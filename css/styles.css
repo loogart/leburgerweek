@@ -524,6 +524,7 @@ keyframes slide-it-in {
     align-self: flex-end;
 }
 
+
 @media (max-width: 767px) {
     .main-jumbotron {
         background-color: #4E2D2D;
@@ -537,7 +538,7 @@ keyframes slide-it-in {
         padding: 45px 15px;
     }
     .main-jumbotron h1 {
-        font-size: 5em;
+        font-size: 4em;
         font-weight: 900;
     }
     .main-jumbotron h4 {
@@ -766,4 +767,38 @@ fieldset[disabled] .btn-primary.focus {
     animation-duration: .5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+}
+
+.owl-nav.disabled + .owl-dots {
+    margin-top: 10px;
+    position: relative;
+    margin: -30px auto auto;
+}
+
+.owl-dots {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+    margin: 5px 12px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    -webkit-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+    border-radius: 30px;
+}
+
+.owl-dots .owl-dot.active span,
+.owl-dots .owl-dot:hover span {
+    background: #869791;
 }

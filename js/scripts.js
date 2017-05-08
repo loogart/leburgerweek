@@ -1,6 +1,6 @@
 // owl carousel
 $(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
+    $(".owl-carousel.main-carousel").owlCarousel({
         items: 1,
         lazyLoad: true,
         loop: true,
@@ -8,14 +8,13 @@ $(document).ready(function () {
         animateIn: 'slideInRight',
         autoplay: true,
         autoplayTimeout: 4500,
-        autoHeight: true
+        autoHeight: true,
+        dots:true
     });
 });
 
 
 $(document).ready(function () {
-
-
     //navbar sticky 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 40) {
@@ -28,6 +27,4 @@ $(document).ready(function () {
             $('.logo-award-lg').removeClass('sticky-award');
         }
     });
-
-
 });

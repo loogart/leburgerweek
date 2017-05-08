@@ -151,7 +151,6 @@ keyframes slide-logo {
     -ms-flex-positive: 4;
     flex-grow: 4;
     text-align: left;
-    padding-left: 15px;
     border-left: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5;
     letter-spacing: 1px;
@@ -159,6 +158,7 @@ keyframes slide-logo {
 
 .nav-flex-location a {
     color: #9B9B9B;
+    padding:20px 15px;
 }
 
 .nav-flex-location a.active {
@@ -333,6 +333,7 @@ keyframes slide-it-in {
     .collapse-navi>.mobile-menu-bars a {
         color: #484848;
         margin: auto;
+        padding:20px 0;
     }
     .collapse-navi>.mobile-menu-bars a:hover,
     .collapse-navi>.mobile-menu-bars a:active,

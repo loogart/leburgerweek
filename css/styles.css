@@ -393,24 +393,21 @@ keyframes slide-it-in {
     border-bottom: 0 solid transparent;
 }
 
-
-/*
-.fade-scale {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    opacity: 0;
-    -webkit-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
-    -webkit-transform: scale(.5);
-    transform: scale(.5);
+.mobile-menu .modal-body .container {
+    padding: 0 50px
 }
 
-.fade-scale.in {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+.mobile-menu .modal-body ul {
+    -webkit-animation: slide-it-in .8s ease;
+    animation: slide-it-in .8s ease;
 }
-*/
+
+
+/*sign in up popup*/
+
+
+
+/* popup animations */
 
 .fade-slide {
     -webkit-transform: translateX(100%);
@@ -426,14 +423,24 @@ keyframes slide-it-in {
     transform: translateX(0);
 }
 
-.mobile-menu .modal-body .container {
-    padding: 0 50px
+.fade-scale {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    -webkit-transform: scale(.2);
+    transform: scale(.2);
+    -webkit-transform-origin: top;
+    transform-origin: top;
 }
 
-.mobile-menu .modal-body ul {
-    -webkit-animation: slide-it-in .8s ease;
-    animation: slide-it-in .8s ease;
+.fade-scale.in {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
+
 
 @-webkit-keyframes slide-it-in {
     0% {

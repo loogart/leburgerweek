@@ -138,9 +138,10 @@
     <section class="burger-profile">
         <div class="container">
             <div class="row">
-                <div class="col-sm-offset-1 col-sm-10">
+                <div class="col-sm-12">
                     <div class="row">
-                        <div class="col-sm-6 col-sm-push-6 burger-zoomers">
+                        <!-- imgages -->
+                        <div class="col-sm-push-8 col-sm-4 col-md-6 col-md-push-6 burger-zoomers">
                             <a href="img/mtl/burger-1.jpg"><img class="burger-photo" src="img/mtl/burger-1.jpg"></a>
                             <div class="owl-carousel burger-carousel">
                                 <div class="restaurant-photo">
@@ -159,44 +160,35 @@
                                     <a href="img/mtl/burger-5.jpg"><img class="img-responsive" src="img/mtl/burger-5.jpg"></a>
                                 </div>
                             </div>
-                            <div class="map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.554897822938!2d-73.55603898430002!3d45.498907239147556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91af6072811ed%3A0x4819ebf8c20ba163!2s155+Fahrenheit!5e0!3m2!1sen!2sca!4v1490025749254" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-                            </div>
                         </div>
-                        <div class="col-sm-6 col-sm-pull-6">
+
+                        <!-- desription -->
+                        <div class="col-sm-pull-4 col-sm-8 col-md-6 col-md-pull-6">
                             <h2>Farenheit 155</h2>
                             <h4>The Walk of Shame</h4>
-                            <ul class="list-inline">
-                                <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <ul class="list-inline social-links">
+                                <li><a href="#" class="fb-color"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="ig-color"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="tw-color"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                             </ul>
-                            <p>Essayez notre ultime burger qui vous donnera une drôle de façon de marcher.</p>
-                            <hr>
-                            <h4><b>Ingrédients</b></h4>
-                            <ol>
-                                <li>6 oz de boeuf avec fromage en grain à l'intérieur</li>
-                                <li>aioli à l'avocat et aux tomates séchées</li>
-                                <li>cheddar veilli</li>
-                                <li>tomates rôties avec coulis miel et balsamique</li>
-                                <li>oignons rouges caramélisés au vin rouge</li>
-                                <li>roquette</li>
-                                <li>capicollo maison</li>
-                                <li>oeufs de caille</li>
-                                <li>relish maison sur pain brioché maison</li>
-                                <li>servi avec frites</li>
-                            </ol>
-                            <h3>22$</h3>
-                            <hr>
-                            <section class="btn-actions">
-                                <a href="#" class="btn btn-primary btn-lg" role="button"> $19 Buy Voucher</a>
-                                <button type="button" id="saveFaves" data-complete-text="Saved to favorites" class="btn btn-default btn-lg" autocomplete="off">
-                        <i class="fa fa-heart-o"></i> Save to favorites
-                    </button>
-                                <a href="#" class="btn btn-success btn-lg" role="button"><i class="fa fa-check"></i> Vote</a>
-                            </section>
-                            <hr>
+                            <div class="panel panel-default">
+                                <!-- Default panel contents -->
+                                <div class="panel-heading">Burger description</div>
+                                <div class="panel-body">
+                                    <p>Essayez notre ultime burger qui vous donnera une drôle de façon de marcher.</p>
+                                </div>
+                                <!-- List group -->
+                                <ul class="list-group">
+                                    <li class="list-group-item">6 oz de boeuf avec fromage en grain à l'intérieur</li>
+                                    <li class="list-group-item">aioli à l'avocat et aux tomates séchées</li>
+                                    <li class="list-group-item">cheddar veilli</li>
+                                    <li class="list-group-item">tomates rôties avec coulis miel et balsamique</li>
+                                    <li class="list-group-item">oignons rouges caramélisés au vin rouge</li>
+                                </ul>
+                            </div>
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.554897822938!2d-73.55603898430002!3d45.498907239147556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91af6072811ed%3A0x4819ebf8c20ba163!2s155+Fahrenheit!5e0!3m2!1sen!2sca!4v1490025749254" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -204,31 +196,21 @@
         </div>
     </section>
 
-    <!-- footer -->
-    <section class="footer">
+    <!-- action bar -->
+    <section class="action-bar">
         <div class="container">
-            <div clas="row">
-                <div class="col-sm-offset-1 col-sm-6 col-md-offset-2 col-md-5">
-                    <h3>About</h3>
-                    <p>From the 1st to 7th of September 2017, restaurants from Québec, Montréal, Winnipeg, Toronto, Ottawa, Vancouver, the regions of Quebec and Port-au-Prince offer you the most incredible burgers!.</p>
-                </div>
-                <div class="col-sm-4 col-md-3">
-                    <h3>Connect with us</h3>
-                    <ul class=list-unstyled>
-                        <li><a href="https://www.facebook.com/LeBurgerWeek" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li>
-                        <li><a href="https://www.instagram.com/leburgerweek/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-                        <li><a href="https://twitter.com/leburgerweek" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
-                        <li><a href="mailto:chris@loogart.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</a></li>
+            <div class="row">
+                <div class="col-sm-8">
+                    <ul class="list-inline">
+                        <li class="buy"><a href="#" class="btn btn-primary" role="button"><i class="fa fa-ticket" aria-hidden="true"></i> Buy</a></li>
+                        <li><a href="#" class="btn btn-default" role="button"><i class="fa fa-check"></i> Vote</a></li>
+                        <li><a href="#" class="btn btn-default" role="button"><i class="fa fa-heart-o"></i> Favorite</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-                    <hr>
-                    <h6>© 2017 Le Burger Week | Designed by <a href="http://loogart.com" target="_blank">Loogart</a>.</h6>
-                </div>
-
             </div>
         </div>
     </section>
+
 
     <!-- JS dependencies -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -1,5 +1,5 @@
-// owl carousel
 $(document).ready(function () {
+    // carousel main jumbotron
     $(".owl-carousel.main-carousel").owlCarousel({
         items: 1,
         lazyLoad: true,
@@ -11,24 +11,25 @@ $(document).ready(function () {
         autoHeight: true,
         dots: true
     });
-
+    // carousel restaurant photos
     $(".owl-carousel.burger-carousel").owlCarousel({
         margin: 10,
         nav: true,
         dots: false,
         responsive: {
             0: {
-                items: 3
+                items: 2.5
             },
-            600: {
-                items: 3
+            768: {
+                items: 2
             },
-            1000: {
+            992: {
                 items: 4
             }
         }
     })
-
+    
+    //lightbox for burger photos
     $(".burger-zoomers").magnificPopup({
         delegate: 'a', // child items selector, by clicking on it popup will open
         type: 'image',

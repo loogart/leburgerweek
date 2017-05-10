@@ -1101,6 +1101,19 @@ fieldset[disabled] .btn-facebook.focus {
     color: #00aced;
 }
 
+.award-badge-2 {
+    position: relative;
+    width: 70px;
+    height: 20px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.map{
+    margin-bottom: 10px;
+}
+
 
 @media (max-width:767px) {
     .burger-profile {

@@ -158,10 +158,12 @@ keyframes slide-logo {
 .nav-flex-location a {
     color: #9B9B9B;
     padding: 20px 15px;
+    font-size: 16px;
 }
 
-.nav-flex-location a.active {
-    color: #484848;
+.nav-flex-location a.active,
+.nav-flex-location a.active:hover {
+    color: #ff7525;
 }
 
 .nav-flex-btn {
@@ -195,7 +197,8 @@ keyframes slide-logo {
 
 .open>.dropdown-menu {
     animation-name: slidenavAnimation;
-    animation-duration: .3s;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -236,8 +239,8 @@ keyframes slide-logo {
 }
 
 ul.dropdown-menu a {
-    -webkit-animation: slide-it-in .4s ease;
-    animation: slide-it-in .4s ease;
+    -webkit-animation: slide-it-in .3s ease;
+    animation: slide-it-in .3s ease;
 }
 
 @-webkit-keyframes slide-it-in {
@@ -269,19 +272,38 @@ keyframes slide-it-in {
 .nav-flex-item.dropdown ul.dropdown-menu {
     padding: 0;
     border-radius: 0;
-    border: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
     margin-top: 0;
     width: 69%;
 }
 
 .nav-flex-item.dropdown ul.dropdown-menu li:nth-child(odd) {
     background-color: #f8f8f8;
-    border-bottom: 1px dotted #ccc;
 }
 
 .nav-flex-item.dropdown ul.dropdown-menu li a {
     padding: 15px;
     color: #484848;
+}
+
+.dropdown ul.dropdown-menu li.active a,
+.dropdown ul.dropdown-menu li a:hover {
+    background-color: #ff7525;
+    color: #fff;
+}
+
+.dropdown ul.dropdown-menu li.active a {
+    -webkit-animation: appear-active .4s ease;
+    animation: appear-active .4s ease;
+}
+
+@-webkit-keyframes appear-active {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .nav-flex-item a:hover,
@@ -559,7 +581,6 @@ keyframes slide-it-in {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-
 }
 
 .vc-align--child {
@@ -609,6 +630,52 @@ keyframes slide-it-in {
         -webkit-box-flex: 1;
         -ms-flex: 1;
         flex: 1;
+    }
+}
+
+.city-jumbotron .jumbotron {
+    margin-bottom: 0;
+    padding: 80px 0 30px;
+    color: #fff;
+    background-image: url('../img/city/montreal-hires.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    min-height: 300px;
+    text-align: center;
+}
+
+.city-jumbotron h2 {
+    text-shadow: 0 3px 40px rgba(0, 0, 0, .7);
+    font-size: 3em;
+}
+
+.city-jumbotron .vc-align--parent-mini {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.city-jumbotron.vc-align-child-mini {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+@media (max-width: 767px) {
+    .city-jumbotron .jumbotron {
+        padding: 120px 0 60px;
+        min-height: 100px;
+    }
+    .city-jumbotron h2 {
+        text-shadow: 0 3px 40px rgba(0, 0, 0, .7);
+        font-size: 2em;
     }
 }
 
@@ -792,6 +859,22 @@ fieldset[disabled] .btn-facebook.focus {
     margin: 23px auto;
 }
 
+@media (max-width:767px) {
+    .city-tiles {
+        padding: 30px 0 30px;
+        background-color: #fff;
+    }
+    .city-tiles h2 {
+        font-size: 2.3em;
+    }
+    .city-tiles h4 {
+        font-size: 1.2em;
+    }
+    .city-tiles p {
+        font-size: 1.5em;
+    }
+}
+
 .tile {
     height: 250px;
     width: 100%;
@@ -821,6 +904,161 @@ fieldset[disabled] .btn-facebook.focus {
     margin-top: 160px;
     margin-left: 30px;
     text-shadow: 0 0px 20px rgba(0, 0, 0, .5);
+}
+
+
+/* city burgers */
+
+.city-burgers {
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+.city-burgers h2 {
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    font-size: 3.5em;
+}
+
+.city-burgers h4 {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #ff7525;
+}
+
+.city-burgers p {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 1.8em;
+    margin: 23px auto;
+}
+
+@media (max-width:767px) {
+    .city-burgers {
+        padding: 15px 0;
+        background-color: #fff;
+    }
+    .city-burgers h2 {
+        font-size: 2.3em;
+    }
+    .city-burgers h4 {
+        font-size: 1.2em;
+    }
+    .city-burgers p {
+        font-size: 1.5em;
+    }
+}
+
+
+/*cards*/
+
+.card-container {}
+
+.card {
+    display: block;
+    position: relative;
+    margin: 20px auto;
+}
+
+.burger-image {
+    width: 100%;
+    height: 250px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+}
+
+.burger-image:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-filter: brightness(.3);
+    filter: brightness(.69);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.award-badge {
+    position: absolute;
+    width: 70px;
+    height: 20px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    right: 20px;
+    top: 15px;
+}
+
+.card .card-content {}
+
+.card .card-content h3 {
+    font-size: 2em;
+    font-weight: bolder;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 32px;
+    max-height: 64px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.card .card-content h5 {
+    font-size: 1.2em;
+    color: #ff7525;
+    font-weight: bold;
+    font-weight: bolder;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    max-height: 32px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+/* burger profile */
+
+.burger-profile {
+    padding: 120px 0 60px;
+    background-color: #fff;
+}
+
+.burger-profile h2 {
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    font-size: 3.5em;
+}
+
+.burger-profile h4 {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #ff7525;
+}
+
+.burger-profile p {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 1.8em;
+    margin: 23px auto;
+}
+
+@media (max-width:767px) {
+    .burger-profile {
+        padding: 15px 0;
+        background-color: #fff;
+    }
+    .burger-profile h2 {
+        font-size: 2.3em;
+    }
+    .burger-profile h4 {
+        font-size: 1.2em;
+    }
+    .burger-profile p {
+        font-size: 1.5em;
+    }
 }
 
 
@@ -857,6 +1095,15 @@ fieldset[disabled] .btn-facebook.focus {
         background-repeat: no-repeat;
         background-position: center bottom;
     }
+    .partners h2 {
+        font-size: 2.3em;
+    }
+    .partners h4 {
+        font-size: 1.2em;
+    }
+    .partners p {
+        font-size: 1.5em;
+    }
 }
 
 
@@ -880,28 +1127,28 @@ fieldset[disabled] .btn-facebook.focus {
     line-height: 1.6em;
 }
 
-.footer ul li{
+.footer ul li {
     line-height: 28px;
 }
 
-.footer a{
-    color:#fff;
+.footer a {
+    color: #fff;
 }
 
-.footer h3{
+.footer h3 {
     color: #FAA21E;
     margin-bottom: 27px;
 }
 
-.footer h6, .footer h6 a {
+.footer h6,
+.footer h6 a {
     font-family: Roboto, sans-serif;
     font-weight: 300;
     font-size: .86em;
     color: #FAA21E;
     line-height: 1.3em;
-    margin-top:30px;
+    margin-top: 30px;
 }
-
 
 @media (max-width: 767px) {
     .footer {

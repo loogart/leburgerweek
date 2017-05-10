@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Le Burger Week</title>
+    <title>Montréal | Le Burger Week</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -21,8 +21,8 @@
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="img/favicon.png">
     <meta name="msapplication-TileColor" content="#FF7525">
-
     <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#FF7525">
     <meta name="theme-color" content="#FF7525">
 
     <!-- Bootstrap -->
@@ -50,13 +50,13 @@
                     <a href="index.html" class="logo"></a>
                 </div>
                 <div class="nav-flex-item nav-flex-location dropdown">
-                    <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i> Select your city
+                    <a class="dropdown-toggle active" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> Montréal
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                         <li><a href="city.html">Québec, Québec</a></li>
-                        <li><a href="city.html">Montréal, Québec</a></li>
+                        <li class="active"><a href="city.html">Montréal, Québec</a></li>
                         <li><a href="city.html">Winnipeg, Manitoba</a></li>
                         <li><a href="city.html">Toronto, Ontario</a></li>
                         <li><a href="city.html">Port-au-Prince, Haïti</a></li>
@@ -134,106 +134,219 @@
         </div>
     </section>
 
-    <!-- jumbotron-->
-    <div class="owl-carousel main-carousel">
-        <div class="jumbotron main-jumbotron">
-            <div class="container">
-                <div class="row vc-align--parent">
-                    <div class="vc-align--child col-sm-8">
-                        <h4>September 1-7</h4>
-                        <h1>Discover. Taste. Vote.</h1>
-                        <a href="#!" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signUp">Sign up for free</a>
-                    </div>
-                </div>
+    <!-- city jumbotron -->   
+    <section class="city-jumbotron">
+        <div class="jumbotron vc-align--parent-mini">
+            <div class="container vc-align--child-mini">
+                <h2>Montréal City</h2>
             </div>
         </div>
-        <div class="jumbotron main-jumbotron" style="background-image:url('./img/jumbo1.jpg')">
-            <div class="container">
-                <div class="row vc-align--parent">
-                    <div class="vc-align--child col-sm-8">
-                        <h4>Announcement No. 2</h4>
-                        <h1>Your business. Sign up.</h1>
-                        <a href="#!" class="btn btn-primary btn-lg">Open a business account</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="jumbotron main-jumbotron" style="background-image:url('./img/jumbo2.jpg')">
-            <div class="container">
-                <div class="row vc-align--parent">
-                    <div class="vc-align--child col-sm-8">
-                        <h4>Anouncement No. 3</h4>
-                        <h1>Hello Montreal's 375th.</h1>
-                        <a href="#!" class="btn btn-primary btn-lg">Join the party</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
-    <!-- select city -->
-    <section class="city-tiles">
+    <!-- ciy burgers -->
+    <section class="city-burgers">
         <div class="container">
             <div class="row">
-                <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-                    <h2>Which city are you in?</h2>
-                    <p>Choose your city and discover the most amazing burgers around you.</p>
+                <div class="col-sm-offset-1 col-sm-10">
+                    <h2>Restaurants in Montréal</h2>
+                    <p>The competition is fierce in this city. The burger selection is infinite... well, almost.</p>
+                    <h4><i class="fa fa-th"></i> Results 16 burgers in Montreal, QC.</h4>
                 </div>
-                <div class="col-sm-offset-1 col-sm-5 col-md-offset-2 col-md-4">
-                    <a href="city.html">
-                        <div class="tile" style="background-image:url('./img/city/quebec.jpg')">
-                            <h3>Québec</h3>
+                <div class="col-sm-offset-1 col-sm-10">
+                    <div class="row card-container">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card">
+                                <a href="burger.html" target="_blank" class="card-image">
+                                    <img class="burger-image" src="img/mtl/burger-1.jpg">
+                                    <a href="#!" target="_blank"><img class="award-badge" src="img/logos/logo-just-eat.png"></a>
+                                </a>
+                                <div class="card-content">
+                                    <h3>155 Fahrenheit</h3>
+                                    <h5>The walk of shame</h5>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-sm-5 col-md-4">
-                    <a href="city.html">
-                        <div class="tile" style="background-image:url('./img/city/montreal.jpg')">
-                            <h3>Montreal</h3>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card">
+                                <a href="burger.html" target="_blank" class="card-image">
+                                    <img class="burger-image" src="img/mtl/burger-2.jpg">
+                                    <a href="#!" target="_blank"><img class="award-badge" src="img/logos/logo-bud.png"></a>
+                                </a>
+                                <div class="card-content">
+                                    <h3>ART:BRGR</h3>
+                                    <h5>F...me burger</h5>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-sm-offset-1 col-sm-5 col-md-offset-2 col-md-4">
-                    <a href="city.html">
-                        <div class="tile" style="background-image:url('./img/city/winnipeg.jpg')">
-                            <h3>Winnipeg</h3>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card">
+                                <a href="burger.html" target="_blank" class="card-image">
+                                    <img class="burger-image" src="img/mtl/burger-3.jpg">
+                                    <a href="#!" target="_blank"><img class="award-badge" src="img/logos/logo-ace.png"></a>
+                                </a>
+                                <div class="card-content">
+                                    <h3>Blackstrap BBQ</h3>
+                                    <h5>Le Pig Mac</h5>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-sm-5 col-md-4">
-                    <a href="city.html">
-                        <div class="tile" style="background-image:url('./img/city/toronto.jpg')">
-                            <h3>Toronto</h3>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card">
+                                <a href="burger.html" target="_blank" class="card-image">
+                                    <img class="burger-image" src="img/mtl/burger-4.jpg">
+                                    <a href="#!" target="_blank"><img class="award-badge hidden" src="img/logos/"></a>
+                                </a>
+                                <div class="card-content">
+                                    <h3>Bulldog Beer House</h3>
+                                    <h5>Bulldog Burger</h5>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-sm-offset-1 col-sm-5 col-md-offset-2 col-md-4">
-                    <a href="city.html">
-                        <div class="tile" style="background-image:url('./img/city/port-au-prince.jpg')">
-                            <h3>Port-au-Prince</h3>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card">
+                                <a href="burger.html" target="_blank" class="card-image">
+                                    <img class="burger-image" src="img/mtl/burger-5.jpg">
+                                    <a href="#!" target="_blank"><img class="award-badge" src="img/logos/logo-just-eat.png"></a>
+                                </a>
+                                <div class="card-content">
+                                    <h3>Chez Tousignant</h3>
+                                    <h5>Le Tousi</h5>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-sm-5 col-md-4">
-                    <a href="city.html">
-                        <div class="tile" style="background-image:url('./img/city/ottawa.jpg')">
-                            <h3>Ottawa</h3>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card">
+                                <a href="burger.html" target="_blank" class="card-image">
+                                    <img class="burger-image" src="img/mtl/burger-6.jpg">
+                                    <a href="#!" target="_blank"><img class="award-badge" src="img/logos/logo-bud.png"></a>
+                                </a>
+                                <div class="card-content">
+                                    <h3>Copper Branch</h3>
+                                    <h5>Grand Sumac</h5>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-sm-offset-1 col-sm-5 col-md-offset-2 col-md-4">
-                    <a href="city.html">
-                        <div class="tile" style="background-image:url('./img/city/gatineau.jpg')">
-                            <h3>Régions du Québec</h3>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card">
+                                <a href="burger.html" target="_blank" class="card-image">
+                                    <img class="burger-image" src="img/mtl/burger-7.jpg">
+                                    <a href="#!" target="_blank"><img class="award-badge" src="img/logos/logo-ace.png"></a>
+                                </a>
+                                <div class="card-content">
+                                    <h3>Griffintown Cafe</h3>
+                                    <h5>SPRESSO BURGER</h5>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-sm-5 col-md-4">
-                    <a href="city.html">
-                        <div class="tile" style="background-image:url('./img/city/vancouver.jpg')">
-                            <h3>Vancouver</h3>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card">
+                                <a href="burger.html" target="_blank" class="card-image">
+                                    <img class="burger-image" src="img/mtl/burger-8.jpg">
+                                    <a href="#!" target="_blank"><img class="award-badge hidden" src="img/logos/"></a>
+                                </a>
+                                <div class="card-content">
+                                    <h3>Jerry Ferrer - Casse-croûte du terroir par Europea</h3>
+                                    <h5>Le Picsou Royal</h5>
+                                </div>
+                            </div>
                         </div>
-                    </a>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card">
+                                <a href="burger.html" target="_blank" class="card-image">
+                                    <img class="burger-image" src="img/mtl/burger-9.jpg">
+                                    <a href="#!" target="_blank"><img class="award-badge" src="img/logos/logo-just-eat.png"></a>
+                                </a>
+                                <div class="card-content">
+                                    <h3>Jukebox Burgers</h3>
+                                    <h5>Jukebox Burger Georgia Burger</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card">
+                                <a href="burger.html" target="_blank" class="card-image">
+                                    <img class="burger-image" src="img/mtl/burger-10.jpg">
+                                    <a href="#!" target="_blank"><img class="award-badge" src="img/logos/logo-bud.png"></a>
+                                </a>
+                                <div class="card-content">
+                                    <h3>Le restaurant le plus hot au monde</h3>
+                                    <h5>Le Burger Ultime Lorem</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card">
+                                <a href="burger.html" target="_blank" class="card-image">
+                                    <img class="burger-image" src="img/mtl/burger-11.jpg">
+                                    <a href="#!" target="_blank"><img class="award-badge" src="img/logos/logo-ace.png"></a>
+                                </a>
+                                <div class="card-content">
+                                    <h3>Le Bec à Vin</h3>
+                                    <h5>La Bête Noire</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card">
+                                <a href="burger.html" target="_blank" class="card-image">
+                                    <img class="burger-image" src="img/mtl/burger-12.jpg">
+                                    <a href="#!" target="_blank"><img class="award-badge hidden" src="img/logos/"></a>
+                                </a>
+                                <div class="card-content">
+                                    <h3>Macbar et Fromage</h3>
+                                    <h5>Big Fat Greek Burger</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card">
+                                <a href="burger.html" target="_blank" class="card-image">
+                                    <img class="burger-image" src="img/mtl/burger-13.jpg">
+                                    <a href="#!" target="_blank"><img class="award-badge" src="img/logos/logo-just-eat.png"></a>
+                                </a>
+                                <div class="card-content">
+                                    <h3>Mâche</h3>
+                                    <h5>Burger Mâche</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card">
+                                <a href="burger.html" target="_blank" class="card-image">
+                                    <img class="burger-image" src="img/mtl/burger-17.jpg">
+                                    <a href="#!" target="_blank"><img class="award-badge" src="img/logos/logo-bud.png"></a>
+                                </a>
+                                <div class="card-content">
+                                    <h3>Mayfair</h3>
+                                    <h5>Royals</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card">
+                                <a href="burger.html" target="_blank" class="card-image">
+                                    <img class="burger-image" src="img/mtl/burger-15.jpg">
+                                    <a href="#!" target="_blank"><img class="award-badge" src="img/logos/logo-ace.png"></a>
+                                </a>
+                                <div class="card-content">
+                                    <h3>Mckibbin's Irish Pub</h3>
+                                    <h5>Festival du burger épicé au pêches!</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card">
+                                <a href="burger.html" target="_blank" class="card-image">
+                                    <img class="burger-image" src="img/mtl/burger-16.jpg">
+                                    <a href="#!" target="_blank"><img class="award-badge hidden" src="img/logos/"></a>
+                                </a>
+                                <div class="card-content">
+                                    <h3>MISTER STEER</h3>
+                                    <h5>THE HERO BURGER</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -243,30 +356,34 @@
     <section class="partners">
         <div class="container">
             <div class="row">
-                <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-                    <h2>Our partners</h2>
-                    <p>A special thanks to our partners and sponsors.</p>
+                <div class="col-sm-offset-1 col-sm-10">
+                    <h2>Montreal Partners</h2>
+                    <p>A special thanks to our partners and sponsors in the Montreal region.</p>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-offset-2 col-md-2">
-                    <a href="#!" target="_blank"><img class="img-responsive" src="img/partners/energie.png"></a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2">
-                    <a href="#!" target="_blank"><img class="img-responsive" src="img/partners/libro-noir.png"></a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2">
-                    <a href="#!" target="_blank"><img class="img-responsive" src="img/partners/qfaq-couleur.png"></a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2">
-                    <a href="#!" target="_blank"><img class="img-responsive" src="img/partners/restos_0.png"></a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-offset-2 col-md-2">
-                    <a href="#!" target="_blank"><img class="img-responsive" src="img/partners/rougefm-rouge.png"></a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2">
-                    <a href="#!" target="_blank"><img class="img-responsive" src="img/partners/tableedeschefs.png"></a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2">
-                    <a href="#!" target="_blank"><img class="img-responsive" src="img/partners/terroirs-couleur.png"></a>
+                <div class="col-sm-offset-1 col-sm-10">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3 col-lg-2">
+                            <a href="#!" target="_blank"><img class="img-responsive" src="img/partners/energie.png"></a>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-lg-2">
+                            <a href="#!" target="_blank"><img class="img-responsive" src="img/partners/libro-noir.png"></a>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-lg-2">
+                            <a href="#!" target="_blank"><img class="img-responsive" src="img/partners/qfaq-couleur.png"></a>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-lg-2">
+                            <a href="#!" target="_blank"><img class="img-responsive" src="img/partners/restos_0.png"></a>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-lg-2">
+                            <a href="#!" target="_blank"><img class="img-responsive" src="img/partners/rougefm-rouge.png"></a>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-lg-2">
+                            <a href="#!" target="_blank"><img class="img-responsive" src="img/partners/tableedeschefs.png"></a>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-lg-2">
+                            <a href="#!" target="_blank"><img class="img-responsive" src="img/partners/terroirs-couleur.png"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

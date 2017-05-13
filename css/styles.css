@@ -524,7 +524,7 @@ keyframes slide-it-in {
 }
 
 /*test fade in and out */
-.modal.fade-2 .modal-dialog {
+.modal.fade .modal-dialog {
 	-webkit-transform: scale(0.1);
 	transform: scale(0.1);
 	top: 300px;
@@ -533,7 +533,7 @@ keyframes slide-it-in {
 	transition: all 0.3s;
 }
 
-.modal.fade-2.in .modal-dialog {
+.modal.fade.in .modal-dialog {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transform: translate3d(0, -300px, 0);

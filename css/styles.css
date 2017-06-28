@@ -1162,6 +1162,28 @@ fieldset[disabled] .btn-facebook.focus {
     margin-bottom: 10px;
 }
 
+.award-badge-3 {
+    position: relative;
+    height: 22px;
+    -o-object-fit: contain;
+    object-fit: contain;  
+    margin-left: 3px;
+}
+
+.sub-image{
+    margin-top:15px;
+    padding:10px 0;
+}
+
+ul.list-btn-block{
+    max-width: 320px;
+    margin:auto;
+}
+
+ul.list-btn-block li{
+    margin:10px auto;
+}
+
 .map {
     margin-bottom: 10px;
 }

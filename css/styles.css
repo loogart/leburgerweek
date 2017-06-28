@@ -38,13 +38,13 @@ body {
 }
 
 .nav-flex-logo {
-    padding-top: 8px;
+    padding-top: 4px;
     margin-top: 0;
 }
 
 .logo {
     display: inline-block;
-    height: 46px;
+    height: 50px;
     width: 269px;
     background-image: url('../img/logos/logo-full.svg');
     background-size: contain;
@@ -89,7 +89,7 @@ keyframes slide-logo {
 @media (max-width: 767px) {
     .logo {
         display: inline-block;
-        height: 46px;
+        height: 50px;
         width: 60px;
         background-image: url('../img/logos/logo.svg');
         background-size: contain;

@@ -596,12 +596,12 @@ keyframes slide-it-in {
 .main-jumbotron {
     background-color: #4E2D2D;
     color: #fff;
-    min-height: 50vh;
+    min-height: 60vh;
     font-family: Roboto, sans-serif;
     background-image: url('../img/illo-colors.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 60%;
+    background-position: 20%;
     margin-top: 60px;
     margin-bottom: 0;
 }
@@ -650,9 +650,9 @@ keyframes slide-it-in {
         min-height: 21vh;
         font-family: Roboto, sans-serif;
         background-image: url('../img/illo-colors.png');
-        background-size: 200%;
+/*        background-size: 200%;*/
         background-repeat: no-repeat;
-        background-position: left;
+        background-position: 20%;
         padding: 45px 15px;
     }
     .main-jumbotron h1 {

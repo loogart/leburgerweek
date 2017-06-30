@@ -1388,3 +1388,8 @@ ul.list-btn-block li{
     background: #fc8e4e;
     opacity: 1;
 }
+
+.logo-partners {
+    max-height:100px;
+    margin-bottom:30px;
+}

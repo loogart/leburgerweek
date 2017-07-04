@@ -987,7 +987,7 @@ fieldset[disabled] .btn-facebook.focus {
     color: #ff7525;
 }
 
-.city-burgers p, .city-burgers li {
+.city-burgers p, .city-burgers li, summary {
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 1.8em;

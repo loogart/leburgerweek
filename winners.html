@@ -223,6 +223,16 @@
         .burger-winner .content h5 {
             color: #FF7425;
         }
+        
+        @media (min-width:767px) {
+            .stick-it {
+                margin: 0;
+                padding: 2px 0 0 12px;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 80px;
+            }
+        }
 
     </style>
 
@@ -230,7 +240,7 @@
     <section class="winners">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 stick-it">
                     <ul class="list-group burger-winner-nav">
                         <li class="list-group-item"><a href="#quebec">Quebec</a></li>
                         <li class="list-group-item"><a href="#montreal">Montreal</a></li>

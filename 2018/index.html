@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>Le Burger Week 2018</title>
+    <style>
+        .navbar {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            top: 10px;
+            padding-top: 5px;
+        }
+
+        .navbar::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            margin: -10px;
+            background: linear-gradient(to right, #EE1272, #F47E27);
+        }
+
+        .navbar-toggler {
+            border: 0;
+        }
+
+        @media (min-width: 992px) {
+            .navbar-expand-lg .navbar-nav .nav-link {
+                padding-right: 1rem;
+                padding-left: 1rem;
+            }}
+
+            .supadupa-jumbotron {
+                overflow: hidden;
+                height: 666px;
+                position: relative;
+            }
+
+            .cta-jumbotron {
+                position: absolute;
+                z-index: 3;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+
+            .layer {
+                display: flex;
+                height: 100%;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .bg {
+                background: url(./img/bg.jpg) no-repeat 50% 50%;
+                background-size: cover;
+                position: relative;
+                width: 110%;
+                left: -5%;
+                top: -5%;
+                height: 720px;
+            }
+
+            .burger {
+                width: 50vw;
+                position: absolute;
+                left: 35%;
+                top: 20%;
+                max-height: 500px;
+            }
+
+            .japanese {
+                width: 20vw;
+                position: absolute;
+                left: 69%;
+                top: 30%;
+            }
+
+            .supadupa-jumbotron h1 {
+                font-size: 4rem;
+            }
+
+            .supadupa-jumbotron p {
+                font-size: 2rem;
+            }
+
+            .sponsor-1 {
+                width: 10vw;
+                margin-bottom: 1rem;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            }
+
+            .sponsor-2 {
+                width: 120px;
+                position: absolute;
+                right: 15%;
+                bottom: 15%;
+
+            }
+
+            .logo {
+                height: 48px;
+                margin-right: 10px;
+            }
+
+            .logo-wordmark {
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+
+            .btn {
+                border-radius: 2rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            @media (max-width:767px) {
+                .navbar-brand {
+                    margin-right: 0;
+                }
+                .supadupa-jumbotron {
+                    overflow: hidden;
+                    height: 80vh;
+                    margin-top: 1rem;
+                }
+                .bg {
+                    background: url(./img/bg.jpg) no-repeat 50% 20%;
+                    background-size: cover;
+                    position: relative;
+                    width: 120%;
+                    left: -10%;
+                    top: -10%;
+                    height: 100vh;
+                }
+                .cta-jumbotron {
+                    position: absolute;
+                    z-index: 3;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                }
+
+
+                .burger {
+                    width: 90vw;
+                    position: absolute;
+                    left: 20%;
+                    top: 30%;
+                }
+                .japanese {
+                    display: none;
+                }
+                .supadupa-jumbotron h1 {
+                    font-size: 2.5rem;
+                }
+                .supadupa-jumbotron p {
+                    font-size: 1.6rem;
+                }
+                .sponsor-1 {
+                    width: 20vw;
+                }
+                .sponsor-2 {
+                    width: 80px;
+                    position: absolute;
+                    right: 10%;
+                    bottom: 30%;
+                }
+            }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="img/logo-en-2.svg">
+            <span class="d-none d-sm-inline-block logo-wordmark">Le Burger Week</span>
+        </a>
+        <form class="form-inline">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-location-arrow"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Location" aria-label="Username" aria-describedby="basic-addon1" value="Montréal">
+            </div>
+        </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Winners</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <!-- parallax jumbotron -->
+        <div class="supadupa-jumbotron">
+            <div class="cta-jumbotron text-white d-flex justify-content-start align-items-center">
+                <div class="container">
+                    <img class="sponsor-1" src="img/saputo.svg">
+                    <h1 class="font-weight-bold">Le Burger Week</h1>
+                    <p class="">Where the best burgers in Canada take the stage!</p>
+                    <a href="#!" class="btn btn-light btn-lg">Sign in</a>
+                </div>
+            </div>
+            <div id="scene">
+                <div class="layer" data-depth="0.3">
+                    <div class="bg"></div>
+                </div>
+                <div class="layer" data-depth="0.5">
+                    <img class="japanese" src="img/japanese.svg">
+                </div>
+                <div class="layer" data-depth="0.6">
+                    <img class="burger" src="img/burger.svg">
+                </div>
+                <div class="layer" data-depth="0.8">
+                    <img class="sponsor-2" src="img/golo.svg">
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="container-fluid p-5" style="background-color:red;height:2000px">
+            <h2>Select your City</h2>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+
+    </script>
+</body>
+
+</html>

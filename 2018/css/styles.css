@@ -11,6 +11,15 @@ a {
     font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
 .pre-nav {
     background-color: #fff;
     border-bottom: 1px solid #eee;
@@ -36,6 +45,12 @@ a {
 .pre-nav a {
     text-decoration: none;
     color: #333;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+
+.pre-nav a:hover {
+    color: #F78C26;
 }
 
 .city-name {
@@ -66,14 +81,17 @@ a {
     position: -webkit-sticky;
     top: 0;
     z-index: 2;
-
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: rgba(0, 0, 0, 0.8);
     text-transform: uppercase;
     font-weight: 500;
-    margin-left: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #EC2979;
 }
 
 .collapsing {
@@ -97,7 +115,6 @@ a {
 .modal__select-city h2 {
     font-size: 1.25rem;
     font-weight: 700;
-
 }
 
 .modal__select-city li {
@@ -113,6 +130,10 @@ a {
 
 .intro-text {
     width: 50%;
+}
+
+.super-title {
+    color: #FECF19;
 }
 
 p.tagline {
@@ -142,6 +163,7 @@ p.tagline {
         font-size: 1.625rem;
         margin-bottom: 0.625rem;
         font-weight: 700;
+        margin-left: 0.5rem;
     }
     .navbar-collapse {
         padding-top: 2rem;
@@ -324,10 +346,6 @@ p.tagline {
         padding-bottom: 2rem;
     }
 
-    h1.main-title {
-        font-size: 1.5rem;
-    }
-
     .burger {
         width: 100vw;
         position: absolute;
@@ -357,15 +375,27 @@ p.tagline {
     }
 }
 
+.alert.burger-alert {
+    background: -webkit-gradient(linear, left top, right top, from(#EE1272), to(#F47E27));
+    background: linear-gradient(to right, #EE1272, #F47E27);
+    color: #fff;
+    border: none;
+    border-radius: 0;
+}
+
+.alert.burger-alert a {
+    color: #fff;
+    text-decoration: underline;
+}
+
 /*==== burger list section ====*/
 
 .burger-list {
     padding: 3rem 0;
+    background-color: #fff;
 }
 
 .burger-list h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
     margin-bottom: 2rem;
 }
 
@@ -376,6 +406,7 @@ p.tagline {
 a.location-edit {
     color: #EC2979;
     text-decoration: underline !important;
+    -webkit-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
 }
 
@@ -385,17 +416,24 @@ a.location-edit:hover {
 
 .burger-list .card {
     border-radius: 1.25rem;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.18);
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.18);
+    -webkit-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
     border: none;
 }
 
 .burger-list .row > div[class*='col-'] {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
     flex: 1 0 auto;
 }
 
 .burger-list .card:hover {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -405,6 +443,7 @@ a.location-edit:hover {
 
 .burger-list .card-img-top {
     border-radius: 1.25rem 1.25rem 0 0;
+    -o-object-fit: cover;
     object-fit: cover;
     height: 220px;
     width: 100%;
@@ -419,7 +458,7 @@ a.location-edit:hover {
 }
 
 .burger-list p.card-text {
-    color:#222;
+    color: #222;
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.4rem;
@@ -433,7 +472,7 @@ a.location-edit:hover {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    color:#F78C26;
+    color: #F78C26;
 }
 
 
@@ -441,4 +480,68 @@ a.location-edit:hover {
     section.burger-list h2 {
         font-size: 1.6rem;
     }
+}
+
+/* ==== sponsors section ===== */
+
+.sponsors-area {
+    padding: 4rem 0;
+    background-color: #f1f1f1;
+    background-image: url('../img/japanese-black.svg');
+    background-size: 666px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.sponsors-area h2 {
+    margin-bottom: 1.5rem;
+}
+
+.sponsors-area p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.sponsor__partner {
+    width: 240px;
+}
+
+/* ======= footer ========*/
+
+footer.supafooter {
+    background: -webkit-gradient(linear, left top, right top, from(#ED3E39), to(#EB297D));
+    padding: 4rem 0;
+    background: linear-gradient(90deg, #ED3E39 0%, #EB297D 100%);
+    color: #fff;
+}
+
+footer.supafooter a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer.supafooter a:hover {
+    color: #FECF19;
+}
+
+footer.supafooter h4 {
+    margin-bottom: 1.5rem;
+}
+
+footer.supafooter hr {
+    margin: 2rem 0;
+    border: 1px dotted #fff;
+    opacity: 0.3;
+}
+
+.footer-logo {
+    display: inline-block;
+    height: 120px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.footer-social {
+    width: 150px;
 }

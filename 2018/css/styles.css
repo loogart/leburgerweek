@@ -17,6 +17,7 @@ a {
     padding-bottom: 8px;
     text-transform: uppercase;
     font-size: 0.9rem;
+    z-index: 2;
 }
 
 .pre-nav::before {
@@ -64,6 +65,8 @@ a {
     position: sticky;
     -webkit-position: -webkit-sticky;
     top: 0;
+    z-index: 2;
+
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -79,12 +82,6 @@ a {
     display: none;
 }
 
-@media (max-width:991px) {
-    .navbar-collapse {
-        padding-top: 1rem;
-    }
-}
-
 .modal__select-city .modal-header {
     border-bottom: 0;
 }
@@ -94,13 +91,13 @@ a {
     border: 0px solid rgba(0, 0, 0, 0.2);
     border-radius: 0rem;
     border-top: 8px solid #F78C26;
-    padding:1rem 2rem;
+    padding: 1rem 2rem;
 }
 
 .modal__select-city h2 {
     font-size: 1.25rem;
     font-weight: 700;
-    
+
 }
 
 .modal__select-city li {
@@ -110,11 +107,21 @@ a {
     line-height: 2.2rem;
 }
 
-.modal__select-city a{
-        color:#F78C26;
+.modal__select-city a {
+    color: #F78C26;
 }
 
-@media (max-width:767px) {
+.intro-text {
+    width: 50%;
+}
+
+p.tagline {
+    margin: 0.5rem 0 1.5rem;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+}
+
+@media (max-width:991px) {
     .pre-nav__right a {
         margin-left: 1rem;
     }
@@ -127,7 +134,27 @@ a {
         border-radius: 0.25rem;
     }
     .navbar-light .navbar-toggler {
-        color:#222;
+        color: #222;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: rgba(0, 0, 0, 0.8);
+        text-transform: capitalize;
+        font-size: 1.625rem;
+        margin-bottom: 0.625rem;
+        font-weight: 700;
+    }
+    .navbar-collapse {
+        padding-top: 2rem;
+        height: 100vh;
+    }
+    .intro-text {
+        width: 60%;
+    }
+}
+
+@media (max-width:767px) {
+    .intro-text {
+        width: 100%;
     }
 }
 
@@ -140,7 +167,190 @@ a {
 }
 
 .language-toggler {
-    border:1px solid #333;
-    padding:0.125rem 0.25rem 0;
+    border: 1px solid #333;
+    padding: 0.125rem 0.25rem 0;
     font-weight: 500;
+}
+
+/* ====== jumbotron parallax styles ==== */
+
+.supadupa-jumbotron {
+    overflow: hidden;
+    height: 666px;
+    position: relative;
+    margin-top: -20px
+}
+
+.cta-jumbotron {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.cta-jumbotron__content {
+    height: 450px;
+}
+
+.cta-jumbotron__content .btn {
+    border-radius: 5rem;
+    background-color: #F78C26;
+    color: #fff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    -webkit-transition: all 0.25s ease-in;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+.cta-jumbotron__content .btn:hover {
+     -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+     box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+}
+.cta-jumbotron__content .btn:focus,
+.btn.focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgb(248, 160, 76);
+    box-shadow: 0 0 0 0.2rem rgba(248, 160, 76, 0.3);
+    
+
+}
+
+.layer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.bg {
+    background: url('../img/background.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+    height: 720px;
+
+}
+
+.burger {
+    width: 50vw;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    max-height: 500px;
+}
+
+.japanese {
+    width: 20vw;
+    position: absolute;
+    left: 72%;
+    top: 35%;
+}
+
+.supadupa-jumbotron h1 {
+    font-size: 4rem;
+}
+
+.supadupa-jumbotron p {
+    font-size: 2rem;
+}
+
+.sponsor {
+    margin-bottom: 1.25rem;
+    display: block;
+}
+
+.sponsor__1 {
+    width: 120px;
+}
+
+.sponsor__2 {
+    width: 180px;
+}
+
+
+.logo {
+    height: 48px;
+    margin-right: 10px;
+}
+
+.logo-wordmark {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width:767px) {
+    .supadupa-jumbotron {
+        overflow: hidden;
+        margin-top: -20px;
+        height: 70vh;
+    }
+    .bg {
+        background: url(../img/background.jpg) no-repeat 50% 20%;
+        background-size: cover;
+        position: relative;
+        width: 120%;
+        left: -10%;
+        top: -10%;
+        height: 80vh;
+    }
+    .cta-jumbotron {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .cta-jumbotron__content {
+        height: 65vh;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    h1.main-title {
+        font-size: 1.5rem;
+    }
+
+    .burger {
+        width: 100vw;
+        position: absolute;
+        left: 12%;
+        top: 25%;
+    }
+    .japanese {
+        display: none;
+    }
+    .supadupa-jumbotron h1 {
+        font-size: 2.2rem;
+    }
+    .supadupa-jumbotron p {
+        font-size: 1.6rem;
+    }
+    .sponsor {
+        margin-bottom: 0;
+        display: block;
+    }
+
+    .sponsor__1 {
+        width: 80px;
+    }
+
+    .sponsor__2 {
+        width: 150px;
+    }
 }

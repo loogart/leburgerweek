@@ -10,6 +10,22 @@
     <link rel="stylesheet" href="./css/styles.css">
 
     <title>Le Burger Week 2018</title>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="./img/favicon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Le Burger Week">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="./img/favicon.png">
+    <meta name="msapplication-TileColor" content="#FF7525">
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="mask-icon" href="./img/icons/safari-pinned-tab.svg" color="#FF7525">
+    <meta name="theme-color" content="#FF7525">
 </head>
 
 
@@ -45,35 +61,35 @@
                     <div class="modal-body">
                         <h2>Canadian Cities</h2>
                         <ul class="list-unstyled">
-                            <li><a href="./">Montréal</a></li>
-                            <li><a href="./">Toronto</a></li>
-                            <li><a href="./">Ottawa</a></li>
-                            <li><a href="./">Québec</a></li>
-                            <li><a href="./">Winnipeg</a></li>
-                            <li><a href="./">Saskatoon</a></li>
-                            <li><a href="./">Calgary</a></li>
-                            <li><a href="./">Edmonton</a></li>
-                            <li><a href="./">Vancouver</a></li>
-                            <li><a href="./">Victoria</a></li>
-                            <li><a href="./">Halifax</a></li>
+                            <li><a href="index.html#burgerList">Montréal</a></li>
+                            <li><a href="index.html#burgerList">Toronto</a></li>
+                            <li><a href="index.html#burgerList">Ottawa</a></li>
+                            <li><a href="index.html#burgerList">Québec</a></li>
+                            <li><a href="index.html#burgerList">Winnipeg</a></li>
+                            <li><a href="index.html#burgerList">Saskatoon</a></li>
+                            <li><a href="index.html#burgerList">Calgary</a></li>
+                            <li><a href="index.html#burgerList">Edmonton</a></li>
+                            <li><a href="index.html#burgerList">Vancouver</a></li>
+                            <li><a href="index.html#burgerList">Victoria</a></li>
+                            <li><a href="index.html#burgerList">Halifax</a></li>
                         </ul>
                         <h2>Regions</h2>
                         <ul class="list-unstyled">
-                            <li><a href="./">Outaouais</a></li>
-                            <li><a href="./">Rive-Sud-Laval</a></li>
-                            <li><a href="./">Régions du Québec</a></li>
+                            <li><a href="index.html#burgerList">Outaouais</a></li>
+                            <li><a href="index.html#burgerList">Rive-Sud-Laval</a></li>
+                            <li><a href="index.html#burgerList">Régions du Québec</a></li>
                         </ul>
                         <h2>Outside Canada</h2>
                         <ul class="list-unstyled">
-                            <li><a href="./">Haiti</a></li>
-                            <li><a href="./">Port-au-Prince</a></li>
+                            <li><a href="index.html#burgerList">Haiti</a></li>
+                            <li><a href="index.html#burgerList">Port-au-Prince</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
-    <!-- main nav -->
+    <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
             <a class="navbar-brand" href="./"><img src="./img/logo-burgerweek.svg"><span class="brand-title d-none d-md-inline-block">Le Burger Week</span></a>
@@ -148,23 +164,154 @@
         </div>
 
         <!-- Burger List -->
-        <section class="burger-list">
+        <section class="burger-list" id="burgerList">
             <div class="container">
+                <h2>Burgers in <a class="location-edit" href="#!" data-toggle="modal" data-target="#selectCity">Montréal</a>.</h2>
+
+                <div class="row">
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <a href="burger.html">
+                                <img class="card-img-top" src="./img/mtl/burger-1.jpg" alt="Burger name from restaurant">
+                                <div class="card-body">
+                                    <h3 class="card-title">Ultra long Restaurant Name</h3>
+                                    <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
+                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 2.3 km away</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <a href="burger.html">
+                                <img class="card-img-top" src="./img/mtl/burger-2.jpg" alt="Burger name from restaurant">
+                                <div class="card-body">
+                                    <h3 class="card-title">Restaurant Name</h3>
+                                    <p class="card-text">Burger Name</p>
+                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 2.3 km away</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <a href="burger.html">
+                                <img class="card-img-top" src="./img/mtl/burger-3.jpg" alt="Burger name from restaurant">
+                                <div class="card-body">
+                                    <h3 class="card-title">Restaurant Name</h3>
+                                    <p class="card-text">Burger Name</p>
+                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 2.3 km away</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <a href="burger.html">
+                                <img class="card-img-top" src="./img/mtl/burger-4.jpg" alt="Burger name from restaurant">
+                                <div class="card-body">
+                                    <h3 class="card-title">Ultra long Restaurant Name</h3>
+                                    <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
+                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 2.3 km away</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <a href="burger.html">
+                                <img class="card-img-top" src="./img/mtl/burger-5.jpg" alt="Burger name from restaurant">
+                                <div class="card-body">
+                                    <h3 class="card-title">Restaurant Name</h3>
+                                    <p class="card-text">Burger Name</p>
+                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 2.3 km away</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <a href="burger.html">
+                                <img class="card-img-top" src="./img/mtl/burger-6.jpg" alt="Burger name from restaurant">
+                                <div class="card-body">
+                                    <h3 class="card-title">Ultra long Restaurant Name</h3>
+                                    <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
+                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 2.3 km away</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <a href="burger.html">
+                                <img class="card-img-top" src="./img/mtl/burger-7.jpg" alt="Burger name from restaurant">
+                                <div class="card-body">
+                                    <h3 class="card-title">Restaurant Name</h3>
+                                    <p class="card-text">Burger Name</p>
+                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 2.3 km away</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <a href="burger.html">
+                                <img class="card-img-top" src="./img/mtl/burger-8.jpg" alt="Burger name from restaurant">
+                                <div class="card-body">
+                                    <h3 class="card-title">Restaurant Name</h3>
+                                    <p class="card-text">Burger Name</p>
+                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 2.3 km away</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <a href="burger.html">
+                                <img class="card-img-top" src="./img/mtl/burger-9.jpg" alt="Burger name from restaurant">
+                                <div class="card-body">
+                                    <h3 class="card-title">Ultra long Restaurant Name</h3>
+                                    <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
+                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 2.3 km away</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <a href="burger.html">
+                                <img class="card-img-top" src="./img/mtl/burger-10.jpg" alt="Burger name from restaurant">
+                                <div class="card-body">
+                                    <h3 class="card-title">Ultra long Restaurant Name</h3>
+                                    <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
+                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 2.3 km away</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
 
             </div>
         </section>
-        
+
         <!-- Sponsors -->
         <section class="sponsors">
             <div class="container">
-
+                
             </div>
         </section>
     </main>
-    
+
     <footer>
         <div class="container">
-            
+
         </div>
     </footer>
 

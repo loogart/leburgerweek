@@ -204,16 +204,18 @@ p.tagline {
     -webkit-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
 }
+
 .cta-jumbotron__content .btn:hover {
-     -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
-     box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
 }
+
 .cta-jumbotron__content .btn:focus,
 .btn.focus {
     outline: 0;
     -webkit-box-shadow: 0 0 0 0.2rem rgb(248, 160, 76);
     box-shadow: 0 0 0 0.2rem rgba(248, 160, 76, 0.3);
-    
+
 
 }
 
@@ -352,5 +354,91 @@ p.tagline {
 
     .sponsor__2 {
         width: 150px;
+    }
+}
+
+/*==== burger list section ====*/
+
+.burger-list {
+    padding: 3rem;
+}
+
+.burger-list h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.burger-list a {
+    text-decoration: none;
+}
+
+a.location-edit {
+    color: #EC2979;
+    text-decoration: underline !important;
+    transition: all 0.25s ease-out;
+}
+
+a.location-edit:hover {
+    color: #F78C26;
+}
+
+.burger-list .card {
+    border-radius: 1.25rem;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.18);
+    transition: all 0.25s ease-out;
+    border: none;
+}
+
+.burger-list .row > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.burger-list .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
+}
+
+.burger-list .card a {
+    text-decoration: none;
+}
+
+.burger-list .card-img-top {
+    border-radius: 1.25rem 1.25rem 0 0;
+    object-fit: cover;
+    height: 220px;
+    width: 100%;
+}
+
+.burger-list h3.card-title {
+    color: #EC2979;
+    font-weight: 900;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.burger-list p.card-text {
+    color:#222;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.burger-list p.card-location {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:#F78C26;
+}
+
+
+@media (max-width:767px) {
+    section.burger-list h2 {
+        font-size: 1.6rem;
     }
 }

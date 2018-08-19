@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
+.pre-nav {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.pre-nav::before {
+    content: "";
+    display: block;
+    height: 8px;
+    margin-bottom: 8px;
+    background: -webkit-gradient(linear, left top, right top, from(#EE1272), to(#F47E27));
+    background: linear-gradient(to right, #EE1272, #F47E27);
+}
+
+.pre-nav__right a {
+    margin-left: 1.5rem;
+}
+
+.pre-nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.city-name {
+    color: #ED3E39;
+    text-transform: capitalize;
+}
+
+.navbar-brand img,
+.modal-header img {
+    height: 60px;
+}
+
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.brand-title {
+    margin-left: 12px;
+    font-weight: 700;
+}
+
+.navbar {
+    padding: 0.3125rem 1rem;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    -webkit-position: -webkit-sticky;
+    top: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
+
+@media (max-width:991px) {
+    .navbar-collapse {
+        padding-top: 1rem;
+    }
+}
+
+.modal__select-city .modal-header {
+    border-bottom: 0;
+}
+
+.modal__select-city .modal-content {
+    width: 100%;
+    border: 0px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0rem;
+    border-top: 8px solid #F78C26;
+    padding:1rem 2rem;
+}
+
+.modal__select-city h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    
+}
+
+.modal__select-city li {
+    font-size: 1.825rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    line-height: 2.2rem;
+}
+
+.modal__select-city a{
+        color:#F78C26;
+}
+
+@media (max-width:767px) {
+    .pre-nav__right a {
+        margin-left: 1rem;
+    }
+    .modal__select-city .modal-dialog {
+        margin: 0;
+    }
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        border: 0 solid transparent;
+        border-radius: 0.25rem;
+    }
+    .navbar-light .navbar-toggler {
+        color:#222;
+    }
+}
+
+.desktop-description__city {
+    padding-right: 1rem;
+}
+
+.desktop-description__city i {
+    color: #F47D29;
+}
+
+.language-toggler {
+    border:1px solid #333;
+    padding:0.125rem 0.25rem 0;
+    font-weight: 500;
+}

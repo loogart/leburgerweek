@@ -381,6 +381,10 @@ p.tagline {
     color: #fff;
     border: none;
     border-radius: 0;
+    position:sticky;
+    position:-webkit-sticky;
+    top:70px;
+    z-index:2;
 }
 
 .alert.burger-alert a {

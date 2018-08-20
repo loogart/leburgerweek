@@ -94,10 +94,26 @@ h2 {
     color: #EC2979;
 }
 
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
     color: #fff;
     text-decoration: none;
     background-color: #EE1272;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #EE1272;
+}
+
+.navbar-light .navbar-nav .nav-link.disabled {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-light .navbar-nav .nav-link.disabled:hover {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .collapsing {
@@ -151,9 +167,6 @@ p.tagline {
 @media (max-width:991px) {
     .pre-nav__right a {
         margin-left: 1rem;
-    }
-    .modal__select-city .modal-dialog {
-        margin: 0;
     }
     .navbar-toggler {
         padding: 0.25rem 0.75rem;
@@ -379,6 +392,9 @@ p.tagline {
     .sponsor__2 {
         width: 150px;
     }
+        .modal__select-city .modal-dialog {
+        margin: 0;
+    }
 }
 
 .alert.burger-alert {
@@ -389,9 +405,9 @@ p.tagline {
     border-radius: 0;
     z-index: 2;
     position: fixed;
-    bottom:0;
-    left:0;
-    right:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin-bottom: 0;
 }
 
@@ -403,7 +419,7 @@ p.tagline {
 /*==== burger list section ====*/
 
 .burger-list {
-    margin:3rem 0;
+    margin: 3rem 0;
     background-color: #fff;
 }
 
@@ -672,7 +688,113 @@ footer.supafooter hr {
 }
 
 
-#burgerList, #sponsorsList{
-    padding-top:6rem;
-    margin-top:-3rem;
+#burgerList,
+#sponsorsList {
+    padding-top: 6rem;
+    margin-top: -3rem;
+}
+
+/* ====== about ======*/
+
+.about {
+    padding: 3rem 0;
+    background-color: #fff;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.about h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about h2::after {
+    content: "";
+    display: block;
+    margin-top: 25px;
+    width: 50px;
+    height: 4px;
+    background-color: #EE1272;
+}
+
+.about h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #F47E27;
+}
+
+
+.about p {
+    --x-height-multiplier: 0.375;
+    --baseline-multiplier: 0.17;
+    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.58;
+    font-size: 18px;
+    line-height: 1.58;
+    letter-spacing: -.004em;
+}
+
+.about a {
+    color: #F47E27;
+    text-decoration: none;
+}
+
+.about .faq-item {
+    border-left: 6px solid #F47E27;
+    padding-left: 24px;
+}
+
+/* ==== sign in button =====*/
+
+.modal__sign-in .modal-header {
+    background: -webkit-gradient(linear, left top, right top, from(#EE1272), to(#F47E27));
+    background: linear-gradient(to right, #EE1272, #F47E27);
+    color: #fff;
+    border-bottom: 0;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.modal__sign-in .modal-content{
+    border:0;
+    border-radius: 1rem;
+}
+
+.btn-facebook {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-facebook.focus {
+    color: #fff;
+    background-color: #2d4373;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.jumbotron-siginin {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 10%;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-signin {
+    width: 200px;
 }

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
 
-    <title>Le Burger Week | 2018</title>
+    <title>Le Burger Week | About</title>
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="./img/favicon.png">
@@ -98,8 +98,8 @@
         </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./about.html"><i class="fas fa-info-circle d-inline-block d-md-none"></i> About</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./about.html"><i class="fas fa-info-circle d-inline-block d-md-none"></i> About<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -135,195 +135,43 @@
         </div>
     </nav>
     <main>
-        <!-- jumbotron section -->
-        <div class="supadupa-jumbotron">
-            <div class="cta-jumbotron text-white d-flex justify-content-start align-items-center p-3">
-                <div class="container">
-                    <div class="d-flex flex-column cta-jumbotron__content">
-                        <div class="intro-text mb-auto flex-grow-1">
-                            <p class="super-title mb-0">September 1-7</p>
-                            <h1 class="main-title font-weight-bold">Le Burger Week</h1>
-                            <p class="tagline d-none d-md-inline-block">Where the best burgers in Canada take the stage!</p>
-                            <p><a href="#!" class="btn btn-lg d-none d-lg-inline-block" data-toggle="modal" data-target="#signIn"><i class="fas fa-utensils"></i> Sign in</a></p>
-                        </div>
-                        <div class="mt-auto">
-                            <div class="d-flex justify-content-between">
-                                <a href="http://saputo.com/" target="_blank"><img class="sponsor sponsor__1" src="img/logo-saputo-presented-by.svg"></a>
-                                <a href="https://golo.io/" target="_blank" class="mt-auto"><img class="sponsor sponsor__2 align-self-end" src="img/logo-golo-delivered-by.svg"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="scene">
-                <div class="layer" data-depth="0.2">
-                    <div class="bg"></div>
-                </div>
-                <div class="layer" data-depth="0.5">
-                    <img class="japanese" src="./img/japanese.svg">
-                </div>
-                <div class="layer" data-depth="0.7">
-                    <img class="burger" src="./img/burger.svg">
-                </div>
 
-            </div>
-        </div>
-
-        <!-- message to user-->
-        <div class="alert alert-success burger-alert alert-dismissible fade show" role="alert">
-            <i class="fas fa-thumbs-up"></i> To improve your experience, <a href="#!" onclick="myFunction()">allow Le Burger Week</a> to sort the restaurants <strong>closest to you</strong>.
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-
-        <!-- Burger List -->
-        <section class="burger-list" id="burgerList">
+        <!-- About -->
+        <section class="about">
             <div class="container">
-                <h2>Burgers in <a class="location-edit" href="#!" data-toggle="modal" data-target="#selectCity">Montréal</a>.</h2>
+                <h1>About Le Burger Week</h1>
+                <h2>Where the best burgers in Canada take the stage!</h2>
+                <p>Every year, from the 1st to 7th of September, restaurants in different cities across Canada and the United States make a special burger just for Le Burger Week®. Burger-lovers from all over get a chance to discover these delicious creations and vote for their favorite ones on LeBurgerWeek.com</p>
+                <p>Le Burger Week® allows participants to discover new venues, while providing the opportunity to taste burger creations they never would have originally. It also allows for restaurants to showcase their best, while increasing their sales and popularity.</p>
                 <div class="row">
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card mb-4">
-                            <a href="burger.html">
-                                <img class="card-img-top" src="./img/mtl/burger-1.jpg" alt="Burger name from restaurant">
-                                <div class="card-body">
-                                    <h3 class="card-title">Ultra long Restaurant Name</h3>
-                                    <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
-                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 0.6 km away</p>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-md-6 my-3">
+                        <img class="img-fluid" src="./img/photos/photo-naeem.jpg">
                     </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card mb-4">
-                            <a href="burger.html">
-                                <img class="card-img-top" src="./img/mtl/burger-2.jpg" alt="Burger name from restaurant">
-                                <div class="card-body">
-                                    <h3 class="card-title">Restaurant Name</h3>
-                                    <p class="card-text">Burger Name</p>
-                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 2.7 km away</p>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-md-6 my-3">
+                        <img class="img-fluid" src="./img/photos/photo-thierry.jpg">
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card mb-4">
-                            <a href="burger.html">
-                                <img class="card-img-top" src="./img/mtl/burger-3.jpg" alt="Burger name from restaurant">
-                                <div class="card-body">
-                                    <h3 class="card-title">Restaurant Name</h3>
-                                    <p class="card-text">Burger Name</p>
-                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 5.6 km away</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card mb-4">
-                            <a href="burger.html">
-                                <img class="card-img-top" src="./img/mtl/burger-4.jpg" alt="Burger name from restaurant">
-                                <div class="card-body">
-                                    <h3 class="card-title">Ultra long Restaurant Name</h3>
-                                    <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
-                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 8.7 km away</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card mb-4">
-                            <a href="burger.html">
-                                <img class="card-img-top" src="./img/mtl/burger-5.jpg" alt="Burger name from restaurant">
-                                <div class="card-body">
-                                    <h3 class="card-title">Restaurant Name</h3>
-                                    <p class="card-text">Burger Name</p>
-                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 8.9 km away</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card mb-4">
-                            <a href="burger.html">
-                                <img class="card-img-top" src="./img/mtl/burger-6.jpg" alt="Burger name from restaurant">
-                                <div class="card-body">
-                                    <h3 class="card-title">Ultra long Restaurant Name</h3>
-                                    <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
-                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 12.4 km away</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card mb-4">
-                            <a href="burger.html">
-                                <img class="card-img-top" src="./img/mtl/burger-7.jpg" alt="Burger name from restaurant">
-                                <div class="card-body">
-                                    <h3 class="card-title">Restaurant Name</h3>
-                                    <p class="card-text">Burger Name</p>
-                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 2.3 km away</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card mb-4">
-                            <a href="burger.html">
-                                <img class="card-img-top" src="./img/mtl/burger-8.jpg" alt="Burger name from restaurant">
-                                <div class="card-body">
-                                    <h3 class="card-title">Restaurant Name</h3>
-                                    <p class="card-text">Burger Name</p>
-                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 14.1 km away</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card mb-4">
-                            <a href="burger.html">
-                                <img class="card-img-top" src="./img/mtl/burger-9.jpg" alt="Burger name from restaurant">
-                                <div class="card-body">
-                                    <h3 class="card-title">Ultra long Restaurant Name</h3>
-                                    <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
-                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 15 km away</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card mb-4">
-                            <a href="burger.html">
-                                <img class="card-img-top" src="./img/mtl/burger-10.jpg" alt="Burger name from restaurant">
-                                <div class="card-body">
-                                    <h3 class="card-title">Ultra long Restaurant Name</h3>
-                                    <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
-                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 18 km away</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card mb-4">
-                            <a href="burger.html">
-                                <img class="card-img-top" src="https://loogart.com/img/loogmoji/animated/loogmoji-animated-ronald-mcdonald-by-loogart.gif" alt="Burger name from restaurant">
-                                <div class="card-body">
-                                    <h3 class="card-title">McDonald's Canada</h3>
-                                    <p class="card-text">Ronald's Delightful Big Mac</p>
-                                    <p class="card-location"><i class="fas fa-map-marker-alt"></i> 20 km away</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
                 </div>
+                <h2>Co-founders</h2>
+                <p>Na’eem Adam and Thierry Rassam are the co-founders and creators of Le Burger Week®. Their mission is to find creative ways to increase sales for restaurant owners while offering something delicious to cities all over the world. Na’eem and Thierry also co-founded and run La Poutine Week. More info <a href="https://peoplemover.tech/en/about/" target="_blank">here</a>.</p>
+
+                <h2>FAQ</h2>
+                <div class="faq-item">
+                    <h3>How do I vote for my favourite burgers?</h3>
+                    <p>Voting is an important part of Le Burger Week®. You can vote for any burger you wish. It’s fairly simple. You just have to click the “Vote” button on the restaurant profile page and follow the instructions. For this, you do need to be signed up to Le Burger Week®. At the end of the week, winners are announced on the website based on your votes.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I register my restaurant for Le Burger Week® or La Poutine Week®?</h3>
+                    <p>For Le Burger Week® 2018 it might be too late already, but please send Maria an email at team@peoplemovertech.com. For La Poutine Week® 2019 in September, you can also send us an email at team@peoplemovertech.com.</p>
+                </div>
+                
+                <h2>More info</h2>
+                <p>If you have any PR or general requests, please send an email to <a href="mailto:team@peoplemovertech.com">team@peoplemovertech.com</a>.</p>
+
             </div>
         </section>
 
         <!-- Sponsors -->
-        <section class="sponsors-area" id="sponsorsList">
+        <section class="sponsors-area">
             <div class="container">
                 <h2>Our partners</h2>
                 <p>We are proud to partner up with amazing sponsors who make Le Burger Week even more delicious!</p>
@@ -335,7 +183,7 @@
             </div>
         </section>
     </main>
-
+       
     <!-- Sign in -->
     <div class="modal modal__sign-in fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">

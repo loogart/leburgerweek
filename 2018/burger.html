@@ -45,7 +45,7 @@
                     <a href="https://www.instagram.com/leburgerweek/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://twitter.com/leburgerweek/" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
-                <a href="#!"><i class="fa fa-lock"></i> Sign in</a>
+                <a href="#!" data-toggle="modal" data-target="#signIn"><i class="fa fa-lock"></i> Sign in</a>
                 <a href="#!" class="language-toggler">FR</a>
             </div>
         </div>
@@ -99,13 +99,19 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-info-circle d-inline-block d-md-none"></i> About<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#sponsorsList"><i class="fas fa-handshake d-inline-block d-md-none"></i> Partners</a>
+                        <a class="nav-link" href="./about.html"><i class="fas fa-info-circle d-inline-block d-md-none"></i> About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-trophy d-inline-block d-md-none"></i>Partners
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="http://saputo.com" target="_blank">Saputo</a>
+                            <a class="dropdown-item" href="https://golo.io" target="_blank">GOLO</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-trophy d-inline-block d-md-none"></i> Winners
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
@@ -166,7 +172,28 @@
 
 
     </main>
-
+    
+    <!-- Sign in -->
+    <div class="modal modal__sign-in fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Le Burger Week</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="jumbotron-siginin">
+                    <img class="logo-signin" src="./img/logo-burgerweek.svg">
+                </div>
+                <div class="modal-body">
+                    <h4>Ready to vote?</h4>
+                    <p>Log in to Facebook to personalize your experience with Le Burger Week and to register your vote for your favourite burger.</p>
+                    <button type="button" class="btn btn-facebook btn-block" data-dismiss="modal"><i class="fab fa-facebook-f"></i> Log in using Facebook</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

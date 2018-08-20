@@ -94,6 +94,12 @@ h2 {
     color: #EC2979;
 }
 
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #EE1272;
+}
+
 .collapsing {
     -webkit-transition: none;
     transition: none;
@@ -381,10 +387,12 @@ p.tagline {
     color: #fff;
     border: none;
     border-radius: 0;
-    position:sticky;
-    position:-webkit-sticky;
-    top:70px;
-    z-index:2;
+    z-index: 2;
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    margin-bottom: 0;
 }
 
 .alert.burger-alert a {
@@ -395,7 +403,7 @@ p.tagline {
 /*==== burger list section ====*/
 
 .burger-list {
-    padding: 3rem 0;
+    margin:3rem 0;
     background-color: #fff;
 }
 
@@ -489,7 +497,7 @@ a.location-edit:hover {
 /* ==== sponsors section ===== */
 
 .sponsors-area {
-    padding: 4rem 0;
+    padding: 3rem 0;
     background-color: #f1f1f1;
     background-image: url('../img/japanese-black.svg');
     background-size: 666px;
@@ -548,4 +556,123 @@ footer.supafooter hr {
 
 .footer-social {
     width: 150px;
+}
+
+/* ===== burger page ======*/
+
+.img-burger-info {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.img-burger {
+    width: 100%;
+    height: calc(100vh - 118px);
+}
+
+.burger-info__right {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: calc(100vh - 118px);
+}
+
+.burger-info .breadcrumb {
+    background-color: #fff;
+    padding: 0;
+}
+
+.burger-info .breadcrumb a {
+    color: #F78C26;
+}
+
+.burger-info h1 {
+    color: #EC2979;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.burger-info h2 {
+    color: #222;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.burger-info ul.social a {
+    color: #222;
+    margin-right: 1rem;
+}
+
+.burger-info ul.social .list-inline-item a:hover {
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+
+.burger-info ul.social .list-inline-item a:hover {
+    color: #F78C26;
+}
+
+.burger-info a.burger-address {
+    color: #F78C26;
+}
+
+.burger-vote {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    height: 80px;
+    background-color: red;
+    width: 100%;
+}
+
+.btn-vote {
+    background: -webkit-gradient(linear, left top, right top, from(#EE1272), to(#F47E27));
+    background: linear-gradient(to right, #EE1272, #F47E27);
+    color: #fff;
+    border-radius: 2rem;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+.btn-vote:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+@media (max-width:991px) {
+    .img-burger {
+        width: 100%;
+        height: 320px;
+    }
+    .burger-info__right {
+        overflow-y: visible;
+        height: auto;
+    }
+    .burger-info .breadcrumb {
+        margin: 1rem auto;
+        font-size: 0.95rem;
+    }
+}
+
+.btn-libro {
+    background-color: #26c386;
+    border: 0;
+    border-radius: 0;
+    border-left: 6px solid #444;
+}
+
+.btn-libro > img {
+    height: 36px;
+}
+
+
+#burgerList, #sponsorsList{
+    padding-top:6rem;
+    margin-top:-3rem;
 }

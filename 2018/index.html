@@ -102,7 +102,7 @@
                         <a class="nav-link" href="#"><i class="fas fa-info-circle d-inline-block d-md-none"></i> About<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-handshake d-inline-block d-md-none"></i> Sponsors</a>
+                        <a class="nav-link" href="index.html#sponsorsList"><i class="fas fa-handshake d-inline-block d-md-none"></i> Partners</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -174,9 +174,7 @@
         <!-- Burger List -->
         <section class="burger-list" id="burgerList">
             <div class="container">
-
                 <h2>Burgers in <a class="location-edit" href="#!" data-toggle="modal" data-target="#selectCity">Montréal</a>.</h2>
-
                 <div class="row">
 
                     <div class="col-md-6 col-lg-4">
@@ -265,8 +263,6 @@
                             </a>
                         </div>
                     </div>
-
-
                     <div class="col-md-6 col-lg-4">
                         <div class="card mb-4">
                             <a href="burger.html">
@@ -317,12 +313,11 @@
                     </div>
 
                 </div>
-
             </div>
         </section>
 
         <!-- Sponsors -->
-        <section class="sponsors-area">
+        <section class="sponsors-area" id="sponsorsList">
             <div class="container">
                 <h2>Our partners</h2>
                 <p>We are proud to partner up with amazing sponsors who make Le Burger Week even more delicious!</p>
@@ -375,21 +370,6 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/parallax.min.js"></script>
     <script src="./js/scripts.js"></script>
-    <script>
-        var scene = document.getElementById('scene');
-        var parallaxInstance = new Parallax(scene);
-    </script>
-    <script>
-        function myFunction() {
-            var txt;
-            if (confirm("Le Burger Week would like to know your location.")) {
-                txt = "Allow";
-            } else {
-                txt = "Block";
-            }
-            document.getElementById("demo").innerHTML = txt;
-        }
-    </script>
 </body>
 
 </html>

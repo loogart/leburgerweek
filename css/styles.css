@@ -513,7 +513,7 @@ a.location-edit:hover {
 /* ==== sponsors section ===== */
 
 .sponsors-area {
-    padding: 3rem 0;
+    padding: 4rem 0;
     background-color: #f1f1f1;
     background-image: url('../img/japanese-black.svg');
     background-size: 666px;
@@ -688,8 +688,7 @@ footer.supafooter hr {
 }
 
 
-#burgerList,
-#sponsorsList {
+#burgerList {
     padding-top: 6rem;
     margin-top: -3rem;
 }

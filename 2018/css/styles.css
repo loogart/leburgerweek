@@ -820,7 +820,10 @@ footer.supafooter hr {
 }
 
 .btn-golo:hover,
-.btn-golo:focus {
+.btn-golo:focus,
+.btn-dark:not(:disabled):not(.disabled):active,
+.btn-dark:not(:disabled):not(.disabled).active,
+.show > .btn-dark.dropdown-toggle {
     background-color: #320480;
     border-left: 6px solid #ff8f67;
 }
@@ -828,8 +831,8 @@ footer.supafooter hr {
 
 .btn-golo > img {
     height: 16px;
-    margin-top:-4px;
-    margin-left:2px;
+    margin-top: -4px;
+    margin-left: 2px;
 }
 
 

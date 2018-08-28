@@ -172,7 +172,7 @@ function initMap() {
         '<div id="content" class="map-popup d-flex align-items-center">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<img class="" src="../img/mtl/burger-1.jpg">' +
+        '<img class="" src="./img/mtl/burger-1.jpg">' +
         '<div class="d-flex flex-column p-4">' +
         '<p class="map-location"><i class="fas fa-map-marker-alt"></i> 0.2 km away</p>' +
         '<h3 class="pink">Restaurant Name</h3>' +
@@ -201,7 +201,7 @@ function initMap() {
         '<div id="content" class="map-popup d-flex align-items-center">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<img class="" src="../img/mtl/burger-2.jpg">' +
+        '<img class="" src="./img/mtl/burger-2.jpg">' +
         '<div class="d-flex flex-column p-4">' +
         '<p class="map-location"><i class="fas fa-map-marker-alt"></i> 1.1 km away</p>' +
         '<h3 class="pink">Restaurant 2</h3>' +
@@ -230,7 +230,7 @@ function initMap() {
         '<div id="content" class="map-popup d-flex align-items-center">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<img class="" src="../img/mtl/burger-3.jpg">' +
+        '<img class="" src="./img/mtl/burger-3.jpg">' +
         '<div class="d-flex flex-column p-4">' +
         '<p class="map-location"><i class="fas fa-map-marker-alt"></i> 0.5 km away</p>' +
         '<h3 class="pink">Restaurant 3</h3>' +
@@ -259,7 +259,7 @@ function initMap() {
         '<div id="content" class="map-popup d-flex align-items-center">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<img class="" src="../img/mtl/burger-4.jpg">' +
+        '<img class="" src="./img/mtl/burger-4.jpg">' +
         '<div class="d-flex flex-column p-4">' +
         '<p class="map-location"><i class="fas fa-map-marker-alt"></i> 0.4 km away</p>' +
         '<h3 class="pink">Restaurant 4</h3>' +

@@ -35,9 +35,9 @@
         <div class="container d-flex">
             <div class="pre-nav__left mr-auto">
                 <a href="#!" data-toggle="modal" data-target="#selectCity">
-               <span class="desktop-description__city d-none d-md-inline-block"><i class="fas fa-caret-down"></i> City </span>
-               <span class="city-name"><i class="fas fa-location-arrow"></i> Montréal</span>
-            </a>
+                    <span class="desktop-description__city d-none d-md-inline-block"><i class="fas fa-caret-down"></i> City </span>
+                    <span class="city-name"><i class="fas fa-location-arrow"></i> Montréal</span>
+                </a>
             </div>
             <div class="pre-nav__right ml-auto">
                 <div class="d-none d-md-inline-block">
@@ -55,8 +55,8 @@
                     <div class="modal-header">
                         <img src="./img/logo-burgerweek.svg">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <i class="fas fa-times"></i>
-                    </button>
+                            <i class="fas fa-times"></i>
+                        </button>
                     </div>
                     <div class="modal-body">
                         <h2>Canadian Cities</h2>
@@ -94,25 +94,29 @@
         <div class="container">
             <a class="navbar-brand" href="./"><img src="./img/logo-burgerweek.svg"><span class="brand-title d-none d-md-inline-block">Le Burger Week</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-       <i class="fas fa-bars"></i>
-        </button>
+                <i class="fas fa-bars"></i>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!" data-toggle="modal" data-target="#selectCity"><i class="fas fa-info-circle d-inline-block d-md-none"></i> Burgers</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./about.html"><i class="fas fa-info-circle d-inline-block d-md-none"></i> About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-trophy d-inline-block d-md-none"></i>Partners
+                            <i class="fas fa-trophy d-inline-block d-md-none"></i>Partners
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="http://saputo.com" target="_blank">Saputo</a>
+                            <a class="dropdown-item" href="http://saputo.ca" target="_blank">Saputo</a>
                             <a class="dropdown-item" href="https://golo.io" target="_blank">GOLO</a>
+                            <a class="dropdown-item" href="https://heineken.com" target="_blank">Heineken</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-trophy d-inline-block d-md-none"></i> Winners
+                            <i class="fas fa-trophy d-inline-block d-md-none"></i> Winners
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="#">2018</a>
@@ -157,10 +161,14 @@
                     </ul>
 
                     <div class="d-flex flex-wrap justify-content-between my-4">
+                        <!-- Buttons for Libro and GOLO will be visible depending on the location you select i.e. Montreal will have the GOLO button and Quebec City will have the Libro button. If none of these services are available, you can simply omit them.
+                        
                         <!-- vote button -->
                         <btn class="btn btn-vote btn-lg mb-3" data-toggle="modal" data-target="#signIn"><i class="fas fa-check-circle"></i> Vote for this burger</btn>
                         <!-- libro button -->
                         <a href="https://www.libroreserve.com/" target="_blank" class="btn btn-dark btn-libro btn-lg mb-3">Réservez sur <img src="./img/logo-libro.png"></a>
+                        <!-- GOLO button -->
+                        <a href="https://www.golo.io/" target="_blank" class="btn btn-dark btn-golo btn-lg mb-3">Get it delivered with <img src="./img/logo-golo-btn.svg"></a>
                     </div>
                     <p class="my-4 h5"><a class="burger-address" href="https://goo.gl/maps/R8Eo3GSv5Yw" target="_blank"><i class="fas fa-map-marker-alt"></i> 14 Byward Market Square, Ottawa, ON K1N 7A1, Canada</a></p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89629.15494509954!2d-75.76334274179688!3d45.41113240000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b1bf395b97%3A0x3f1188e8dbb46860!2sKFC!5e0!3m2!1sen!2sca!4v1534720035256" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -172,7 +180,7 @@
 
 
     </main>
-    
+
     <!-- Sign in -->
     <div class="modal modal__sign-in fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -180,7 +188,7 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalCenterTitle">Le Burger Week</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <i class="fas fa-times"></i>
+                        <i class="fas fa-times"></i>
                     </button>
                 </div>
                 <div class="jumbotron-siginin">
@@ -201,23 +209,8 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/parallax.min.js"></script>
     <script src="./js/scripts.js"></script>
-    <script>
-        var scene = document.getElementById('scene');
-        var parallaxInstance = new Parallax(scene);
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
 
-    </script>
-    <script>
-        function myFunction() {
-            var txt;
-            if (confirm("Le Burger Week would like to know your location.")) {
-                txt = "Allow";
-            } else {
-                txt = "Block";
-            }
-            document.getElementById("demo").innerHTML = txt;
-        }
-
-    </script>
 </body>
 
 </html>

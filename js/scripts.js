@@ -177,7 +177,7 @@ function initMap() {
         '<p class="map-location"><i class="fas fa-map-marker-alt"></i> 0.2 km away</p>' +
         '<h3 class="pink">Restaurant Name</h3>' +
         '<p><b>The Burger Name</b>, is the best thing you will ever taste.</p>' +
-        '<p><a class="orange font-weight-bold" href="../burger.html"><i class="fas fa-arrow-right"></i> View Burger</a></p> ' +
+        '<p><a class="orange font-weight-bold" href="./burger.html"><i class="fas fa-arrow-right"></i> View Burger</a></p> ' +
         '</div>';
 
     var infowindow1 = new google.maps.InfoWindow({
@@ -206,7 +206,7 @@ function initMap() {
         '<p class="map-location"><i class="fas fa-map-marker-alt"></i> 1.1 km away</p>' +
         '<h3 class="pink">Restaurant 2</h3>' +
         '<p><b>And anotha one</b>, bro.</p>' +
-        '<p><a class="orange font-weight-bold" href="../burger.html"><i class="fas fa-arrow-right"></i> View Burger</a></p> ' +
+        '<p><a class="orange font-weight-bold" href="./burger.html"><i class="fas fa-arrow-right"></i> View Burger</a></p> ' +
         '</div>';
 
     var infowindow2 = new google.maps.InfoWindow({
@@ -235,7 +235,7 @@ function initMap() {
         '<p class="map-location"><i class="fas fa-map-marker-alt"></i> 0.5 km away</p>' +
         '<h3 class="pink">Restaurant 3</h3>' +
         '<p>Allen Iversion\'s third burgah!</p>' +
-        '<p><a class="orange font-weight-bold" href="../burger.html"><i class="fas fa-arrow-right"></i> View Burger</a></p> ' +
+        '<p><a class="orange font-weight-bold" href="./burger.html"><i class="fas fa-arrow-right"></i> View Burger</a></p> ' +
         '</div>';
 
     var infowindow3 = new google.maps.InfoWindow({
@@ -264,7 +264,7 @@ function initMap() {
         '<p class="map-location"><i class="fas fa-map-marker-alt"></i> 0.4 km away</p>' +
         '<h3 class="pink">Restaurant 4</h3>' +
         '<p>Number Four for more!</p>' +
-        '<p><a class="orange font-weight-bold" href="../burger.html"><i class="fas fa-arrow-right"></i> View Burger</a></p> ' +
+        '<p><a class="orange font-weight-bold" href="./burger.html"><i class="fas fa-arrow-right"></i> View Burger</a></p> ' +
         '</div>';
 
     var infowindow4 = new google.maps.InfoWindow({

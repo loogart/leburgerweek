@@ -504,6 +504,7 @@ a.location-edit:hover {
 .burger-list h3.card-title {
     color: #EC2979;
     font-weight: 900;
+    font-size: 1.3rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -512,7 +513,7 @@ a.location-edit:hover {
 .burger-list p.card-text {
     color: #222;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     line-height: 1.4rem;
     overflow: hidden;
     display: -webkit-box;
@@ -577,7 +578,7 @@ a.location-edit:hover {
 .map-popup {
     background-color: #fff;
     max-width: 420px;
-    height: 200px;
+    height: 220px;
 }
 
 .map-popup img {
@@ -953,4 +954,22 @@ footer.supafooter hr {
 .dropdown-header {
     color: #EE1272;
     text-transform: uppercase;
+}
+
+.price-tag {
+    background-color: #EB297D;
+    color:#fff;
+    font-weight: bold;
+    padding:0.5em;
+    position:absolute;
+    right:15px;
+    margin-top:-15px;
+    border-radius:0.5rem;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.32);
+}
+
+h3.price-tag-burger-page {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
 }

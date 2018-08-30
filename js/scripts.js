@@ -176,7 +176,8 @@ function initMap() {
         '<div class="d-flex flex-column p-4">' +
         '<p class="map-location"><i class="fas fa-map-marker-alt"></i> 0.2 km away</p>' +
         '<h3 class="pink">Restaurant Name</h3>' +
-        '<p><b>The Burger Name</b>, is the best thing you will ever taste.</p>' +
+        '<p>The Burger Name, is the best thing you will ever taste.</p>' +
+        '<p><strong>$14.95</strong></p>' +
         '<p><a class="orange font-weight-bold" href="./burger.html"><i class="fas fa-arrow-right"></i> View Burger</a></p> ' +
         '</div>';
 
@@ -206,6 +207,7 @@ function initMap() {
         '<p class="map-location"><i class="fas fa-map-marker-alt"></i> 1.1 km away</p>' +
         '<h3 class="pink">Restaurant 2</h3>' +
         '<p><b>And anotha one</b>, bro.</p>' +
+        '<p><strong>$14.95</strong></p>' +
         '<p><a class="orange font-weight-bold" href="./burger.html"><i class="fas fa-arrow-right"></i> View Burger</a></p> ' +
         '</div>';
 
@@ -235,6 +237,7 @@ function initMap() {
         '<p class="map-location"><i class="fas fa-map-marker-alt"></i> 0.5 km away</p>' +
         '<h3 class="pink">Restaurant 3</h3>' +
         '<p>Allen Iversion\'s third burgah!</p>' +
+        '<p><strong>$14.95</strong></p>' +
         '<p><a class="orange font-weight-bold" href="./burger.html"><i class="fas fa-arrow-right"></i> View Burger</a></p> ' +
         '</div>';
 
@@ -264,6 +267,7 @@ function initMap() {
         '<p class="map-location"><i class="fas fa-map-marker-alt"></i> 0.4 km away</p>' +
         '<h3 class="pink">Restaurant 4</h3>' +
         '<p>Number Four for more!</p>' +
+        '<p><strong>$14.95</strong></p>' +
         '<p><a class="orange font-weight-bold" href="./burger.html"><i class="fas fa-arrow-right"></i> View Burger</a></p> ' +
         '</div>';
 

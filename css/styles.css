@@ -958,13 +958,14 @@ footer.supafooter hr {
 
 .price-tag {
     background-color: #EB297D;
-    color:#fff;
+    color: #fff;
     font-weight: bold;
-    padding:0.5em;
-    position:absolute;
-    right:15px;
-    margin-top:-15px;
-    border-radius:0.5rem;
+    padding: 0.5em;
+    position: absolute;
+    right: 15px;
+    margin-top: -15px;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.32);
     box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.32);
 }
 
@@ -973,3 +974,83 @@ h3.price-tag-burger-page {
     margin-bottom: 1.5rem;
     letter-spacing: -0.5px;
 }
+
+/* winners page */
+
+.winners-jumbotron {
+    background: -webkit-gradient(linear, left top, right top, from(#EE1272), to(#F47E27));
+    background: linear-gradient(to right, #EE1272, #F47E27);
+    min-height: 69px;
+    width:100%;
+}
+
+.winners-list {
+    padding: 3em 0;
+    margin: 0;
+}
+
+.winner-tag {
+    background: -webkit-gradient(linear, left top, right top, from(#EE1272), to(#F47E27));
+    background: linear-gradient(to right, #EE1272, #F47E27);
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    position: relative;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.winner-tag.winner-tag__judges {
+    background: #986d0d;
+}
+
+.winner-tag.winner-tag__best-looking {
+    background: #276ef4;
+}
+
+.winner-tag.winner-tag__healthy {
+    background: #19b224;
+}
+
+.list-winners-sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 90px;
+    height: 100vh;
+}
+
+h2 {
+    padding-top: 3em;
+    margin-top: -2.5em;
+}
+
+div.scrollmenu {
+    background-color: #fff;
+    overflow: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    border-top:1px dotted #ccc;
+    width:100%;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1.1em;
+    text-decoration: none;
+    border-right: 1px dotted #ccc;
+    color:#222;
+    -webkit-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+}
+
+div.scrollmenu a:hover, div.scrollmenu a:active, div.scrollmenu a:focus{
+    color:#EE1272;
+}
+

@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Le Burger Week | About</title>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="./img/favicon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Le Burger Week">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="./img/favicon.png">
+    <meta name="msapplication-TileColor" content="#FF7525">
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="mask-icon" href="./img/icons/safari-pinned-tab.svg" color="#FF7525">
+    <meta name="theme-color" content="#FF7525">
+</head>
+
+
+<body>
+    <!-- pre nav -->
+    <nav class="pre-nav">
+        <div class="container d-flex">
+            <div class="pre-nav__left mr-auto">
+                <a href="#!" data-toggle="modal" data-target="#selectCity">
+                    <span class="desktop-description__city d-none d-md-inline-block"><i class="fas fa-caret-down"></i> City </span>
+                    <span class="city-name"><i class="fas fa-location-arrow"></i> Montréal</span>
+                </a>
+            </div>
+            <div class="pre-nav__right ml-auto">
+                <div class="d-none d-md-inline-block">
+                    <a href="https://www.facebook.com/LeBurgerWeek/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/leburgerweek/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/leburgerweek/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="#!" data-toggle="modal" data-target="#signIn"><i class="fa fa-lock"></i> Sign in</a>
+                <a href="#!" class="language-toggler">FR</a>
+            </div>
+        </div>
+        <div class="modal modal__select-city fade" id="selectCity" tabindex="-1" role="dialog" aria-labelledby="selectCity" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="./img/logo-burgerweek.svg">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2>Canadian Cities</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html#burgerList">Montréal</a></li>
+                            <li><a href="index.html#burgerList">Toronto</a></li>
+                            <li><a href="index.html#burgerList">Ottawa</a></li>
+                            <li><a href="index.html#burgerList">Québec</a></li>
+                            <li><a href="index.html#burgerList">Winnipeg</a></li>
+                            <li><a href="index.html#burgerList">Saskatoon</a></li>
+                            <li><a href="index.html#burgerList">Calgary</a></li>
+                            <li><a href="index.html#burgerList">Edmonton</a></li>
+                            <li><a href="index.html#burgerList">Vancouver</a></li>
+                            <li><a href="index.html#burgerList">Victoria</a></li>
+                            <li><a href="index.html#burgerList">Halifax</a></li>
+                        </ul>
+                        <h2>Regions</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html#burgerList">Outaouais</a></li>
+                            <li><a href="index.html#burgerList">Rive-Sud-Laval</a></li>
+                            <li><a href="index.html#burgerList">Régions du Québec</a></li>
+                        </ul>
+                        <h2>Outside Canada</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html#burgerList">Haiti</a></li>
+                            <li><a href="index.html#burgerList">Port-au-Prince</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="./"><img src="./img/logo-burgerweek.svg"><span class="brand-title d-none d-md-inline-block">Le Burger Week</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!" data-toggle="modal" data-target="#selectCity"><i class="fas fa-info-circle d-inline-block d-md-none"></i> Burgers</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./about.html"><i class="fas fa-info-circle d-inline-block d-md-none"></i> About<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-trophy d-inline-block d-md-none"></i> Partners
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="http://saputo.ca" target="_blank">Saputo</a>
+                            <a class="dropdown-item" href="https://golo.io" target="_blank">GOLO</a>
+                            <a class="dropdown-item" href="https://heineken.com" target="_blank">Heineken</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./winners.html"><i class="fas fa-medal d-inline-block d-md-none"></i> Winners</a>
+                    </li>
+                    <li class="nav-item d-inline-block d-md-none">
+                        <a class="nav-link" href="https://www.facebook.com/LeBurgerWeek/" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
+                    </li>
+                    <li class="nav-item d-inline-block d-md-none">
+                        <a class="nav-link" href="https://www.instagram.com/leburgerweek/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                    </li>
+                    <li class="nav-item d-inline-block d-md-none">
+                        <a class="nav-link" href="https://twitter.com/leburgerweek/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <main>
+
+        <!-- About -->
+        <section class="about">
+            <div class="container">
+                <h1>About Le Burger Week</h1>
+                <h2>Where the best burgers in Canada take the stage!</h2>
+                <p>Every year, from the 1st to 7th of September, restaurants in different cities across Canada and the United States make a special burger just for Le Burger Week®. Burger-lovers from all over get a chance to discover these delicious creations and vote for their favorite ones on LeBurgerWeek.com</p>
+                <p>Le Burger Week® allows participants to discover new venues, while providing the opportunity to taste burger creations they never would have originally. It also allows for restaurants to showcase their best, while increasing their sales and popularity.</p>
+                <div class="row">
+                    <div class="col-md-6 my-3">
+                        <img class="img-fluid" src="./img/photos/photo-naeem.jpg">
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <img class="img-fluid" src="./img/photos/photo-thierry.jpg">
+                    </div>
+                </div>
+                <h2>Co-founders</h2>
+                <p>Na’eem Adam and Thierry Rassam are the co-founders and creators of Le Burger Week®. Their mission is to find creative ways to increase sales for restaurant owners while offering something delicious to cities all over the world. Na’eem and Thierry also co-founded and run La Poutine Week. More info <a href="https://peoplemover.tech/en/about/" target="_blank">here</a>.</p>
+
+                <h2>FAQ</h2>
+                <div class="faq-item">
+                    <h3>How do I vote for my favourite burgers?</h3>
+                    <p>Voting is an important part of Le Burger Week®. You can vote for any burger you wish. It’s fairly simple. You just have to click the “Vote” button on the restaurant profile page and follow the instructions. For this, you do need to be signed up to Le Burger Week®. At the end of the week, winners are announced on the website based on your votes.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I register my restaurant for Le Burger Week® or La Poutine Week®?</h3>
+                    <p>For Le Burger Week® 2018 it might be too late already, but please send Maria an email at team@peoplemovertech.com. For La Poutine Week® 2019 in September, you can also send us an email at team@peoplemovertech.com.</p>
+                </div>
+
+                <h2>More info</h2>
+                <p>If you have any PR or general requests, please send an email to <a href="mailto:team@peoplemovertech.com">team@peoplemovertech.com</a>.</p>
+
+            </div>
+        </section>
+
+        <!-- Sponsors -->
+        <section class="sponsors-area">
+            <div class="container">
+                <h2>Our partners</h2>
+                <p>We are proud to partner up with amazing sponsors who make Le Burger Week even more delicious!</p>
+                <div class="d-flex flex-wrap justify-content-between">
+                    <a href="http://saputo.ca" target="_blank"><img class="sponsor sponsor__partner" src="./img/logo-saputo.svg"></a>
+                    <a href="https://golo.io" target="_blank"><img class="sponsor sponsor__partner" src="./img/logo-golo.svg"></a>
+                    <a href="http://heineken.com" target="_blank"><img class="sponsor sponsor__partner" src="./img/logo-heineken.svg"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sign in -->
+    <div class="modal modal__sign-in fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Le Burger Week</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="jumbotron-siginin">
+                    <img class="logo-signin" src="./img/logo-burgerweek.svg">
+                </div>
+                <div class="modal-body">
+                    <h4>Ready to vote?</h4>
+                    <p>Log in to Facebook to personalize your experience with Le Burger Week and to register your vote for your favourite burger.</p>
+                    <button type="button" class="btn btn-facebook btn-block" data-dismiss="modal"><i class="fab fa-facebook-f"></i> Log in using Facebook</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="supafooter">
+        <div class="container">
+            <div class="d-flex flex-wrap flex-md-nowrap ">
+                <div class="p-3">
+                    <img class="footer-logo" src="./img/logo-burgerweek.svg">
+                </div>
+                <div class="p-3">
+                    <h4>What is Le Burger Week?</h4>
+                    <p>Every year, from the 1st to 7th of September, restaurants from different cities across Canada make special burgers just for Le Burger Week. Burger-lovers all over get a chance to discover these delicious creations and vote for their favorite ones on LeBurgerWeek.com</p>
+                </div>
+                <div class="p-3">
+                    <h4>Connect</h4>
+                    <ul class="list-unstyled footer-social">
+                        <li>
+                            <a href="https://www.facebook.com/LeBurgerWeek/" target="_blank">
+                                <i class="fab fa-facebook-square"></i> Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/leburgerweek/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/leburgerweek/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <small>
+                    <p>© 2018 Le Burger Week | <a href="https://peoplemover.tech/" target="_blank">People Mover Technologies Inc.</a> | <a href="#!">Privacy</a></p>
+                    <p>Designed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> by <a href="https://loogart.com" target="_blank">Loogart</a></p>
+                </small>
+                <p><a href="#" class="btn btn-outline-light rounded"><i class="fas fa-chevron-up"></i> Back to top</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/parallax.min.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
+</body>
+
+</html>

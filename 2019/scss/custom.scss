@@ -44,6 +44,14 @@ $component-active-bg: $orange;
 $custom-control-indicator-checked-bg: $orange;
 $custom-control-indicator-active-bg:$orange;
 $custom-control-indicator-checked-border-color:$orange;
+$navbar-light-color: $brown;
+$navbar-light-hover-color:$orange;
+$navbar-light-active-color:$orange;
+$navbar-light-toggler-border-color: transparent;
+$navbar-nav-link-padding-x: 1rem;
+$dropdown-link-active-bg: $orange;
+//$jumbotron-padding: 4rem;
+$jumbotron-bg:white;
 
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
@@ -62,6 +70,46 @@ h3 {
 }
 
 h4 {}
+
+.logo {
+    display: block;
+    width: 250px;
+    max-height: 70px;
+
+    @include media-breakpoint-down(sm) {
+        width: 50px;
+        max-height: 50px;
+    }
+}
+
+.nav-link {
+    letter-spacing: -1;
+}
+
+.dropdown-menu {
+    border-radius: 0.5rem;
+    box-shadow: 0 .75rem 2rem rgba($black, .05);
+}
+
+.jumbotron {
+    background: url(../img/characters/jumbo-row-1.png) 500px 0 no-repeat, url(../img/characters/jumbo-row-2.png) 0 100% repeat-x;
+    background-size: 1200px, 1200px;
+    min-height: 50vh;
+
+    h3 {
+        font-size: $font-size-base*3.25;
+    }
+
+    @include media-breakpoint-down(sm) {
+        background: url(../img/characters/jumbo-row-1.png) 500px 0 no-repeat, url(../img/characters/jumbo-row-2.png) 0 100% no-repeat;
+        background-size: 0, 160%;
+        min-height: 45vh;
+
+        h3 {
+            font-size: $font-size-base*2;
+        }
+    }
+}
 
 .deco {
     display: block;
@@ -100,24 +148,38 @@ a img.logo-register-page {
 .banner {
     background-image: url('../img/characters/group-full.png');
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 120%;
+    background-position: 10% bottom;
+    background-size: 150%;
     min-height: 200px;
     width: 100%;
     margin-bottom: $spacer;
 
     @include media-breakpoint-down(sm) {
-        background-size: 300%;
-        min-height: 200px;
+        background-size: 350%;
+        background-position: 5% bottom;
+        min-height: 150px;
     }
 }
 
-.media-logo{
-    width:33%;
-    max-height:100px;
+.media-logo {
+    width: 33%;
+    max-height: 100px;
     margin-bottom: $spacer;
 }
 
+.privacy {
+
+    p,
+    li {
+        font-size: $font-size-base*0.86;
+    }
+
+    h3 {
+        font-size: $font-size-base;
+        margin-top: $spacer*2;
+        margin-bottom: $spacer*0.69;
+    }
+}
 
 label {
     color: $brown;
@@ -165,8 +227,14 @@ select {
     }
 }
 
-.btn-success {
-    box-shadow: 0 4px 12px rgba($black, 0.15);
+.btn-primary,
+.btn-success,
+.btn-outline-primary {
+    box-shadow: 0 4px 12px rgba($black, 0.25);
+}
+
+.btn-outline-primary {
+    background-color: white;
 }
 
 .price {
@@ -178,7 +246,7 @@ footer {
         min-height: 250px;
         background-image: url("../img/characters/group-footer.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: bottom;
         background-size: 110%;
 
         @include media-breakpoint-down(sm) {
@@ -203,7 +271,8 @@ footer {
         @include media-breakpoint-down(sm) {}
 
         li.list-inline-item:not(:last-child) {
-            margin-right: 2rem;
+            margin-right: $spacer*2;
+            margin-bottom: $spacer;
         }
     }
 

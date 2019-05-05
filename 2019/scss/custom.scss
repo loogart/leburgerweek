@@ -1,0 +1,191 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700,700i');
+
+// Required
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+
+// Re-define BS colors
+$orange: #ED5D28;
+$yellow: #F78C26;
+$green:#468B40;
+
+// Define new colors
+$brown:#4A2B2B;
+$beige:#FFEBC6;
+
+// Map colors
+$colors: ("orange":#ED5D28, "yellow":#F78C26, "green":#468B40, "beige":$beige, "brown":$brown);
+
+//Map theme-colors
+$theme-colors: ("primary": $orange, "success":$green, "warning":$yellow, "dark":$brown, "light":$beige);
+
+// customize theme
+$body-bg: white;
+$body-color: $brown;
+$font-family-sans-serif: 'IBM Plex Mono',
+monospace;
+$headings-font-family:'IBM Plex Mono',
+monospace;
+$input-font-family: 'IBM Plex Mono',
+monospace;
+$font-family-base: $input-font-family;
+$headings-color: $brown;
+$headings-font-weight: 700;
+$input-placeholder-color: lighten($brown, 15%);
+$input-focus-color: $brown;
+$input-focus-bg:$beige;
+$input-focus-border-color:$yellow;
+$link-color: $yellow;
+$link-hover-color:darken($link-color, 15%);
+$component-active-bg: $orange;
+$custom-control-indicator-checked-bg: $orange;
+$custom-control-indicator-active-bg:$orange;
+$custom-control-indicator-checked-border-color:$orange;
+
+// Bootstrap
+@import "../bootstrap/scss/bootstrap.scss";
+
+// Typography
+h1 {}
+
+h2 {
+    font-size: $font-size-base * 1.25;
+    color: $orange;
+}
+
+h3 {
+    font-size: $font-size-base * 2.25;
+    margin-bottom: $spacer*1.5;
+}
+
+h4 {}
+
+.deco {
+    display: block;
+    height: 12px;
+    width: 100%;
+    background-color: $orange;
+}
+
+a img.logo-register-page {
+    height: 120px;
+    width: 269px
+}
+
+.registration-header-artwork {
+    background-image: url('../img/characters/group-header.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 120px;
+    width: 50%;
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+}
+
+.mobile-header-artwork {
+    background-image: url('../img/characters/group-header.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 130%;
+    min-height: 200px;
+    margin-bottom: $spacer * 1;
+}
+
+
+
+label {
+    color: $brown;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base * 0.9;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: $input-height;
+    padding: $input-padding-y $input-padding-x;
+    color: $brown;
+    background-color: transparent;
+    border: 3px solid $brown;
+
+}
+
+select.form-control {
+    &:focus::-ms-value {
+        // Suppress the nested default white text on blue background highlight given to
+        // the selected option text when the (still closed) <select> receives focus
+        // in IE and (under certain conditions) Edge, as it looks bad and cannot be made to
+        // match the appearance of the native widget.
+        // See https://github.com/twbs/bootstrap/issues/19398.
+        color: $input-color;
+        background-color: transparent;
+    }
+}
+
+.custom-select {
+    color: $brown;
+}
+
+select {
+
+    &.custom-select {
+        border: 3px solid $brown;
+        background: transparent;
+
+        &:focus {
+            border-color: #FFDEAD;
+            background: $beige;
+        }
+    }
+}
+
+.btn-success {
+    box-shadow: 0 4px 12px rgba($black, 0.15);
+}
+
+.price {
+    margin-bottom: 0;
+}
+
+footer {
+    .top {
+        min-height: 250px;
+        background-image: url("../img/characters/group-footer.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 110%;
+
+        @include media-breakpoint-down(sm) {
+            min-height: 150px;
+            background-size: 250%;
+            background-position: 10%;
+        }
+
+        margin-top:$spacer * 1;
+        margin-bottom:$spacer * 3;
+    }
+
+    .bottom {
+        padding-top: $spacer*3;
+        padding-bottom: $spacer*3;
+        background-color: $brown;
+
+        hr {
+            border: 0.5px solid $beige;
+        }
+
+        @include media-breakpoint-down(sm) {}
+
+        li.list-inline-item:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+
+}

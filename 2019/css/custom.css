@@ -9721,7 +9721,29 @@ a img.logo-register-page {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 130%;
+  min-height: 250px;
+  margin-bottom: 1rem;
+}
+
+.banner {
+  background-image: url("../img/characters/group-full.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 120%;
   min-height: 200px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+@media (max-width: 767.98px) {
+  .banner {
+    background-size: 300%;
+    min-height: 200px;
+  }
+}
+
+.media-logo {
+  width: 33%;
+  max-height: 100px;
   margin-bottom: 1rem;
 }
 

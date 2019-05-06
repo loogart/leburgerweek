@@ -50,7 +50,6 @@ $navbar-light-active-color:$orange;
 $navbar-light-toggler-border-color: transparent;
 $navbar-nav-link-padding-x: 1rem;
 $dropdown-link-active-bg: $orange;
-//$jumbotron-padding: 4rem;
 $jumbotron-bg:white;
 
 // Bootstrap
@@ -94,19 +93,19 @@ h4 {}
 .jumbotron {
     background: url(../img/characters/jumbo-row-1.png) 500px 0 no-repeat, url(../img/characters/jumbo-row-2.png) 0 100% repeat-x;
     background-size: 1200px, 1200px;
-    min-height: 50vh;
-
+    min-height: 420px;
+    
     h3 {
         font-size: $font-size-base*3.25;
     }
 
     @include media-breakpoint-down(sm) {
-        background: url(../img/characters/jumbo-row-1.png) 500px 0 no-repeat, url(../img/characters/jumbo-row-2.png) 0 100% no-repeat;
-        background-size: 0, 160%;
-        min-height: 45vh;
+        background: none, url(../img/characters/jumbo-row-2.png) 10% 100% no-repeat;
+        background-size: 0, 190%;
+        min-height: 290px;
 
         h3 {
-            font-size: $font-size-base*2;
+            font-size: $font-size-base*2.25;
         }
     }
 }

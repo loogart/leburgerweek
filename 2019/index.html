@@ -32,7 +32,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white shadow-sm navbar-sticky">
         <div class="container">
             <a class="navbar-brand" href="#"><img class="logo d-none d-md-block" src="./img/logo-main.svg"><img class="logo d-block d-md-none" src="./img/logo-burgerweek.svg"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,7 +65,6 @@
         </div>
     </nav>
 
-
     <main>
         <section class="jumbotron">
             <div class="container">
@@ -73,14 +72,57 @@
                 <h3 class="font-weight-bold">Burgers for<br>Everyone</h3>
             </div>
         </section>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
 
+        <section class="winners">
+            <div class="container text-center">
+                <h2>Burger Hall of Fame</h2>
+                <h3>2018 Winners</h3>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="city-1" data-toggle="tab" href="#city1" role="tab" aria-controls="home" aria-selected="true">Montreal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="city-2" data-toggle="tab" href="#city2" role="tab" aria-controls="profile" aria-selected="false">Ottawa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="city-3" data-toggle="tab" href="#city3" role="tab" aria-controls="contact" aria-selected="false">Toronto</a>
+                    </li>
+                                        <li class="nav-item">
+                        <a class="nav-link" id="city-4" data-toggle="tab" href="#city4" role="tab" aria-controls="contact" aria-selected="false">Quebec</a>
+                    </li>
+                                        <li class="nav-item">
+                        <a class="nav-link" id="city-5" data-toggle="tab" href="#city5" role="tab" aria-controls="contact" aria-selected="false">Vancouver</a>
+                    </li>
+                                        <li class="nav-item">
+                        <a class="nav-link" id="city-3" data-toggle="tab" href="#city6" role="tab" aria-controls="contact" aria-selected="false">Calgary</a>
+                    </li>
+                </ul>
+                
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="city1" role="tabpanel" aria-labelledby="montreal-tab">MTL</div>
+                    <div class="tab-pane fade" id="city2" role="tabpanel" aria-labelledby="ottawa-tab">OTT</div>
+                    <div class="tab-pane fade" id="city3" role="tabpanel" aria-labelledby="toronto-tab">TO</div>
+                    <div class="tab-pane fade" id="city4" role="tabpanel" aria-labelledby="quebec-tab">QC</div>
+                    <div class="tab-pane fade" id="city5" role="tabpanel" aria-labelledby="vancouver-tab">VAN</div>
+                    <div class="tab-pane fade" id="city6" role="tabpanel" aria-labelledby="calgary-tab">CAL</div>
+                    
                 </div>
 
+
+                <div class="row">
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
 
     </main>
 
@@ -119,6 +161,4 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+</body></html>

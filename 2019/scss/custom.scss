@@ -121,6 +121,7 @@ section.winners {
     background-size:240px;
     @include media-breakpoint-down(sm) {
         background-size: 0;
+        padding:$spacer*2 0;
     }
 }
 
@@ -130,6 +131,7 @@ section.stats {
     background-size:240px;
     @include media-breakpoint-down(sm) {
         background-size: 0;
+        padding:$spacer*2 0;
     }
     .statistic{
         border: 4px solid $orange;
@@ -146,6 +148,7 @@ section.where {
     background-size:240px;
     @include media-breakpoint-down(sm) {
         background-size: 0;
+        padding:$spacer*2 0;
     }
 }
 
@@ -155,17 +158,19 @@ section.join {
     background-size:240px;
     @include media-breakpoint-down(sm) {
         background-size: 0;
+        padding:$spacer*2 0;
     }
 }
 
 .nav-tabs {
     border-bottom: none;
     padding-bottom: $spacer*2;
+    align-items: center;
 
     li.nav-item {
         @include media-breakpoint-down(sm) {
-            flex: 1 1 33%;
-            text-align: center;
+            flex: 1 1 50%;
+            text-align: left;
         }
     }
 
@@ -175,18 +180,28 @@ section.join {
         border-bottom: transparent solid 4px;
         padding: $spacer*.5 0;
         margin: auto $spacer*1.5 auto 0;
-
         @include hover-focus {
             border-color: transparent;
+        }
+        @include media-breakpoint-down(sm) {
+            border-bottom: none;
+            padding: $spacer*.5;
+            margin: $spacer*.5 auto;
+            border-radius:0.25rem;
         }
 
     }
 
     .nav-link.active {
         color: $brown;
-        background-color: $nav-tabs-link-active-bg;
+        background-color: transparent;
         border-color: transparent;
         border-bottom: $orange solid 4px;
+        @include media-breakpoint-down(sm) {
+            border-bottom: none;
+            background-color: $orange;
+            color:white;
+        }
     }
 }
 

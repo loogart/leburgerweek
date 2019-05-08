@@ -9739,6 +9739,7 @@ section.winners {
 @media (max-width: 767.98px) {
   section.winners {
     background-size: 0;
+    padding: 2rem 0;
   }
 }
 
@@ -9750,6 +9751,7 @@ section.stats {
 @media (max-width: 767.98px) {
   section.stats {
     background-size: 0;
+    padding: 2rem 0;
   }
 }
 section.stats .statistic {
@@ -9768,6 +9770,7 @@ section.where {
 @media (max-width: 767.98px) {
   section.where {
     background-size: 0;
+    padding: 2rem 0;
   }
 }
 
@@ -9779,17 +9782,19 @@ section.join {
 @media (max-width: 767.98px) {
   section.join {
     background-size: 0;
+    padding: 2rem 0;
   }
 }
 
 .nav-tabs {
   border-bottom: none;
   padding-bottom: 2rem;
+  align-items: center;
 }
 @media (max-width: 767.98px) {
   .nav-tabs li.nav-item {
-    flex: 1 1 33%;
-    text-align: center;
+    flex: 1 1 50%;
+    text-align: left;
   }
 }
 .nav-tabs .nav-link {
@@ -9802,11 +9807,26 @@ section.join {
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   border-color: transparent;
 }
+@media (max-width: 767.98px) {
+  .nav-tabs .nav-link {
+    border-bottom: none;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    border-radius: 0.25rem;
+  }
+}
 .nav-tabs .nav-link.active {
   color: #4A2B2B;
-  background-color: #fff;
+  background-color: transparent;
   border-color: transparent;
   border-bottom: #ED5D28 solid 4px;
+}
+@media (max-width: 767.98px) {
+  .nav-tabs .nav-link.active {
+    border-bottom: none;
+    background-color: #ED5D28;
+    color: white;
+  }
 }
 
 .card {

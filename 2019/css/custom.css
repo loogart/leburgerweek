@@ -155,12 +155,12 @@ sup {
 }
 
 a {
-  color: #F78C26;
+  color: #d14511;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #c96607;
+  color: #8a2e0c;
   text-decoration: underline;
 }
 
@@ -2718,11 +2718,11 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #F78C26;
+  color: #d14511;
   text-decoration: none;
 }
 .btn-link:hover {
-  color: #c96607;
+  color: #8a2e0c;
   text-decoration: underline;
 }
 .btn-link:focus, .btn-link.focus {
@@ -9690,6 +9690,13 @@ h3 {
   margin-bottom: 1.5rem;
 }
 
+.sticky-top {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1020;
+}
+
 .logo {
   display: block;
   width: 250px;
@@ -9734,7 +9741,7 @@ section.winners {
   padding: 4rem 0;
   background: url(../img/characters/4.png) 105% 5% no-repeat, #f8efef;
   background: url(../img/characters/4.png) 105% 5% no-repeat, linear-gradient(0deg, #f8efef 36%, #fefbf4 70%, white 100%);
-  background-size: 240px;
+  background-size: 240px, 100%;
 }
 @media (max-width: 767.98px) {
   section.winners {
@@ -10016,6 +10023,12 @@ footer .bottom {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #4A2B2B;
+}
+footer .bottom a {
+  color: #F78C26;
+}
+footer .bottom a:hover {
+  color: #FFEBC6;
 }
 footer .bottom hr {
   border: 0.5px solid #FFEBC6;

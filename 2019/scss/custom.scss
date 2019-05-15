@@ -122,50 +122,55 @@ h3 {
 }
 
 section.winners {
-    padding:$spacer*4 0;
-    background: url(../img/characters/4.png) 105% 5% no-repeat, rgb(248,239,239);
-    background: url(../img/characters/4.png) 105% 5% no-repeat, linear-gradient(0deg, rgba(248,239,239,1) 36%, rgba(254,251,244,1) 70%, rgba(255,255,255,1) 100%);
-    background-size:240px, 100%;
+    padding: $spacer*4 0;
+    background: url(../img/characters/4.png) 105% 5% no-repeat, rgb(248, 239, 239);
+    background: url(../img/characters/4.png) 105% 5% no-repeat, linear-gradient(0deg, rgba(248, 239, 239, 1) 36%, rgba(254, 251, 244, 1) 70%, rgba(255, 255, 255, 1) 100%);
+    background-size: 240px, 100%;
+
     @include media-breakpoint-down(sm) {
         background-size: 0;
-        padding:$spacer*2 0;
+        padding: $spacer*2 0;
     }
 }
 
 section.stats {
-    padding:$spacer*4 0;
+    padding: $spacer*4 0;
     background: url(../img/characters/12.png) 0% 5% no-repeat, white;
-    background-size:240px;
+    background-size: 240px;
+
     @include media-breakpoint-down(sm) {
         background-size: 0;
-        padding:$spacer*2 0;
+        padding: $spacer*2 0;
     }
-    .statistic{
+
+    .statistic {
         border: 4px solid $orange;
         display: flex;
         flex-direction: column;
-        padding:$spacer;
+        padding: $spacer;
         margin-bottom: $spacer;
     }
 }
 
 section.where {
-    padding:$spacer*4 0;
+    padding: $spacer*4 0;
     background: url(../img/characters/10.png) 105% 5% no-repeat, white;
-    background-size:240px;
+    background-size: 240px;
+
     @include media-breakpoint-down(sm) {
         background-size: 0;
-        padding:$spacer*2 0;
+        padding: $spacer*2 0;
     }
 }
 
 section.join {
-    padding:$spacer*4 0;
+    padding: $spacer*4 0;
     background: url(../img/characters/5.png) 0% 5% no-repeat, white;
-    background-size:240px;
+    background-size: 240px;
+
     @include media-breakpoint-down(sm) {
         background-size: 0;
-        padding:$spacer*2 0;
+        padding: $spacer*2 0;
     }
 }
 
@@ -187,14 +192,16 @@ section.join {
         border-bottom: transparent solid 4px;
         padding: $spacer*.5 0;
         margin: auto $spacer*1.5 auto 0;
+
         @include hover-focus {
             border-color: transparent;
         }
+
         @include media-breakpoint-down(sm) {
             border-bottom: none;
             padding: $spacer*.5;
             margin: $spacer*.5 auto;
-            border-radius:0.25rem;
+            border-radius: 0.25rem;
         }
 
     }
@@ -204,10 +211,11 @@ section.join {
         background-color: transparent;
         border-color: transparent;
         border-bottom: $orange solid 4px;
+
         @include media-breakpoint-down(sm) {
             border-bottom: none;
             background-color: $orange;
-            color:white;
+            color: white;
         }
     }
 }
@@ -419,25 +427,43 @@ footer {
         @include media-breakpoint-down(sm) {
             min-height: 150px;
             background-size: 250%;
-            background-position: 10%;
+            background-position: 0;
         }
 
         margin-top:$spacer * 1;
         margin-bottom:$spacer * 3;
     }
 
+    @keyframes animatedBackground {
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 100% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }    }
+
+    .scrolling {
+        background-repeat: repeat-x;
+        animation: animatedBackground 20s linear infinite;
+    }
+
     .bottom {
         padding-top: $spacer*3;
         padding-bottom: $spacer*3;
         background-color: $brown;
-        
-        a{
-            color:$yellow;
-            &:hover{
+
+        a {
+            color: $yellow;
+
+            &:hover {
                 color: $beige;
             }
         }
-        
+
         hr {
             border: 0.5px solid $beige;
         }

@@ -55,6 +55,10 @@ $card-border-width:1px;
 $card-border-color:#e5e5e5;
 $btn-padding-x:1.5rem;
 $btn-padding-x-lg:2.25rem;
+$pagination-color:$orange;
+$pagination-hover-color:darken($pagination-color, 10%);
+$pagination-active-bg: $orange;
+$pagination-active-border-color:$orange;
 
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
@@ -73,17 +77,19 @@ h3 {
 }
 
 // Navbar
-.alert-language{
-    padding-left:0;
-    padding-right:0;
+.alert-language {
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 0;
-    border:0;
+    border: 0;
     border-radius: 0;
     background-color: #444;
-    a{
+
+    a {
         text-decoration: underline;
     }
 }
+
 .sticky-top {
     position: sticky;
     position: -webkit-sticky;
@@ -603,6 +609,7 @@ body {
 
 [role="main"] {
     padding-top: 69px;
+
     /* Space for fixed navbar */
     @include media-breakpoint-down(sm) {
         padding-top: 0;

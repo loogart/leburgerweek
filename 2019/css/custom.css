@@ -4347,13 +4347,13 @@ input[type=button].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #007bff;
+  color: #ED5D28;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
 .page-link:hover {
   z-index: 2;
-  color: #0056b3;
+  color: #d14511;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -4376,8 +4376,8 @@ input[type=button].btn-block {
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #ED5D28;
+  border-color: #ED5D28;
 }
 .page-item.disabled .page-link {
   color: #6c757d;

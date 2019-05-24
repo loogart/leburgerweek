@@ -73,6 +73,17 @@ h3 {
 }
 
 // Navbar
+.alert-language{
+    padding-left:0;
+    padding-right:0;
+    margin-bottom: 0;
+    border:0;
+    border-radius: 0;
+    background-color: #444;
+    a{
+        text-decoration: underline;
+    }
+}
 .sticky-top {
     position: sticky;
     position: -webkit-sticky;

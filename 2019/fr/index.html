@@ -31,10 +31,17 @@
 </head>
 
 <body>
-
+    <div class="alert alert-language alert-dismissible fade show text-white" role="alert">
+        <div class="container d-flex justify-content-between small">
+            <span>Switch language to <a href="../" class="text-white">English</a></span>
+            <a href="#" class="text-white" data-dismiss="alert" aria-label="Close" role="button">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+    </div>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#"><img class="logo d-none d-md-block" src="../img/logo-main-fr.svg" alt="logo de la Semaine du Burger"><img class="logo d-block d-md-none" src="../img/logo-burgerweek-fr.svg" alt="logo de la Semaine du Burger" >
+            <a class="navbar-brand" href="#"><img class="logo d-none d-md-block" src="../img/logo-main-fr.svg" alt="logo de la Semaine du Burger"><img class="logo d-block d-md-none" src="../img/logo-burgerweek-fr.svg" alt="logo de la Semaine du Burger">
                 <h1 class="sr-only">Semaine du Burger</h1>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,24 +50,28 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Info</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mailto:thierry@peoplemovertech.com">Contacter</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Réseaux sociaux
+                            Branchez-vous
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Facebook</a>
-                            <a class="dropdown-item" href="#">Instagram</a>
-                            <a class="dropdown-item" href="#">Twitter</a>
+                            <a class="dropdown-item" href="https://www.facebook.com/LeBurgerWeek/" target="_blank">Facebook</a>
+                            <a class="dropdown-item" href="https://www.instagram.com/leburgerweek/" target="_blank">Instagram</a>
+                            <a class="dropdown-item" href="https://twitter.com/leburgerweek/">Twitter</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="mailto:thierry@peoplemovertech.com">Contacter</a>
                         </div>
                     </li>
+<!--
+                    <li class="nav-item">
+                        <a class="nav-link" href="../">EN</a>
+                    </li>
+-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./account.html">Connexion</a>
+                    </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
+                <form class="form-inline my-2 my-lg-0 ml-md-3">
                     <a class="btn btn-primary my-2 my-sm-0" href="./register.html" role="button">S'inscrire</a>
                 </form>
             </div>
@@ -282,8 +293,10 @@
         </section>
 
         <!-- Elfsight Instagram embed -->
+        <!--
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
         <div class="elfsight-app-f96761ed-e137-4800-9ba3-10b298a62b6a"></div>
+-->
 
 
     </main>

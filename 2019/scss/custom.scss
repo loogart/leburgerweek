@@ -11,16 +11,17 @@
 $orange: #ED5D28;
 $yellow: #F78C26;
 $green:#468B40;
+$blue: #2F4ADE;
 
 // Define new colors
 $brown:#4A2B2B;
 $beige:#FFEBC6;
 
 // Map colors
-$colors: ("orange":#ED5D28, "yellow":#F78C26, "green":#468B40, "beige":$beige, "brown":$brown);
+$colors: ("orange":#ED5D28, "yellow":#F78C26, "green":#468B40, "beige":$beige, "brown":$brown, "blue": #2F4ADE);
 
 //Map theme-colors
-$theme-colors: ("primary": $orange, "success":$green, "warning":$yellow, "dark":$brown, "light":$beige);
+$theme-colors: ("primary": $orange, "success":$green, "warning":$yellow, "dark":$brown, "light":$beige, "info":$blue);
 
 // customize theme
 $body-bg: white;
@@ -59,6 +60,8 @@ $pagination-color:$orange;
 $pagination-hover-color:darken($pagination-color, 10%);
 $pagination-active-bg: $orange;
 $pagination-active-border-color:$orange;
+$btn-font-size-lg: $input-btn-font-size-lg*.8;
+$btn-padding-x-lg: $spacer;
 
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
@@ -135,6 +138,60 @@ h3 {
         h3 {
             font-size: $font-size-base*2.25;
         }
+    }
+
+    &.location {
+        background: none;
+        background-size: contain;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+
+        a:not(.btn) {
+            text-decoration: underline;
+        }
+    }
+
+    .location-banner {
+        background: url(../img/characters/people-location-banner.png) 50% 0 repeat-x;
+        background-size: contain;
+        min-height: calc(100vh - 500px);
+        animation: animatedBackground 20s linear infinite;
+        @keyframes animatedBackground {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 100% 0;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            background: url(../img/characters/people-location-banner.png) 69% 0 repeat-x;
+            background-size: 210%;
+            min-height: calc(100vh - 420px);
+
+        }
+    }
+
+}
+
+.modal.location{
+    .modal-header{
+        border-top: 20px solid $orange;
+        border-bottom: none;
+    }
+    li{
+        margin-bottom: .69rem;
+        a:not(.btn){
+            font-size: 1.1rem;
+        }
+    }
+    .modal-footer{
+        justify-content: flex-start;
+        border-top: none;
     }
 }
 
@@ -421,6 +478,7 @@ select {
 
 .btn-primary,
 .btn-success,
+.btn-info,
 .btn-outline-primary {
     box-shadow: 0 4px 12px rgba($black, 0.25);
 }

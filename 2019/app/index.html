@@ -41,7 +41,7 @@
     </div>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#"><img class="logo d-none d-md-block" src="../img/logos/cbw/logo-main.svg" alt="logo of Le Burger Week"><img class="logo d-block d-md-none" src="../img/logos/cbw/logo-burgerweek.svg" alt="logo of Le Burger Week">
+            <a class="navbar-brand" href="./"><img class="logo d-none d-md-block" src="../img/logos/cbw/logo-main.svg" alt="logo of Le Burger Week"><img class="logo d-block d-md-none" src="../img/logos/cbw/logo-burgerweek.svg" alt="logo of Le Burger Week">
                 <h1 class="sr-only">Le Burger Week</h1>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,7 +105,7 @@
                                     <li><a href="./results.html">Regina</a></li>
                                     <li><a href="./results.html">Calgary</a></li>
                                     <li><a href="./results.html">International</a></li>
-                                    <li><a class="btn btn-lg btn-info my-3" href="./results.html" role="button"><i class="fas fa-location-arrow"></i> Share your location</a></li>
+                                    <li><a class="btn btn-lg btn-info my-3" href="./results.html" role="button" id="target2"><i class="fas fa-location-arrow"></i> Share your location</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -155,10 +155,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // index.html location javascript popup simulation
-        $("#target").click(function() {
-            confirm("La Poutine Week would like to use your location.")
-        });
-    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
+    <script src="../js/scripts.js"></script>
+
 </body></html>

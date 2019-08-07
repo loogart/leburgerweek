@@ -3745,8 +3745,8 @@ input[type=button].btn-block {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #007bff;
+  color: white;
+  background-color: #ED5D28;
 }
 
 .nav-fill .nav-item {
@@ -9785,11 +9785,22 @@ h3 {
   border-top: 20px solid #ED5D28;
   border-bottom: none;
 }
+.modal.location .modal-body {
+  background: url(../img/characters/modal-bg.png) 100% 0% no-repeat;
+  background-size: 39%;
+}
+@media (max-width: 767.98px) {
+  .modal.location .modal-body {
+    background: url(../img/characters/modal-bg.png) 120% 30% no-repeat;
+    background-size: 49%;
+  }
+}
 .modal.location li {
   margin-bottom: 0.69rem;
 }
 .modal.location li a:not(.btn) {
   font-size: 1.1rem;
+  text-decoration: underline;
 }
 .modal.location .modal-footer {
   justify-content: flex-start;
@@ -9852,6 +9863,57 @@ section.join {
   }
 }
 
+section.results {
+  background-color: #F2F2F2;
+}
+section.results .filters {
+  background: white;
+  padding-bottom: 1rem;
+}
+section.results .filters ul.nav {
+  width: 420px;
+}
+@media (max-width: 767.98px) {
+  section.results .filters ul.nav {
+    width: 100%;
+  }
+}
+section.results .filters .nav-pills .nav-link {
+  border: 1px solid #ED5D28;
+}
+section.results .filters .nav-pills .nav-item:first-child .nav-link {
+  border-radius: 4px 0 0 4px;
+}
+section.results .filters .nav-pills .nav-item:last-child .nav-link {
+  border-radius: 0 4px 4px 0;
+}
+section.results .btn-group-toggle .btn {
+  box-shadow: none;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+section.results #map {
+  width: 100%;
+  height: calc(100vh - 244px);
+}
+section.results #map a {
+  text-decoration: none;
+}
+section.results #map .card {
+  margin-bottom: 0;
+  border: none;
+  max-width: 320px;
+}
+section.results #map .card img {
+  border-radius: 6px;
+}
+section.results #map .card h5 {
+  font-size: 1.5rem;
+}
+section.results #map .card:hover {
+  background: #f8f9fa;
+}
+
 .nav-tabs {
   border-bottom: none;
   padding-bottom: 2rem;
@@ -9895,6 +9957,17 @@ section.join {
   }
 }
 
+.card-results p.sort-location a {
+  color: #2F4ADE;
+  text-decoration: underline;
+}
+.card-results p.sort-location a:hover {
+  color: #1e36bc;
+}
+.card-results a {
+  text-decoration: none;
+}
+
 .card {
   margin-bottom: 2rem;
   transition: all 0.2s ease-out;
@@ -9912,6 +9985,21 @@ section.join {
 }
 .card a:hover i {
   transform: translateX(5px);
+}
+.card p {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  color: #939da8;
+  font-size: 0.86rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card p:first-child {
+  max-width: 80%;
+}
+.card p:last-child {
+  max-width: 20%;
 }
 .card:hover {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.16);

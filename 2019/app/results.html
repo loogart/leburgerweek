@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../img/favicon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Le Burger Week">
+    <link rel="apple-touch-icon-precomposed" href="../img/favicon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../img/favicon.png">
+    <meta name="msapplication-TileColor" content="#ED5D28">
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <link rel="mask-icon" href="../img/icons/safari-pinned-tab.svg" color="#ED5D28">
+    <meta name="theme-color" content="#ED5D28">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Burgers for you</title>
+</head>
+
+<body>
+    <div class="alert alert-language alert-dismissible fade show text-white" role="alert">
+        <div class="container d-flex justify-content-between small">
+            <span>Changer la langue en <a href="./fr" class="text-white">français</a></span>
+            <a href="#" class="text-white" data-dismiss="alert" aria-label="Close" role="button">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+    </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="./"><img class="logo d-none d-md-block" src="../img/logos/cbw/logo-main.svg" alt="logo of Le Burger Week"><img class="logo d-block d-md-none" src="../img/logos/cbw/logo-burgerweek.svg" alt="logo of Le Burger Week">
+                <h1 class="sr-only">Le Burger Week</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Connect
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://www.facebook.com/LeBurgerWeek/" target="_blank">Facebook</a>
+                            <a class="dropdown-item" href="https://www.instagram.com/leburgerweek/" target="_blank">Instagram</a>
+                            <a class="dropdown-item" href="https://twitter.com/leburgerweek/">Twitter</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="mailto:thierry@peoplemovertech.com">Contact</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./account.html">Log in</a>
+                    </li>
+                </ul>
+                <!--
+                <form class="form-inline my-2 my-lg-0 ml-md-3">
+                    <a class="btn btn-primary my-2 my-sm-0" href="./register.html" role="button">Sign up</a>
+                </form>
+-->
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="results">
+            <div class="filters">
+                <div class="container">
+                    <ul class="nav nav-pills nav-fill justify-content-center py-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-list" role="tab" aria-controls="pills-home" aria-selected="true">List view</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-map" role="tab" aria-controls="pills-list-view" aria-selected="false">Map View</a>
+                        </li>
+                    </ul>
+                    <p class="h5">What's in my burger?</p>
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-primary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked=""> All
+                        </label>
+                        <label class="btn btn-outline-primary">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Vegetarian
+                        </label>
+                        <label class="btn btn-outline-primary">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Vegan
+                        </label>
+                        <label class="btn btn-outline-primary">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Glutten-free
+                        </label>
+                        <label class="btn btn-outline-primary">
+                            <input type="radio" name="options" id="option5" autocomplete="off"> Beef
+                        </label>
+                        <label class="btn btn-outline-primary">
+                            <input type="radio" name="options" id="option6" autocomplete="off"> Chicken
+                        </label>
+                        <label class="btn btn-outline-primary">
+                            <input type="radio" name="options" id="option8" autocomplete="off"> Sea Food
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-list" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="container card-results py-3">
+                        <p class="sort-location"><a href="" data-toggle="modal" data-target="#chooseArea"><i class="fas fa-location-arrow"></i> Sorted by distance closest to you</a></p>
+                        <div class="modal location fade" id="chooseArea" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="exampleModalLabel">Browse per Area</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Montreal</a></li>
+                                            <li><a href="./results.html">Laval</a></li>
+                                            <li><a href="./results.html">Quebec Regions (incl. Rive-Sud)</a></li>
+                                            <li><a href="./results.html">Winnipeg</a></li>
+                                            <li><a href="./results.html">Edmonton</a></li>
+                                            <li><a href="./results.html">Vancouver</a></li>
+                                            <li><a href="./results.html">Ottawa</a></li>
+                                            <li><a href="./results.html">Toronto</a></li>
+                                            <li><a href="./results.html">Regina</a></li>
+                                            <li><a href="./results.html">Calgary</a></li>
+                                            <li><a href="./results.html">International</a></li>
+                                            <li><a class="btn btn-lg btn-info my-3" href="./results.html" role="button" id="target2"><i class="fas fa-location-arrow"></i> Share your location</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="./burger.html">
+                                    <div class="card">
+                                        <img src="../img/photos/1533302925922.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h4>Restaurant Name</h4>
+                                            <h5>Burger Name</h5>
+                                            <div class="d-flex justify-content-between">
+                                                <p>$18.50 - Beef, Cheese, tomatoes, lettuce</p>
+                                                <p>1.2km</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="./burger.html">
+                                    <div class="card">
+                                        <img src="../img/photos/1534272140491.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h4>Restaurant Name</h4>
+                                            <h5>Burger Name</h5>
+                                            <div class="d-flex justify-content-between">
+                                                <p>$12 - Vegetarian, glutten free</p>
+                                                <p>5.6km</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="./burger.html">
+                                    <div class="card">
+                                        <img src="../img/photos/1534272389035.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h4>Restaurant Name</h4>
+                                            <h5>Burger Name</h5>
+                                            <div class="d-flex justify-content-between">
+                                                <p>$15 - Friend Chicken, love, Loogart</p>
+                                                <p>6.0km</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="./burger.html">
+                                    <div class="card">
+                                        <img src="../img/photos/1534278626498.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h4>Restaurant Name</h4>
+                                            <h5>Burger Name</h5>
+                                            <div class="d-flex justify-content-between">
+                                                <p>$14.99 - Chicken, Beef, Colslaw</p>
+                                                <p>6.8km</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="./burger.html">
+                                    <div class="card">
+                                        <img src="../img/photos/1534272531089.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h4>Restaurant Name</h4>
+                                            <h5>Burger Name</h5>
+                                            <div class="d-flex justify-content-between">
+                                                <p>$17 - Beef, Bacon, Cheese</p>
+                                                <p>7.9km</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="./burger.html">
+                                    <div class="card">
+                                        <img src="../img/photos/1534775491351.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h4>Restaurant Name</h4>
+                                            <h5>Burger Name</h5>
+                                            <div class="d-flex justify-content-between">
+                                                <p>$11.99 - Beef, Chicken, Cheese</p>
+                                                <p>180km</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="tab-pane fade" id="pills-map" role="tabpanel" aria-labelledby="pills-map-view">
+                    <div id="map"></div>
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 d-flex align-items-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="./">Home</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Registration</a></li>
+                            <li class="list-inline-item"><a href="./faq.html">FAQ for Businesses</a></li>
+                            <li class="list-inline-item"><a href="./privacy.html">Terms of Use</a></li>
+                            <li class="list-inline-item"><a href="./privacy.html#privacy">Privacy Policy</a></li>
+                            <li class="list-inline-item"><a href="./account.html">Login</a></li>
+                            <li class="list-inline-item"><a href="./fr">Français</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 d-flex justify-content-sm-end">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/LeBurgerWeek/" target="_blank"><i class="fab fa-facebook fa-2x" aria-hidden="true" title="Le Burger Week Facebook"></i> <span class="sr-only">Le Burger Week Facebook Page</span></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/leburgerweek/" target="_blank"><i class="fab fa-instagram fa-2x" aria-hidden="true" title="Le Burger Week Instagram"></i> <span class="sr-only">Le Burger Week Instagram Feed</span></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/leburgerweek/" target="_blank"><i class="fab fa-twitter fa-2x" aria-hidden="true" title="Le Burger Week Twitter"></i> <span class="sr-only">Le Burger Week Twitter Feed</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <hr>
+                        <div class="d-flex flex-column flex-sm-row justify-content-between">
+                            <p class="small text-light">© 2019 Le Burger Week | <a href="https://peoplemover.tech/" target="_blank">People Mover Technologies Inc.</a></p>
+                            <p class="small text-light">Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> by <a href="https://loogart.com" target="_blank">Loogart</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
+    <script src="../js/scripts.js"></script>
+</body>
+
+</html>

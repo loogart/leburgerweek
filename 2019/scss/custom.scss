@@ -63,6 +63,9 @@ $pagination-active-border-color:$orange;
 $btn-font-size-lg: $input-btn-font-size-lg*.8;
 $btn-padding-x-lg: $spacer;
 
+$nav-pills-link-active-color: white;
+$nav-pills-link-active-bg: $orange;
+
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
 
@@ -158,6 +161,7 @@ h3 {
         background-size: contain;
         min-height: calc(100vh - 500px);
         animation: animatedBackground 20s linear infinite;
+
         @keyframes animatedBackground {
             0% {
                 background-position: 0 0;
@@ -178,18 +182,32 @@ h3 {
 
 }
 
-.modal.location{
-    .modal-header{
+.modal.location {
+    .modal-header {
         border-top: 20px solid $orange;
         border-bottom: none;
     }
-    li{
-        margin-bottom: .69rem;
-        a:not(.btn){
-            font-size: 1.1rem;
+
+    .modal-body {
+        background: url(../img/characters/modal-bg.png) 100% 0% no-repeat;
+        background-size: 39%;
+
+        @include media-breakpoint-down(sm) {
+            background: url(../img/characters/modal-bg.png) 120% 30% no-repeat;
+            background-size: 49%;
         }
     }
-    .modal-footer{
+
+    li {
+        margin-bottom: .69rem;
+
+        a:not(.btn) {
+            font-size: 1.1rem;
+            text-decoration: underline;
+        }
+    }
+
+    .modal-footer {
         justify-content: flex-start;
         border-top: none;
     }
@@ -248,6 +266,68 @@ section.join {
     }
 }
 
+section.results {
+    background-color: #F2F2F2;
+
+    .filters {
+        background: white;
+        padding-bottom: $spacer;
+
+        ul.nav {
+            width: 420px;
+            //            margin: auto;
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+        }
+
+        .nav-pills .nav-link {
+            border: 1px solid $orange;
+        }
+
+        .nav-pills .nav-item {
+            &:first-child .nav-link {
+                border-radius: 4px 0 0 4px;
+            }
+
+            &:last-child .nav-link {
+                border-radius: 0 4px 4px 0;
+            }
+        }
+    }
+
+    .btn-group-toggle {
+        .btn {
+            box-shadow: none;
+            margin-bottom: .5rem;
+            cursor: pointer;
+        }
+    }
+
+    #map {
+        width: 100%;
+        height: calc(100vh - 244px);
+        a{
+            text-decoration: none;
+        }
+        .card{
+            margin-bottom: 0;
+            border:none;
+            max-width:320px;
+            img{
+                border-radius: 6px;
+            }
+            h5{
+                font-size: $font-size-base*1.5;
+            }
+            &:hover{
+                background:$light;
+            }
+        }
+    }
+}
+
 .nav-tabs {
     border-bottom: none;
     padding-bottom: $spacer*2;
@@ -294,6 +374,21 @@ section.join {
     }
 }
 
+.card-results {
+    p.sort-location a {
+        color: $blue;
+        text-decoration: underline;
+
+        &:hover {
+            color: darken($blue, 10%);
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
 .card {
     margin-bottom: $spacer*2;
     transition: all 0.2s ease-out;
@@ -316,6 +411,27 @@ section.join {
         &:hover i {
             transform: translateX(5px);
         }
+    }
+
+    p {
+        margin-top: $spacer*.5;
+        margin-bottom: 0;
+        color: lighten($dark, 39%);
+        font-size: $font-size-base*.86;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &:first-child {
+            max-width: 80%;
+
+        }
+
+        &:last-child {
+            max-width: 20%;
+        }
+
+
     }
 
     &:hover {

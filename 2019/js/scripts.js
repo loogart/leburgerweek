@@ -212,8 +212,6 @@ $("#voteForBurger").click(function () {
     voteModal.modal('toggle');
     //toggle button class
     voteBtn.toggleClass("btn-success");
-    voteBtn.html("Vote for this Burger");
-
 });
 
 // Animate on Scroll

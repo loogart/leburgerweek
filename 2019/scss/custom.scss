@@ -308,25 +308,57 @@ section.results {
     #map {
         width: 100%;
         height: calc(100vh - 244px);
-        a{
+
+        a {
             text-decoration: none;
         }
-        .card{
+
+        .card {
             margin-bottom: 0;
-            border:none;
-            max-width:320px;
-            img{
+            border: none;
+            max-width: 320px;
+
+            img {
                 border-radius: 6px;
             }
-            h5{
+
+            h5 {
                 font-size: $font-size-base*1.5;
             }
-            &:hover{
-                background:$light;
+
+            &:hover {
+                background: $light;
             }
         }
     }
 }
+
+section.burger {
+    a:not(.btn) {
+        text-decoration: underline;
+    }
+
+    ol.breadcrumb {
+        background-color: white;
+    }
+
+    ul.list-unstyled {
+        li {
+            margin-bottom: .5rem;
+        }
+    }
+
+    .modal-body {
+        padding: 0;
+
+        .img-fit {
+            width: 100%;
+            object-fit: cover;
+            height: 86px;
+        }
+    }
+}
+
 
 .nav-tabs {
     border-bottom: none;

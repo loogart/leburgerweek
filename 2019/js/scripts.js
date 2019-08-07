@@ -202,3 +202,19 @@ function initMap() {
     });
 
 }
+
+//vote modal
+var voteModal = $('#voteModal');
+var voteBtn = $('.btn-primary');
+
+$("#voteForBurger").click(function () {
+    //Open modal
+    voteModal.modal('toggle');
+    //toggle button class
+    voteBtn.toggleClass("btn-success");
+    voteBtn.html("Vote for this Burger");
+
+});
+
+// Animate on Scroll
+AOS.init();

@@ -25,6 +25,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <title>Burgers for you</title>
@@ -81,10 +82,10 @@
                 <div class="container">
                     <ul class="nav nav-pills nav-fill justify-content-center py-3" id="pills-tab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-list" role="tab" aria-controls="pills-home" aria-selected="true">List view</a>
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-list" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-list"></i> List view</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-map" role="tab" aria-controls="pills-list-view" aria-selected="false">Map View</a>
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-map" role="tab" aria-controls="pills-list-view" aria-selected="false"><i class="fas fa-map-marker-alt"></i> Map View</a>
                         </li>
                     </ul>
                     <p class="h5">What's in my burger?</p>
@@ -117,7 +118,7 @@
 
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-list" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="container card-results py-3">
+                    <div class="container card-results py-4">
                         <p class="sort-location"><a href="" data-toggle="modal" data-target="#chooseArea"><i class="fas fa-location-arrow"></i> Sorted by distance closest to you</a></p>
                         <div class="modal location fade" id="chooseArea" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -148,7 +149,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4" data-aos="fade-up">
                                 <a href="./burger.html">
                                     <div class="card">
                                         <img src="../img/photos/1533302925922.jpg" class="card-img-top" alt="...">
@@ -163,7 +164,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4" data-aos="fade-up">
                                 <a href="./burger.html">
                                     <div class="card">
                                         <img src="../img/photos/1534272140491.jpg" class="card-img-top" alt="...">
@@ -178,7 +179,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4" data-aos="fade-up">
                                 <a href="./burger.html">
                                     <div class="card">
                                         <img src="../img/photos/1534272389035.jpg" class="card-img-top" alt="...">
@@ -193,7 +194,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4" data-aos="fade-up">
                                 <a href="./burger.html">
                                     <div class="card">
                                         <img src="../img/photos/1534278626498.jpg" class="card-img-top" alt="...">
@@ -208,7 +209,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4" data-aos="fade-up">
                                 <a href="./burger.html">
                                     <div class="card">
                                         <img src="../img/photos/1534272531089.jpg" class="card-img-top" alt="...">
@@ -223,7 +224,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4" data-aos="fade-up">
                                 <a href="./burger.html">
                                     <div class="card">
                                         <img src="../img/photos/1534775491351.jpg" class="card-img-top" alt="...">
@@ -238,6 +239,10 @@
                                     </div>
                                 </a>
                             </div>
+
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-outline-secondary" href="#!">Load more burgers...</a>
                         </div>
                     </div>
 
@@ -262,8 +267,6 @@
                     <div class="col-sm-8 d-flex align-items-center">
                         <ul class="list-inline">
                             <li class="list-inline-item"><a href="./">Home</a></li>
-                            <li class="list-inline-item"><a href="./register.html">Registration</a></li>
-                            <li class="list-inline-item"><a href="./faq.html">FAQ for Businesses</a></li>
                             <li class="list-inline-item"><a href="./privacy.html">Terms of Use</a></li>
                             <li class="list-inline-item"><a href="./privacy.html#privacy">Privacy Policy</a></li>
                             <li class="list-inline-item"><a href="./account.html">Login</a></li>
@@ -292,8 +295,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/aos.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
     <script src="../js/scripts.js"></script>
-</body>
-
-</html>
+</body></html>

@@ -25,6 +25,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <title>Burger Name | Burger Restaurant</title>
@@ -77,13 +78,58 @@
 
     <main>
         <section class="burger">
-        
+            <div class="container pb-5">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./results.html"><i class="fas fa-chevron-left"></i> Back to burgers</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Restaurant Name</li>
+                    </ol>
+                </nav>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="../img/photos/1534278626498.jpg" alt="" class="img-fluid rounded-lg shadow mb-4" data-aos="fade-up">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="h2 text-primary">Restaurant Name</h1>
+                        <h2 class="h3">Burger Name</h2>
+                        <h3 class="lead font-weight-bold my-4">$14.99</h3>
+                        <p>Chicken, Beef, Colslaw. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas illum quam eos ipsa facilis dignissimos ea officia omnis. Ad molestias tempora velit ullam quisquam voluptas alias placeat quo debitis harum.</p>
+                        <p class="lead font-weight-bold mt-4">Address</p>
+                        <p><a href="https://goo.gl/maps/Vkfb5movN5a4opmSA" target="_blank">1124 Ste-Catherine Ouest,<br> Montreal, QC H4N 7A1</a></p>
+                        <div class="d-flex align-items-center my-4">
+                            <img class="rounded shadow mr-3" width="36" height="36" src="../img/logos/libro.jpg" alt="réservez une place avec Libro">
+                            <a href="https://www.libroreserve.com/" class="text-dark" target="_blank">Réservez une place au resto avec Libro</a>
+                        </div>
+                        <p class="lead font-weight-bold mt-4">Social media</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#!" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                            <li><a href="#!" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+                            <li><a href="#!" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+                        </ul>
+                        <p class="mt-4"><a class="btn btn-lg btn-primary my-2 my-sm-0" href="#!" role="button" data-toggle="modal" data-target="#voteBurger" id="voteForBurger"><i class="fas fa-check"></i> Vote for this burger</a></p>
 
+                        <div class="modal fade" id="voteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header border-0">
+                                        <h5 class="modal-title"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-center pb-4">
+                                        <i class="fas fa-check-circle fa-6x text-success mb-3"></i>
+                                        <p class="h4">Thank you for your vote!</p>
+                                        <img src="../img/characters/group-header.png" class="img-fit my-3" alt="">
+                                        <p><a href="#!" class="text-dark">Voted by mistake? Undo</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      
-
-
-
+            </div>
         </section>
     </main>
 
@@ -94,8 +140,6 @@
                     <div class="col-sm-8 d-flex align-items-center">
                         <ul class="list-inline">
                             <li class="list-inline-item"><a href="./">Home</a></li>
-                            <li class="list-inline-item"><a href="./register.html">Registration</a></li>
-                            <li class="list-inline-item"><a href="./faq.html">FAQ for Businesses</a></li>
                             <li class="list-inline-item"><a href="./privacy.html">Terms of Use</a></li>
                             <li class="list-inline-item"><a href="./privacy.html#privacy">Privacy Policy</a></li>
                             <li class="list-inline-item"><a href="./account.html">Login</a></li>
@@ -124,8 +168,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/aos.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
     <script src="../js/scripts.js"></script>
-</body>
 
-</html>
+</body></html>

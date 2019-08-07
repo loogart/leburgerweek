@@ -9914,6 +9914,24 @@ section.results #map .card:hover {
   background: #f8f9fa;
 }
 
+section.burger a:not(.btn) {
+  text-decoration: underline;
+}
+section.burger ol.breadcrumb {
+  background-color: white;
+}
+section.burger ul.list-unstyled li {
+  margin-bottom: 0.5rem;
+}
+section.burger .modal-body {
+  padding: 0;
+}
+section.burger .modal-body .img-fit {
+  width: 100%;
+  object-fit: cover;
+  height: 86px;
+}
+
 .nav-tabs {
   border-bottom: none;
   padding-bottom: 2rem;

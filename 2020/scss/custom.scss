@@ -9,16 +9,19 @@
 
 // Re-define BS colors
 $orange: #ED5D28;
-$yellow: #F78C26;
-$green:#468B40;
+$yellow: #FAA21E;
+$green:#A9AE38;
 $blue: #2F4ADE;
+$red:#B32029;
 
 // Define new colors
-$brown:#4A2B2B;
-$beige:#FFEBC6;
+$brown:#411F1F;
+$gold:#AB7029;
+$beige:#FFE8C9;
+$saputo:#CF3339;
 
 // Map colors
-$colors: ("orange":#ED5D28, "yellow":#F78C26, "green":#468B40, "beige":$beige, "brown":$brown, "blue": #2F4ADE);
+$colors: ("orange":#ED5D28, "yellow":#F78C26, "green":#468B40, "beige":$beige, "brown":$brown, "blue": #2F4ADE, "gold":$gold, "saputo":$saputo);
 
 //Map theme-colors
 $theme-colors: ("primary": $orange, "success":$green, "warning":$yellow, "dark":$brown, "light":$beige, "info":$blue);
@@ -26,26 +29,218 @@ $theme-colors: ("primary": $orange, "success":$green, "warning":$yellow, "dark":
 // customize theme
 $body-bg: white;
 $body-color: $brown;
-$font-family-sans-serif: 'IBM Plex Sans', sans-serif;
-$headings-font-family:'IBM Plex Mono', monospace;
-$input-font-family: 'IBM Plex Sans', sans-serif;
+$font-family-sans-serif: 'IBM Plex Sans',
+sans-serif;
+$headings-font-family:'IBM Plex Mono',
+monospace;
+$input-font-family: 'IBM Plex Sans',
+sans-serif;
 $font-family-base: $input-font-family;
+
+$body-color: $brown;
+$navbar-brand-font-size: $font-size-base;
+$navbar-light-color:$brown;
+$navbar-light-hover-color:$orange;
+$navbar-light-active-color:$orange;
+$navbar-light-brand-color:$brown;
+$navbar-light-brand-hover-color:$orange;
+$navbar-light-toggler-border-color: transparent;
+$btn-padding-x-lg: $spacer*2;
+$btn-font-weight:bold;
 
 
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
 
+
 // Typography
+
 h1 {
+    font-size: 36px;
+    color: $brown;
     font-weight: bold;
 }
 
 h2 {
-    font-size: $font-size-base * 1.25;
-    color: $orange;
+    font-size: 24px;
+    color: $brown;
+    font-weight: bold;
+    margin-bottom: $spacer*2;
 }
 
 h3 {
-    font-size: $font-size-base * 2.25;
-    margin-bottom: $spacer*1.5;
+    font-size: 20px;
+    color: $brown;
+}
+
+.navbar-brand,
+.nav-link {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.logo-main {
+    max-width: 150px;
+    margin-bottom: 34px;
+}
+
+span.supertitle {
+    display: block;
+    color: $orange;
+    font-size: 24px;
+    margin-bottom: 12px;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+// Background artwork
+.bg-artwork {
+    position: absolute;
+
+    @include media-breakpoint-down(sm) {
+        position: relative;
+    }
+}
+
+.bg-artwork__resto {
+    width: 169px;
+    bottom: 0;
+    left: 80px;
+
+    @include media-breakpoint-down(sm) {
+        display: inline-block;
+        width: 80px;
+        left: 0;
+        margin: 0 auto 20px;
+    }
+}
+
+.bg-artwork__resto-owner {
+    width: 159px;
+    bottom: 0;
+    right: 80px;
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+}
+
+// Sections
+
+section {
+    padding-top: 69px;
+    padding-bottom: 69px;
+    position: relative;
+    overflow: hidden;
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 50px;
+        padidng-bottom: 50px;
+    }
+
+    h1.jumbo {
+        font-size: 64px;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 32px;
+        }
+    }
+
+    h2.jumbo {
+        font-size: 44px;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 24px;
+        }
+    }
+}
+
+section.hero {
+    background-color: white;
+    text-align: center;
+
+    .hero-illustration {
+        width: 100%;
+        max-width: 991px;
+        padding: 0 15px;
+
+        @include media-breakpoint-down(sm) {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            object-position: 30%;
+            padding: 0;
+            margin-top: 20px;
+        }
+    }
+
+    .grass {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $green;
+        height: 70px;
+    }
+}
+
+
+
+section.dark {
+    background-color: $brown;
+
+    h2 {
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+section.white {
+    @mixin tile-award {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        height: 240px;
+        padding: 20px;
+        background-color: $green;
+        margin-bottom: 20px;
+
+        h3 {
+            color: white;
+            font-weight: bold;
+            font-size: 2em;
+        }
+    }
+
+    .tile-green {
+        @include tile-award;
+        background-color: $green;
+    }
+
+    .tile-orange {
+        @include tile-award;
+        background-color: $orange;
+    }
+
+    .tile-yellow {
+        @include tile-award;
+        background-color: $yellow;
+    }
+
+    .tile-saputo {
+        @include tile-award;
+        background-color: $saputo;
+    }
+
+    .icon-award {
+        height: 54px;
+        margin-bottom: 20px;
+    }
+
 }

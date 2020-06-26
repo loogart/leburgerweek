@@ -1,0 +1,51 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+// Required
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+
+// Re-define BS colors
+$orange: #ED5D28;
+$yellow: #F78C26;
+$green:#468B40;
+$blue: #2F4ADE;
+
+// Define new colors
+$brown:#4A2B2B;
+$beige:#FFEBC6;
+
+// Map colors
+$colors: ("orange":#ED5D28, "yellow":#F78C26, "green":#468B40, "beige":$beige, "brown":$brown, "blue": #2F4ADE);
+
+//Map theme-colors
+$theme-colors: ("primary": $orange, "success":$green, "warning":$yellow, "dark":$brown, "light":$beige, "info":$blue);
+
+// customize theme
+$body-bg: white;
+$body-color: $brown;
+$font-family-sans-serif: 'IBM Plex Sans', sans-serif;
+$headings-font-family:'IBM Plex Mono', monospace;
+$input-font-family: 'IBM Plex Sans', sans-serif;
+$font-family-base: $input-font-family;
+
+
+// Bootstrap
+@import "../bootstrap/scss/bootstrap.scss";
+
+// Typography
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: $font-size-base * 1.25;
+    color: $orange;
+}
+
+h3 {
+    font-size: $font-size-base * 2.25;
+    margin-bottom: $spacer*1.5;
+}

@@ -96,7 +96,7 @@ span.supertitle {
     }
 }
 
-// Background artwork
+// Artwork
 .bg-artwork {
     position: absolute;
 
@@ -105,7 +105,7 @@ span.supertitle {
     }
 }
 
-.bg-artwork__resto {
+.bg-artwork__1 {
     width: 169px;
     bottom: 0;
     left: 80px;
@@ -118,7 +118,7 @@ span.supertitle {
     }
 }
 
-.bg-artwork__resto-owner {
+.bg-artwork__2 {
     width: 159px;
     bottom: 0;
     right: 80px;
@@ -126,6 +126,42 @@ span.supertitle {
     @include media-breakpoint-down(sm) {
         display: none;
     }
+}
+
+.bg-artwork__3 {
+    width: 200px;
+    bottom: 0;
+    left: 30px;
+
+    @include media-breakpoint-down(sm) {
+        display: inline-block;
+        width: 120px;
+        left: 0;
+        margin: 0 auto 20px;
+    }
+}
+
+.icon-award {
+    height: 54px;
+    margin-bottom: 20px;
+}
+
+.icon-marketing{
+    height:69px;
+    margin-bottom:10px;
+}
+
+.img-featurette{
+    max-width:320px;
+}
+
+.logo-partner{
+    width:169px;
+    max-height:69px;
+}
+
+.logo-footer{
+    width:99px;
 }
 
 // Sections
@@ -202,6 +238,9 @@ section.dark {
 }
 
 section.white {
+    a{
+        text-decoration: none;
+    }
     @mixin tile-award {
         display: flex;
         align-items: flex-end;
@@ -237,10 +276,32 @@ section.white {
         @include tile-award;
         background-color: $saputo;
     }
-
-    .icon-award {
-        height: 54px;
-        margin-bottom: 20px;
-    }
-
 }
+
+footer{
+    h6{
+        color:$yellow;
+        margin-bottom:25px;
+    }
+    ul li{
+      margin-bottom:15px;  
+        font-size: 14px;
+    }
+    a{
+        color:white;
+        text-decoration: none;
+        &:hover{
+            color:$orange;
+            text-decoration: none;
+        }
+    }
+    color:$beige;
+    font-size: 11px;
+    li.list-inline-item {
+        font-size: 11px;
+        margin-bottom:0;
+    }
+}
+
+
+

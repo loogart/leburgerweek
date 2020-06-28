@@ -59,15 +59,11 @@ $input-focus-border-color:$yellow;
 $input-focus-color: $brown;
 $input-placeholder-color:#a89a89;
 $component-active-bg: $orange;
+$input-focus-box-shadow:0 0 0 0.2rem rgba(247, 190, 85, 0.47);
 $custom-control-indicator-checked-bg: $orange;
 $custom-control-indicator-active-bg:$orange;
 $custom-control-indicator-checked-border-color:$orange;
 $label-margin-bottom: 5px;
-
-
-// Bootstrap
-@import "../bootstrap/scss/bootstrap.scss";
-
 $btn-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
 0 12.5px 10px rgba(0, 0, 0, 0.035),
@@ -75,24 +71,9 @@ $btn-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
 0 100px 80px rgba(0, 0, 0, 0.07);
 
-select.form-control{
-    padding: 20px 0;
-    height:44px;
-    border-radius: 0!important;
-}
-    
-label{
-    font-weight: bold;
-    font-size: 14px;
-}
+// Bootstrap
+@import "../bootstrap/scss/bootstrap.scss";
 
-.btn {
-    box-shadow: $btn-shadow;
-}
-
-.btn:active {
-    box-shadow: none;
-}
 
 // Typography
 
@@ -140,13 +121,34 @@ span.supertitle {
     }
 }
 
+
+select.form-control {
+    padding: 20px 0;
+    height: 44px;
+    border-radius: 0 !important;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn {
+    box-shadow: $btn-shadow;
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
 // Artwork
 .logo-main {
     max-width: 150px;
     margin-bottom: 34px;
     transition: .25s all ease-in;
-    
-    &:hover,&:active{
+
+    &:hover,
+    &:active {
         transform: scale(.98);
     }
 
@@ -284,13 +286,14 @@ section.hero {
     }
 }
 
-section.generic{
+section.generic {
     padding-top: 34px;
     background-color: white;
 }
 
 section.dark {
     background-color: $brown;
+
     h2 {
         color: white;
     }

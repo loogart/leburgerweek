@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="./img/favicon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Le Burger Week">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/custom.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d83ef6eb3.js" crossorigin="anonymous"></script>
+
+    <!-- Primary Meta Tags -->
+    <title>Register | Le Cheeseburger Week 2020</title>
+    <meta name="title" content="Le Cheeseburger Week 2020 presented by Saputo.">
+    <meta name="description" content="Le Cheeseburger Week® allows participants to discover new venues, while providing the opportunity to taste burger creations they never would have originally.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loogart.github.io/leburgerweek/2020">
+    <meta property="og:title" content="Registration | Le Cheeseburger Week 2020">
+    <meta property="og:description" content="Register for Le Cheeseburger Week®.">
+    <meta property="og:image" content="https://loogart.github.io/leburgerweek/2020/img/">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://loogart.github.io/leburgerweek/2020">
+    <meta property="twitter:title" content="Registration | Le Cheeseburger Week 2020">
+    <meta property="twitter:description" content="Register for Le Cheeseburger Week®.">
+    <meta property="twitter:image" content="https://loogart.github.io/leburgerweek/2020/img/og-image.jpg">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color:white">
+        <a class="navbar-brand" href="./">Le Burger Week <span class="sr-only">(current)</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="far fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="./faq.html">FAQ</a>
+                <a class="nav-item nav-link" href="./winners.html">2019 Winners</a>
+                <a class="nav-item nav-link active" href="./register.html">Register</a>
+                <a class="nav-item nav-link" href="./login.html">Login</a>
+                <a class="nav-item nav-link" href="./fr">Français</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- hero section -->
+        <section class="generic">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-lg-6 mx-auto">
+                        <div class="text-center">
+                            <nav><a href="./"><img src="./img/logo-en.svg" alt="homepage of Le Burger Week" class="logo-main"></a></nav>
+                            <h1>September 1-7, 2020</h1>
+                            <p class="mt-4">Ready to register today? Fill out the rest of your information and payment method. We guarantee an amazing experience!</p>
+                            <p class="small">If you would like to get more information before registering or if you are paying by cheque, <a href="mailto:team@peoplemovertech.com">email us directly</a>.</p>
+                        </div>
+                        <form class="needs-validation mt-4" novalidate>
+                            <div class="form-group">
+                                <label for="inputName">Full name</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Burger Lover" required>
+                                <div class="invalid-feedback">We need your name!</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="name@company.com" required>
+                                <div class="invalid-feedback">We need your email.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPhone">Phone number</label>
+                                <input type="text" class="form-control" id="inputPhone" placeholder="(123)4567890">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputRestoName">Restaurant name</label>
+                                <input type="text" class="form-control" id="inputRestoName" placeholder="The Best Burger Place">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Cheeseburger Ave." required>
+                                <div class="invalid-feedback">We need your address for billing.</div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-5">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity" placeholder="Burgerville" required>
+                                <div class="invalid-feedback">Please provide us your city.</div>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputProvince">Province</label>
+                                    <select id="inputProvince" class="form-control" placeholder="" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select your province.</div>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="inputZip">Postal Code</label>
+                                    <input type="text" class="form-control" id="inputZip" placeholder="A1A 2B2" required>
+                                <div class="invalid-feedback">Please provide your postal code.</div>
+                                </div>
+                            </div>
+
+                            <div class="form-row d-flex justify-content-between">
+                                <div class="form-group col-md-8">
+                                    <label for="selectRegion">Your region</label>
+                                    <select class="form-control region" id="selectRegion" placeholder="" required>
+                                        <option selected disabled value=""></option>
+                                        <option value="$700">Montreal</option>
+                                        <option value="$500">Laval</option>
+                                        <option value="$300">QC Regions (incl. Rive Sud)</option>
+                                        <option value="$600">Winnipeg</option>
+                                        <option value="$250">Edmonton</option>
+                                        <option value="$300">Vancouver</option>
+                                        <option value="$300">Ottawa</option>
+                                        <option value="$400">Toronto</option>
+                                        <option value="$250">Regina</option>
+                                        <option value="$250">Calgary</option>
+                                        <option value="$50">International (with material)</option>
+                                        <option value="FREE">International (no material)</option>
+                                    </select>
+                                <div class="invalid-feedback">Select your region.</div>
+                                </div>
+                                <div class="form-group col-md-4 text-left text-md-right">
+                                    <label for="selectRegion">Registration fee</label>
+                                    <p class="h1 font-weight-bold price">-</p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="checkbox" id="checkTerms" required>
+                                    <label class="custom-control-label font-weight-light" for="checkTerms">I Agree to the People Mover Technologies' <a href="./terms.html" target="_blank">Terms and Conditions</a>.</label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-5"><button type="submit" class="btn btn-warning btn-lg btn-block"><i class="fas fa-lock mr-2"></i> Pay and register</button></p>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <section class="dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-5 text-center text-md-left">
+                        <img src="./img/logo-en.svg" alt="" class="logo-footer">
+                        <ul class="list-inline mt-4">
+                            <li class="list-inline-item">Cities:</li>
+                            <li class="list-inline-item"><a href="#!" class="text-light">Montreal</a></li>
+                            <li class="list-inline-item"><a href="#!" class="text-light">Winnipeg</a></li>
+                            <li class="list-inline-item"><a href="#!" class="text-light">Vancouver</a></li>
+                            <li class="list-inline-item"><a href="#!" class="text-light">Edmonton</a></li>
+                            <li class="list-inline-item"><a href="#!" class="text-light">Calgary</a></li>
+                            <li class="list-inline-item"><a href="#!" class="text-light">Regina</a></li>
+                            <li class="list-inline-item"><a href="#!" class="text-light">Saskatoon</a></li>
+                            <li class="list-inline-item"><a href="#!" class="text-light">Toronto</a></li>
+                            <li class="list-inline-item"><a href="#!" class="text-light">Outaouais</a></li>
+                            <li class="list-inline-item"><a href="#!" class="text-light">Laval</a></li>
+                            <li class="list-inline-item"><a href="#!" class="text-light">Quebec</a></li>
+                            <li class="list-inline-item"><a href="#!" class="text-light">International</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md mb-4">
+                        <h6>Website</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="./winner.html">2019 Winners</a></li>
+                            <li><a href="mailto:team@peoplemovertech.com">Contact</a></li>
+                            <li><a href="#!">Français</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md mb-4">
+                        <h6>Restaurants</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="./register.html">Registration</a></li>
+                            <li><a href="./login.html">Login</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md mb-4">
+                        <h6>Legal</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="./terms.html">Terms of use</a></li>
+                            <li><a href="./privacy.html">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md mb-4">
+                        <h6>Social media</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.facebook.com/LeBurgerWeek/" target="_blank"><i class="fab fa-facebook mr-2"></i>&nbsp;Facebook</a></li>
+                            <li><a href="https://www.instagram.com/leburgerweek/" target="_blank"><i class="fab fa-instagram mr-2"></i>&nbsp;Instagram</a></li>
+                            <li><a href="https://twitter.com/leburgerweek/" target="_blank"><i class="fab fa-twitter mr-2"></i>&nbsp;Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 d-flex justify-content-between flex-wrap">
+                        <p class="small text-primary">© 2019&nbsp;Le Burger Week&nbsp;|&nbsp;<a href="https://peoplemover.tech" target="_blank" class="text-primary">People Mover Technologies Inc.</a></p>
+                        <p class="small text-primary">Made with&nbsp;<i class="fal fa-heart"></i>&nbsp;and&nbsp;<i class="fal fa-coffee"></i>&nbsp;by <a href="https://loogart.com" target="_blank" class="text-primary">Loogart</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/scripts.js"></script>
+
+</body>
+
+</html>

@@ -38,23 +38,23 @@
     <meta property="twitter:url" content="https://loogart.github.io/leburgerweek/2020">
     <meta property="twitter:title" content="Le Cheeseburger Week 2020">
     <meta property="twitter:description" content="Le Cheeseburger Week® allows participants to discover new venues, while providing the opportunity to taste burger creations they never would have originally.">
-    <meta property="twitter:image" content="https://loogart.github.io/leburgerweek/2020/img/">
+    <meta property="twitter:image" content="https://loogart.github.io/leburgerweek/2020/img/og-image.jpg">
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:white">
-        <a class="navbar-brand" href="#">Le Burger Week <span class="sr-only">(current)</span></a>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color:white">
+        <a class="navbar-brand" href="./">Le Burger Week <span class="sr-only">(current)</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <i class="far fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link" href="#">FAQ</a>
-                <a class="nav-item nav-link" href="#">2019 Winners</a>
-                <a class="nav-item nav-link" href="#">Register</a>
-                <a class="nav-item nav-link" href="#">Login</a>
-                <a class="nav-item nav-link" href="#">Français</a>
+                <a class="nav-item nav-link" href="./faq.html">FAQ</a>
+                <a class="nav-item nav-link" href="./winners.html">2019 Winners</a>
+                <a class="nav-item nav-link" href="./register.html">Register</a>
+                <a class="nav-item nav-link" href="./login.html">Login</a>
+                <a class="nav-item nav-link" href="./fr">Français</a>
             </div>
         </div>
     </nav>
@@ -63,19 +63,20 @@
         <!-- hero section -->
         <section class="hero">
             <div class="container">
-                <img src="./img/logo-en.svg" alt="homepage of Le Burger Week" class="logo-main">
+                </nav><a href="./"><img src="./img/logo-en.svg" alt="homepage of Le Burger Week" class="logo-main"></a></nav>
                 <h1 class="jumbo"><span class="supertitle">September 1-7</span>Cheeseburgers.</h1>
-                <a href="" class="btn btn-primary btn-lg mt-4">Register today</a>
+                <a href="./register.html" class="btn btn-primary btn-lg mt-4">Register today</a>
             </div>
-            <img src="./img/jumbotron-illustration.svg" alt="" class="hero-illustration">
+            <img src="./img/jumbotron-illustration.svg" alt="" class="hero-illustration d-none d-sm-inline-block" data-aos="fade-in">
+            <img src="./img/jumbotron-illustration-mobile.svg" alt="" class="hero-illustration d-inline-block d-sm-none" data-aos="fade-in">
             <div class="grass"></div>
         </section>
 
         <!-- donate section -->
         <section class="dark">
             <div class="container text-center">
-                <img src="./img/section-donate-resto.svg" alt="" class="bg-artwork bg-artwork__1">
-                <img src="./img/section-donate-person.svg" alt="" class="bg-artwork bg-artwork__2">
+                <img src="./img/section-donate-resto.svg" alt="" class="bg-artwork bg-artwork__1" data-aos="slide-right">
+                <img src="./img/section-donate-person.svg" alt="" class="bg-artwork bg-artwork__2" data-aos="slide-left">
                 <div class="row">
                     <div class="col-md-7 col-lg-8 mx-auto">
                         <h2 class="jumbo"><span class="supertitle">Cheeseburgers help us.</span>And the restaurants.</h2>
@@ -94,7 +95,7 @@
                 <div class="row my-4">
                     <div class="col-md-6 col-lg-3">
                         <a href="#!">
-                            <div class="tile-green">
+                            <div class="tile-green" data-aos="fade-up">
                                 <div class="tile-body">
                                     <img src="./img/icon_award_public-choice.svg" alt="" class="icon-award">
                                     <h3>Public's<br>Choice</h3>
@@ -104,7 +105,7 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <a href="#!">
-                            <div class="tile-orange">
+                            <div class="tile-orange" data-aos="fade-up">
                                 <div class="tile-body">
                                     <img src="./img/icon_award-judge.svg" alt="" class="icon-award">
                                     <h3>Judge's<br>Choice</h3>
@@ -114,7 +115,7 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <a href="#!">
-                            <div class="tile-yellow">
+                            <div class="tile-yellow" data-aos="fade-up">
                                 <div class="tile-body">
                                     <img src="./img/icon_award-top-five.svg" alt="" class="icon-award">
                                     <h3>Top<br>Five</h3>
@@ -124,7 +125,7 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <a href="#!">
-                            <div class="tile-saputo">
+                            <div class="tile-saputo" data-aos="fade-up">
                                 <div class="tile-body">
                                     <img src="./img/icon_award-saputo.svg" alt="" class="icon-award">
                                     <h3>Saputo's<br>Choice</h3>
@@ -134,7 +135,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!-- section marketing benefits -->
@@ -146,22 +146,22 @@
                         <p>Le Burger Week® allows participants to discover new venues, while providing the opportunity to taste burger creations they never would have originally. It also allows for restaurants to showcase their best, while increasing their sales and popularity. We take care of the marketing heavy-lifting, you focus on burger creation and your customers.</p>
                         <div class="row">
                             <div class="col-md-6 mt-4">
-                                <img src="./img/icon_marketing-1.svg" alt="" class="icon-marketing">
+                                <img src="./img/icon_marketing-1.svg" alt="" class="icon-marketing" data-aos="fade-in">
                                 <h3 class="text-warning font-weight-bold display-4">400</h3>
                                 <p class="lead">Restaurants worldwide</p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <img src="./img/icon_marketing-2.svg" alt="" class="icon-marketing">
+                                <img src="./img/icon_marketing-2.svg" alt="" class="icon-marketing" data-aos="fade-in">
                                 <h3 class="text-warning font-weight-bold display-4">5 million</h3>
                                 <p class="lead">Page views per year</p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <img src="./img/icon_marketing-3.svg" alt="" class="icon-marketing">
+                                <img src="./img/icon_marketing-3.svg" alt="" class="icon-marketing" data-aos="fade-in">
                                 <h3 class="text-warning font-weight-bold display-4">150,000</h3>
                                 <p class="lead">Yearly activations</p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <img src="./img/icon_marketing-4.svg" alt="" class="icon-marketing">
+                                <img src="./img/icon_marketing-4.svg" alt="" class="icon-marketing" data-aos="fade-in">
                                 <h3 class="text-warning font-weight-bold display-4">1 million</h3>
                                 <p class="lead">Website unique visits per year</p>
                             </div>
@@ -174,8 +174,8 @@
         <!-- featurettes -->
         <section class="white">
             <div class="container">
-                <div class="row align-items-center mb-5 ">
-                    <div class="col-md-6 text-center mb-4 mb-md-0 order-md-2">
+                <div class="row align-items-center pb-jumbo">
+                    <div class="col-md-6 text-center mb-4 mb-md-0 order-md-2" data-aos="fade-left">
                         <img src="./img/feature-east-west.svg" alt="" class="img-featurette">
                     </div>
                     <div class="col-md-6 order-md-1 text-center text-md-left">
@@ -183,8 +183,8 @@
                         <p>With an ever-growing network and customer base, Le Burger Week® has become a nationwide tradition across Canada. It has also reached restaurants in the U.S. and is a yearly festival in Haiti.</p>
                     </div>
                 </div>
-                <div class="row align-items-center my-5">
-                    <div class="col-md-6 text-center mb-4 mb-md-0">
+                <div class="row align-items-center pb-jumbo">
+                    <div class="col-md-6 text-center mb-4 mb-md-0" data-aos="fade-right">
                         <img src="./img/feature-expo.svg" alt="" class="img-featurette">
                     </div>
                     <div class="col-md-6 text-center text-md-left">
@@ -192,7 +192,7 @@
                         <p>One week with Le Burger Week’s marketing vehicle can help put your restaurant on the map and make it a local staple.</p>
                     </div>
                 </div>
-                <div class="row mt-5">
+                <div class="row">
                     <div class="col-md-6 mx-auto text-center">
                         <h2 class="jumbo"><span class="supertitle">Our partners.</span>Squad goals.</h2>
                         <p>We are fortunate to partner up with organizations that help promote our mission: taste amazing food from local spots around you.</p>
@@ -208,8 +208,8 @@
         <!-- final CTA -->
         <section class="bg-light">
             <div class="container text-center">
-                <img src="./img/person7-man-juggling.svg" alt="" class="bg-artwork bg-artwork__3">
-                <img src="./img/person6-woman-eating.svg" alt="" class="bg-artwork bg-artwork__2">
+                <img src="./img/person7-man-juggling.svg" alt="" class="bg-artwork bg-artwork__3" data-aos="slide-right">
+                <img src="./img/person6-woman-eating.svg" alt="" class="bg-artwork bg-artwork__2" data-aos="fade-up" style="bottom:-10px">
                 <div class="row">
                     <div class="col-md-7 col-lg-8 mx-auto">
                         <h2 class="jumbo"><span class="supertitle">Calling all restaurants.</span>Join the movements.</h2>
@@ -221,7 +221,8 @@
         </section>
 
     </main>
-
+    
+    <!-- footer -->
     <footer>
         <section class="dark">
             <div class="container">
@@ -247,37 +248,36 @@
                     <div class="col-6 col-md mb-4">
                         <h6>Website</h6>
                         <ul class="list-unstyled">
-                            <li><a href="#!">About</a></li>
-                            <li><a href="#!">2019 Winners</a></li>
-                            <li><a href="#!">Contact</a></li>
+                            <li><a href="./winner.html">2019 Winners</a></li>
+                            <li><a href="mailto:team@peoplemovertech.com">Contact</a></li>
                             <li><a href="#!">Français</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md mb-4">
                         <h6>Restaurants</h6>
                         <ul class="list-unstyled">
-                            <li><a href="#!">Registration</a></li>
-                            <li><a href="#!">Login</a></li>
-                            <li><a href="#!">FAQ</a></li>
+                            <li><a href="./register.html">Registration</a></li>
+                            <li><a href="./login.html">Login</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md mb-4">
                         <h6>Legal</h6>
                         <ul class="list-unstyled">
-                            <li><a href="#!">Terms of use</a></li>
-                            <li><a href="#!">Privacy policy</a></li>
+                            <li><a href="./terms.html">Terms of use</a></li>
+                            <li><a href="./privacy.html">Privacy policy</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md mb-4">
                         <h6>Social media</h6>
                         <ul class="list-unstyled">
-                            <li><a href="#!"><i class="fab fa-facebook mr-2"></i>&nbsp;Facebook</a></li>
-                            <li><a href="#!"><i class="fab fa-instagram mr-2"></i>&nbsp;Instagram</a></li>
-                            <li><a href="#!"><i class="fab fa-twitter mr-2"></i>&nbsp;Twitter</a></li>
+                            <li><a href="https://www.facebook.com/LeBurgerWeek/" target="_blank"><i class="fab fa-facebook mr-2"></i>&nbsp;Facebook</a></li>
+                            <li><a href="https://www.instagram.com/leburgerweek/" target="_blank"><i class="fab fa-instagram mr-2"></i>&nbsp;Instagram</a></li>
+                            <li><a href="https://twitter.com/leburgerweek/" target="_blank"><i class="fab fa-twitter mr-2"></i>&nbsp;Twitter</a></li>
                         </ul>
                     </div>
                     <div class="col-12 d-flex justify-content-between flex-wrap">
-                        <p class="small text-primary">© 2019&nbsp;Le Burger Week&nbsp;|&nbsp;<a href="#!" target="_blank" class="text-primary">People Mover Technologies Inc.</a></p>
+                        <p class="small text-primary">© 2019&nbsp;Le Burger Week&nbsp;|&nbsp;<a href="https://peoplemover.tech" target="_blank" class="text-primary">People Mover Technologies Inc.</a></p>
                         <p class="small text-primary">Made with&nbsp;<i class="fal fa-heart"></i>&nbsp;and&nbsp;<i class="fal fa-coffee"></i>&nbsp;by <a href="https://loogart.com" target="_blank" class="text-primary">Loogart</a></p>
                     </div>
                 </div>
@@ -288,10 +288,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
+    <script src="./js/scripts.js"></script>
 
-    </script>
 </body>
 
 </html>

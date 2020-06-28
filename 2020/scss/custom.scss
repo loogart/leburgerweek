@@ -47,11 +47,52 @@ $navbar-light-brand-hover-color:$orange;
 $navbar-light-toggler-border-color: transparent;
 $btn-padding-x-lg: $spacer*2;
 $btn-font-weight:bold;
+$navbar-toggler-padding-x:0;
+$link-color:$orange;
+$link-hover-color: darken($link-color, 15%);
+$input-border-color: $brown;
+$input-border-width:2px;
+$input-padding-y: 20px;
+$input-border-radius: 4px;
+$input-color: $brown;
+$input-focus-border-color:$yellow;
+$input-focus-color: $brown;
+$input-placeholder-color:#a89a89;
+$component-active-bg: $orange;
+$custom-control-indicator-checked-bg: $orange;
+$custom-control-indicator-active-bg:$orange;
+$custom-control-indicator-checked-border-color:$orange;
+$label-margin-bottom: 5px;
 
 
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
 
+$btn-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+0 12.5px 10px rgba(0, 0, 0, 0.035),
+0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+0 100px 80px rgba(0, 0, 0, 0.07);
+
+select.form-control{
+    padding: 20px 0;
+    height:44px;
+    border-radius: 0!important;
+}
+    
+label{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn {
+    box-shadow: $btn-shadow;
+}
+
+.btn:active {
+    box-shadow: none;
+}
 
 // Typography
 
@@ -79,11 +120,6 @@ h3 {
     font-size: 14px;
 }
 
-.logo-main {
-    max-width: 150px;
-    margin-bottom: 34px;
-}
-
 span.supertitle {
     display: block;
     color: $orange;
@@ -96,7 +132,30 @@ span.supertitle {
     }
 }
 
+.pb-jumbo {
+    padding-bottom: 69px;
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 30px;
+    }
+}
+
 // Artwork
+.logo-main {
+    max-width: 150px;
+    margin-bottom: 34px;
+    transition: .25s all ease-in;
+    
+    &:hover,&:active{
+        transform: scale(.98);
+    }
+
+    @include media-breakpoint-down(sm) {
+        max-width: 120px;
+        margin-bottom: 15px;
+    }
+}
+
 .bg-artwork {
     position: absolute;
 
@@ -146,35 +205,35 @@ span.supertitle {
     margin-bottom: 20px;
 }
 
-.icon-marketing{
-    height:69px;
-    margin-bottom:10px;
+.icon-marketing {
+    height: 69px;
+    margin-bottom: 10px;
 }
 
-.img-featurette{
-    max-width:320px;
+.img-featurette {
+    max-width: 320px;
 }
 
-.logo-partner{
-    width:169px;
-    max-height:69px;
+.logo-partner {
+    width: 169px;
+    max-height: 69px;
 }
 
-.logo-footer{
-    width:99px;
+.logo-footer {
+    width: 99px;
 }
 
 // Sections
 
 section {
-    padding-top: 69px;
-    padding-bottom: 69px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     position: relative;
     overflow: hidden;
 
     @include media-breakpoint-down(sm) {
         padding-top: 50px;
-        padidng-bottom: 50px;
+        padding-bottom: 50px;
     }
 
     h1.jumbo {
@@ -195,6 +254,7 @@ section {
 }
 
 section.hero {
+    padding-top: 34px;
     background-color: white;
     text-align: center;
 
@@ -204,12 +264,9 @@ section.hero {
         padding: 0 15px;
 
         @include media-breakpoint-down(sm) {
-            height: 200px;
             width: 100%;
-            object-fit: cover;
-            object-position: 30%;
-            padding: 0;
-            margin-top: 20px;
+            padding: 0 15px 0;
+            margin-top: 40px;
         }
     }
 
@@ -219,15 +276,21 @@ section.hero {
         right: 0;
         bottom: 0;
         background-color: $green;
-        height: 70px;
+        height: 92px;
+
+        @include media-breakpoint-down(sm) {
+            height: 52px;
+        }
     }
 }
 
-
+section.generic{
+    padding-top: 34px;
+    background-color: white;
+}
 
 section.dark {
     background-color: $brown;
-
     h2 {
         color: white;
     }
@@ -238,9 +301,10 @@ section.dark {
 }
 
 section.white {
-    a{
+    a {
         text-decoration: none;
     }
+
     @mixin tile-award {
         display: flex;
         align-items: flex-end;
@@ -278,30 +342,32 @@ section.white {
     }
 }
 
-footer{
-    h6{
-        color:$yellow;
-        margin-bottom:25px;
+footer {
+    h6 {
+        color: $yellow;
+        margin-bottom: 25px;
     }
-    ul li{
-      margin-bottom:15px;  
+
+    ul li {
+        margin-bottom: 15px;
         font-size: 14px;
     }
-    a{
-        color:white;
+
+    a {
+        color: white;
         text-decoration: none;
-        &:hover{
-            color:$orange;
+
+        &:hover {
+            color: $orange;
             text-decoration: none;
         }
     }
+
     color:$beige;
     font-size: 11px;
+
     li.list-inline-item {
         font-size: 11px;
-        margin-bottom:0;
+        margin-bottom: 0;
     }
 }
-
-
-

@@ -9983,7 +9983,13 @@ span.supertitle {
 select.form-control {
   padding: 20px 0;
   height: 44px;
-  border-radius: 0 !important;
+}
+
+p.price small {
+  display: block;
+  font-size: 14px;
+  color: #a95050;
+  margin-top: 5px;
 }
 
 label {

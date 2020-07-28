@@ -108,7 +108,7 @@ span.supertitle {
     margin-bottom: 12px;
 
     @include media-breakpoint-down(sm) {
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 16px;
     }
 }
@@ -127,11 +127,11 @@ select.form-control {
     height: 44px;
 }
 
-p.price small{
+p.price small {
     display: block;
     font-size: 14px;
-    color:lighten($brown, 30%);
-    margin-top:5px;
+    color: lighten($brown, 30%);
+    margin-top: 5px;
 }
 
 label {
@@ -150,7 +150,7 @@ label {
 // Artwork
 .logo-main {
     max-width: 150px;
-    margin-bottom: 34px;
+    margin-bottom: 10px;
     transition: .25s all ease-in;
 
     &:hover,
@@ -160,7 +160,6 @@ label {
 
     @include media-breakpoint-down(sm) {
         max-width: 120px;
-        margin-bottom: 15px;
     }
 }
 
@@ -229,6 +228,29 @@ label {
 
 .logo-footer {
     width: 99px;
+}
+
+.winners-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 20px;
+
+    @include media-breakpoint-down(md) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.winner-item {
+    display: flex;
+}
+
+.img-winner {
+    object-fit: cover;
+    width: 120px;
+    height: 80px;
+    border-radius: 12px;
 }
 
 // Sections

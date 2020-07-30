@@ -42,6 +42,8 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=1502111493180438&autoLogAppEvents=1" nonce="SaZNM0zU"></script>
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-md navbar-light" style="background-color:white">
         <a class="navbar-brand" href="./">Le Burger Week <span class="sr-only">(current)</span></a>
@@ -196,15 +198,21 @@
                         <div class="modal fade" id="videoSaputo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-xl">
                                 <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Le Cheeseburger Week</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
+                                    <!-- english video -->
+                                    <div class="fb-video" data-href="https://www.facebook.com/LeBurgerWeek/videos/293076578628604/" data-show-text="false" data-width="">
+                                        <blockquote cite="https://developers.facebook.com/LeBurgerWeek/videos/293076578628604/" class="fb-xfbml-parse-ignore"><a href="https://developers.facebook.com/LeBurgerWeek/videos/293076578628604/">Le Cheeseburger Week presented by Saputo!</a>
+                                            <p>2020 is extra cheesey!</p>Posted by <a href="https://www.facebook.com/LeBurgerWeek/">Le Burger Week</a> on Thursday, July 30, 2020
+                                        </blockquote>
                                     </div>
-                                    <div class="embed-responsive embed-responsive-21by9">
-                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SVW7mO48LD8" allowfullscreen></iframe>
+                                    
+                                    <!-- vidéo en français -->
+<!--
+                                    <div class="fb-video" data-href="https://www.facebook.com/LeBurgerWeek/videos/1207805869583474/" data-show-text="false" data-width="">
+                                        <blockquote cite="https://developers.facebook.com/LeBurgerWeek/videos/1207805869583474/" class="fb-xfbml-parse-ignore"><a href="https://developers.facebook.com/LeBurgerWeek/videos/1207805869583474/">Le Cheeseburger Week présenté par Saputo!</a>
+                                            <p>Le Cheeseburger Week 2020!</p>Posted by <a href="https://www.facebook.com/LeBurgerWeek/">Le Burger Week</a> on Thursday, July 30, 2020
+                                        </blockquote>
                                     </div>
+-->
                                 </div>
                             </div>
                         </div>

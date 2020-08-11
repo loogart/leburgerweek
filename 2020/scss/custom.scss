@@ -402,3 +402,19 @@ footer {
         margin-bottom: 0;
     }
 }
+
+// live festival css
+
+.custom-select {
+    &.search-bar {
+        padding-left: 3rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $brown;
+        vertical-align: middle;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        appearance: none;
+        background: #eee url(../img/location-pin.svg) no-repeat left .75rem center/16px 16px;
+    }
+}

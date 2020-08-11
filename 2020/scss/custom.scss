@@ -443,7 +443,7 @@ section.results {
 
 #map {
     width: 100%;
-    height: 50vh;
+    height: 86vh;
 }
 
 .grid-burgers {
@@ -451,8 +451,8 @@ section.results {
     display: -ms-grid;
     grid-template-columns: repeat(6, 1fr);
     -ms-grid-columns: (1fr)[6];
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
 
     @include media-breakpoint-down(lg) {
         grid-template-columns: repeat(4, 1fr);
@@ -480,8 +480,11 @@ a.grid-burger__item {
     text-decoration: none;
 
     .img-burger {
-        border-radius: 20px;
+        border-radius: 12px;
         margin-bottom: 20px;
+        width:100%;
+        height:150px;
+        object-fit: cover;
     }
 
     .resto-name {

@@ -211,3 +211,15 @@ $(function () {
         $("#resultsGrid").toggleClass("d-none", this.checked)
     }).change();
 });
+
+// modal data mirror for prottotype
+$(".grid-burger__item").click(function() {
+    var restoName = $(this).find(".resto-name").html();
+    var burgerName = $(this).find(".burger-name").html();
+    var burgerPrice = $(this).find(".price").html();
+    var burgerImage = $(this).find("img.img-burger").attr("src");
+    $(".modal-resto").html(restoName);
+    $(".modal-burger").html(burgerName);
+    $(".modal-price").html(burgerPrice);
+    $('.modal-photo').attr('src', burgerImage);
+});

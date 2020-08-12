@@ -437,6 +437,19 @@ section.results {
     padding-bottom: 20px;
 }
 
+.the-filter {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+}
+
+.logo-results {
+    width: 69px;
+    padding: 5px 5px 5px 0;
+}
+
 .results-grid {
     padding: 30px 0;
 }
@@ -449,10 +462,10 @@ section.results {
 .grid-burgers {
     display: grid;
     display: -ms-grid;
-    grid-template-columns: repeat(6, 1fr);
-    -ms-grid-columns: (1fr)[6];
+    grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: (1fr)[5];
     grid-column-gap: 40px;
-    grid-row-gap: 40px;
+    grid-row-gap: 60px;
 
     @include media-breakpoint-down(lg) {
         grid-template-columns: repeat(4, 1fr);
@@ -482,9 +495,20 @@ a.grid-burger__item {
     .img-burger {
         border-radius: 12px;
         margin-bottom: 20px;
-        width:100%;
-        height:150px;
+        width: 100%;
+        height: 150px;
         object-fit: cover;
+        transition: .25s all ease-out;
+
+        @include media-breakpoint-down(xs) {
+            height: 200px;
+        }
+
+    }
+
+    &:hover .img-burger {
+        opacity: .8;
+        transform: translateY(-5px);
     }
 
     .resto-name {
@@ -497,12 +521,22 @@ a.grid-burger__item {
         display: block;
         color: $brown;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 20px;
+        line-height: 1.25;
     }
 
     .price,
     .distance {
         color: lighten($brown, 30%);
         font-size: 14px;
+        margin-top: 10px;
     }
+}
+
+
+.img-map {
+    height: 120px;
+    width: 200px;
+    margin-bottom:12px;
+    border-radius: 12px;
 }

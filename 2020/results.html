@@ -63,149 +63,216 @@
     </nav>
 
     <main>
-        <section class="results">
-            <!-- filter -->
-            <div class="container-fluid">
-                <h1 class="sr-only">Burger results</h1>
-                <div class="row d-flex align-items-center">
-                    <div class="col-md-6 col-lg-5">
-                        <div class="row">
-                            <div class="col-8">
-                                <select class="custom-select search-bar mb-3">
-                                    <option selected>Close to me</option>
-                                    <option value="Montreal">Montreal, QC</option>
-                                    <option value="Winnipeg">Winnipeg, MA</option>
-                                    <option value="Edmonton">Edmonton, AB</option>
-                                    <option value="Vancouver">Vancouver, BC</option>
-                                    <option value="Calgary">Calgary, AB</option>
-                                    <option value="Regina">Regina, SA</option>
-                                    <option value="Saskatoon">Saskatoon, SA</option>
-                                    <option value="Toronto">Toronto, ON</option>
-                                    <option value="Outaouais">Outaouais</option>
-                                    <option value="Laval">Laval, QC</option>
-                                    <option value="Quebec">Quebec, QC</option>
-                                    <option value="International">International</option>
-                                </select>
-                            </div>
-                            <div class="col-4">
-                                <select class="custom-select filter-btn mb-3">
-                                    <option selected>All</option>
-                                    <option value="Vegetarian">Vegetarian</option>
-                                    <option value="Vegan">Vegan</option>
-                                    <option value="Glutten-free">Glutten-free</option>
-                                    <option value="Chicken">Chicken</option>
-                                    <option value="Sea Food">Sea Food</option>
-                                    <option value="Saputo Cheese">Saputo Cheese</option>
-                                </select>
-                            </div>
+        <!-- filter -->
+        <nav class="container-fluid the-filter">
+            <h1 class="sr-only">Burger results</h1>
+            <div class="row d-flex align-items-center">
+                <div class="col-md-1">
+                    <a href="./live-index.html"><img src="./img/logo-2020-en.svg" alt="" class="logo-results mb-4 mb-md-0"></a>
+                </div>
+                <div class="col-md-6 col-lg-5 mb-4 mb-md-0">
+                    <div class="row">
+                        <div class="col-7">
+                            <select class="custom-select search-bar">
+                                <option selected>Closest to me</option>
+                                <option value="Montreal">Montreal, QC</option>
+                                <option value="Winnipeg">Winnipeg, MA</option>
+                                <option value="Edmonton">Edmonton, AB</option>
+                                <option value="Vancouver">Vancouver, BC</option>
+                                <option value="Calgary">Calgary, AB</option>
+                                <option value="Regina">Regina, SA</option>
+                                <option value="Saskatoon">Saskatoon, SA</option>
+                                <option value="Toronto">Toronto, ON</option>
+                                <option value="Outaouais">Outaouais</option>
+                                <option value="Laval">Laval, QC</option>
+                                <option value="Quebec">Quebec, QC</option>
+                                <option value="International">International</option>
+                            </select>
+                        </div>
+                        <div class="col-5">
+                            <select class="custom-select filter-btn">
+                                <option selected>All</option>
+                                <option value="Vegetarian">Vegetarian</option>
+                                <option value="Vegan">Vegan</option>
+                                <option value="Glutten-free">Glutten-free</option>
+                                <option value="Chicken">Chicken</option>
+                                <option value="Sea Food">Sea Food</option>
+                                <option value="Saputo Cheese">Saputo Cheese</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="col-md-5 col-lg-4 ml-auto">
-                        <div class="d-flex justify-content-sm-end">
-                            <p class="">Showing 69 burgers</p>
-                            <div class="custom-control custom-switch ml-4">
-                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                <label class="custom-control-label" for="customSwitch1">Map view</label>
+                </div>
+                <div class="col-md-5 col-lg-4 ml-auto pb-3 pb-md-0">
+                    <div class="d-flex justify-content-sm-end">
+                        <span>Showing 69 burgers</span>
+                        <div class="custom-control custom-switch ml-4">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">Map view</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="results">
+            <!-- results grid -->
+            <div class="results-grid" id="resultsGrid">
+                <div class="container">
+                    <div class="grid-burgers">
+                        <a href="#burgerModal" data-toggle="modal" class="grid-burger__item" target="_blank">
+                            <img class="img-burger" src="./img/photo-burger1.jpg" alt="">
+                            <span class="resto-name">Restaurant name</span>
+                            <span class="burger-name">Burger Name</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$90.00</span>
+                                <span class="distance">500.0 km</span>
+                            </div>
+                        </a>
+                        <a href="#burgerModal" data-toggle="modal" class="grid-burger__item" target="_blank">
+                            <img class="img-burger" src="./img/photo-burger2.jpg" alt="">
+                            <span class="resto-name">Restaurant name</span>
+                            <span class="burger-name">Ultra super long name for a Fun Burger</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$90.00</span>
+                                <span class="distance">500.0 km</span>
+                            </div>
+                        </a>
+                        <a href="#burgerModal" data-toggle="modal" class="grid-burger__item" target="_blank">
+                            <img class="img-burger" src="./img/photo-burger3.jpg" alt="">
+                            <span class="resto-name">Restaurant name</span>
+                            <span class="burger-name">Burger Name</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$90.00</span>
+                                <span class="distance">500.0 km</span>
+                            </div>
+                        </a>
+                        <a href="#burgerModal" data-toggle="modal" class="grid-burger__item" target="_blank">
+                            <img class="img-burger" src="./img/photo-burger4.jpg" alt="">
+                            <span class="resto-name">Restaurant name</span>
+                            <span class="burger-name">Burger Name</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$90.00</span>
+                                <span class="distance">500.0 km</span>
+                            </div>
+                        </a>
+                        <a href="#burgerModal" data-toggle="modal" class="grid-burger__item" target="_blank">
+                            <img class="img-burger" src="./img/photo-burger5.jpg" alt="">
+                            <span class="resto-name">Restaurant name</span>
+                            <span class="burger-name">Burger Name</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$90.00</span>
+                                <span class="distance">500.0 km</span>
+                            </div>
+                        </a>
+                        <a href="#burgerModal" data-toggle="modal" class="grid-burger__item" target="_blank">
+                            <img class="img-burger" src="./img/photo-burger6.jpg" alt="">
+                            <span class="resto-name">Restaurant name</span>
+                            <span class="burger-name">Burger Name</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$90.00</span>
+                                <span class="distance">500.0 km</span>
+                            </div>
+                        </a>
+                        <a href="#burgerModal" data-toggle="modal" class="grid-burger__item" target="_blank">
+                            <img class="img-burger" src="./img/photo-burger7.jpg" alt="">
+                            <span class="resto-name">Restaurant name</span>
+                            <span class="burger-name">Burger Name</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$90.00</span>
+                                <span class="distance">500.0 km</span>
+                            </div>
+                        </a>
+                        <a href="#burgerModal" data-toggle="modal" class="grid-burger__item" target="_blank">
+                            <img class="img-burger" src="./img/empty1.svg" alt="">
+                            <span class="resto-name">Restaurant name</span>
+                            <span class="burger-name">Burger Name</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$90.00</span>
+                                <span class="distance">500.0 km</span>
+                            </div>
+                        </a>
+                        <a href="#burgerModal" data-toggle="modal" class="grid-burger__item" target="_blank">
+                            <img class="img-burger" src="./img/empty2.svg" alt="">
+                            <span class="resto-name">Restaurant name</span>
+                            <span class="burger-name">Burger Name</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$90.00</span>
+                                <span class="distance">500.0 km</span>
+                            </div>
+                        </a>
+                        <a href="#burgerModal" data-toggle="modal" class="grid-burger__item" target="_blank">
+                            <img class="img-burger" src="./img/empty3.svg" alt="">
+                            <span class="resto-name">Restaurant name</span>
+                            <span class="burger-name">Burger Name</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$90.00</span>
+                                <span class="distance">500.0 km</span>
+                            </div>
+                        </a>
+                        <a href="#burgerModal" data-toggle="modal" class="grid-burger__item" target="_blank">
+                            <img class="img-burger" src="./img/empty4.svg" alt="">
+                            <span class="resto-name">Restaurant name</span>
+                            <span class="burger-name">Burger Name</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$90.00</span>
+                                <span class="distance">500.0 km</span>
+                            </div>
+                        </a>
+                        <a href="#burgerModal" data-toggle="modal" class="grid-burger__item" target="_blank">
+                            <img class="img-burger" src="./img/empty5.svg" alt="">
+                            <span class="resto-name">Restaurant name</span>
+                            <span class="burger-name">Burger Name</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$90.00</span>
+                                <span class="distance">500.0 km</span>
+                            </div>
+                        </a>
+                        <a href="#burgerModal" data-toggle="modal" class="grid-burger__item" target="_blank">
+                            <img class="img-burger" src="./img/empty6.svg" alt="">
+                            <span class="resto-name">Restaurant name</span>
+                            <span class="burger-name">Burger Name</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$90.00</span>
+                                <span class="distance">500.0 km</span>
+                            </div>
+                        </a>
+                        <a href="#burgerModal" data-toggle="modal" class="grid-burger__item" target="_blank">
+                            <img class="img-burger" src="./img/empty7.svg" alt="">
+                            <span class="resto-name">Restaurant name</span>
+                            <span class="burger-name">Burger Name</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$90.00</span>
+                                <span class="distance">500.0 km</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-center mt-5">
+                        <a href="#!" class="btn btn-outline-dark"><i class="fal fa-plus"></i>&nbsp;Load more burgers</a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="burgerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="results-wrapper">
-                <!-- results grid -->
-                <div class="results-grid" id="resultsGrid">
-                    <div class="container-fluid">
-                    <div class="grid-burgers">
-                            <a href="./burger.html" class="grid-burger__item">
-                                <img class="img-burger" src="./img/photo-burger1.jpg" alt="">
-                                <span class="resto-name">Restaurant name</span>
-                                <span class="burger-name">Burger Name</span>
-                                <div class="d-flex justify-content-between mt-3">
-                                    <span class="price">$90.00</span>
-                                    <span class="distance">500.0 km</span>
-                                </div>
-                            </a>
-                            <a href="./burger.html" class="grid-burger__item">
-                                <img class="img-burger" src="./img/empty2.svg" alt="">
-                                <span class="resto-name">Restaurant name</span>
-                                <span class="burger-name">Burger Name</span>
-                                <div class="d-flex justify-content-between mt-3">
-                                    <span class="price">$90.00</span>
-                                    <span class="distance">500.0 km</span>
-                                </div>
-                            </a>
-                            <a href="./burger.html" class="grid-burger__item">
-                                <img class="img-burger" src="./img/empty3.svg" alt="">
-                                <span class="resto-name">Restaurant name</span>
-                                <span class="burger-name">Burger Name</span>
-                                <div class="d-flex justify-content-between mt-3">
-                                    <span class="price">$90.00</span>
-                                    <span class="distance">500.0 km</span>
-                                </div>
-                            </a>
-                        <a href="./burger.html" class="grid-burger__item">
-                                <img class="img-burger" src="./img/empty4.svg" alt="">
-                                <span class="resto-name">Restaurant name</span>
-                                <span class="burger-name">Burger Name</span>
-                                <div class="d-flex justify-content-between mt-3">
-                                    <span class="price">$90.00</span>
-                                    <span class="distance">500.0 km</span>
-                                </div>
-                            </a>
-                        <a href="./burger.html" class="grid-burger__item">
-                                <img class="img-burger" src="./img/empty5.svg" alt="">
-                                <span class="resto-name">Restaurant name</span>
-                                <span class="burger-name">Burger Name</span>
-                                <div class="d-flex justify-content-between mt-3">
-                                    <span class="price">$90.00</span>
-                                    <span class="distance">500.0 km</span>
-                                </div>
-                            </a>
-                        <a href="./burger.html" class="grid-burger__item">
-                                <img class="img-burger" src="./img/empty1.svg" alt="">
-                                <span class="resto-name">Restaurant name</span>
-                                <span class="burger-name">Burger Name</span>
-                                <div class="d-flex justify-content-between mt-3">
-                                    <span class="price">$90.00</span>
-                                    <span class="distance">500.0 km</span>
-                                </div>
-                            </a>
-                        <a href="./burger.html" class="grid-burger__item">
-                                <img class="img-burger" src="./img/empty1.svg" alt="">
-                                <span class="resto-name">Restaurant name</span>
-                                <span class="burger-name">Burger Name</span>
-                                <div class="d-flex justify-content-between mt-3">
-                                    <span class="price">$90.00</span>
-                                    <span class="distance">500.0 km</span>
-                                </div>
-                            </a><a href="./burger.html" class="grid-burger__item">
-                                <img class="img-burger" src="./img/empty1.svg" alt="">
-                                <span class="resto-name">Restaurant name</span>
-                                <span class="burger-name">Burger Name</span>
-                                <div class="d-flex justify-content-between mt-3">
-                                    <span class="price">$90.00</span>
-                                    <span class="distance">500.0 km</span>
-                                </div>
-                            </a>
-                        <a href="./burger.html" class="grid-burger__item">
-                                <img class="img-burger" src="./img/empty1.svg" alt="">
-                                <span class="resto-name">Restaurant name</span>
-                                <span class="burger-name">Burger Name</span>
-                                <div class="d-flex justify-content-between mt-3">
-                                    <span class="price">$90.00</span>
-                                    <span class="distance">500.0 km</span>
-                                </div>
-                            </a>
-                        
-
-                        </div>
-                    </div>
-                </div>
-                <!-- map view -->
-                <div class="results-map d-none" id="resultsMap">
-                    <div id="map"></div>
-                </div>
+            <!-- map view -->
+            <div class="results-map d-none" id="resultsMap">
+                <div id="map"></div>
             </div>
 
         </section>

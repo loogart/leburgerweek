@@ -76,17 +76,13 @@ function initMap() {
         '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<a href="./product.html">' +
-        '<div class="card">' +
-        '<img src="../img/photos/poutine-generic.jpg" class="card-img-top" alt="...">' +
-        '<div class="card-body">' +
-        '<h3>Restaurant Name</h4>' +
-        '<h4>Poutine Name</h5>' +
+        '<a href="./burger.html" class="grid-burger__item" target="_blank">' +
+        '<img src="./img/photo-burger1.jpg" class="img-map" alt="...">' +
+        '<span class="resto-name">Restaurant Name</span>' +
+        '<span class="burger-name">Poutine Name</span>' +
         '<div class="d-flex justify-content-between">' +
-        '<p>$18</p>' +
-        '<p>1.2km</p>' +
-        '</div>' +
-        '</div>' +
+        '<span class="price">$18</span>' +
+        '<span class="distance">1.2km</span>' +
         '</div>' +
         '</a>' +
         '</div>';
@@ -115,17 +111,13 @@ function initMap() {
         '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<a href="./product.html">' +
-        '<div class="card">' +
-        '<img src="../img/photos/poutine-generic.jpg" class="card-img-top" alt="...">' +
-        '<div class="card-body">' +
-        '<h3>Restaurant Name</h4>' +
-        '<h4>Poutine Name</h5>' +
+        '<a href="./burger.html" class="grid-burger__item" target="_blank">' +
+        '<img src="./img/photo-burger2.jpg" class="img-map" alt="...">' +
+        '<span class="resto-name">Restaurant Name</span>' +
+        '<span class="burger-name">Poutine Name</span>' +
         '<div class="d-flex justify-content-between">' +
-        '<p>$18</p>' +
-        '<p>1.2km</p>' +
-        '</div>' +
-        '</div>' +
+        '<span class="price">$18</span>' +
+        '<span class="distance">1.2km</span>' +
         '</div>' +
         '</a>' +
         '</div>';
@@ -154,17 +146,13 @@ function initMap() {
         '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<a href="./product.html">' +
-        '<div class="card">' +
-        '<img src="../img/photos/poutine-generic.jpg" class="card-img-top" alt="...">' +
-        '<div class="card-body">' +
-        '<h3>Restaurant Name</h4>' +
-        '<h4>Poutine Name</h5>' +
+        '<a href="./burger.html" class="grid-burger__item" target="_blank">' +
+        '<img src="./img/photo-burger3.jpg" class="img-map" alt="...">' +
+        '<span class="resto-name">Restaurant Name</span>' +
+        '<span class="burger-name">Poutine Name</span>' +
         '<div class="d-flex justify-content-between">' +
-        '<p>$18</p>' +
-        '<p>1.2km</p>' +
-        '</div>' +
-        '</div>' +
+        '<span class="price">$18</span>' +
+        '<span class="distance">1.2km</span>' +
         '</div>' +
         '</a>' +
         '</div>';
@@ -193,17 +181,13 @@ function initMap() {
         '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<a href="./product.html">' +
-        '<div class="card">' +
-        '<img src="../img/photos/poutine-generic.jpg" class="card-img-top" alt="...">' +
-        '<div class="card-body">' +
-        '<h3>Restaurant Name</h4>' +
-        '<h4>Poutine Name</h5>' +
+        '<a href="./burger.html" class="grid-burger__item" target="_blank">' +
+        '<img src="./img/photo-burger4.jpg" class="img-map" alt="...">' +
+        '<span class="resto-name">Restaurant Name</span>' +
+        '<span class="burger-name">Poutine Name</span>' +
         '<div class="d-flex justify-content-between">' +
-        '<p>$18</p>' +
-        '<p>1.2km</p>' +
-        '</div>' +
-        '</div>' +
+        '<span class="price">$18</span>' +
+        '<span class="distance">1.2km</span>' +
         '</div>' +
         '</a>' +
         '</div>';

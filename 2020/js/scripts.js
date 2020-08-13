@@ -76,7 +76,7 @@ function initMap() {
         '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<a href="./burger.html" class="grid-burger__item" target="_blank">' +
+        '<a href="./burger.html" class="grid-burger__item">' +
         '<img src="./img/photo-burger1.jpg" class="img-map" alt="...">' +
         '<span class="resto-name">Restaurant Name</span>' +
         '<span class="burger-name">Poutine Name</span>' +
@@ -111,7 +111,7 @@ function initMap() {
         '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<a href="./burger.html" class="grid-burger__item" target="_blank">' +
+        '<a href="./burger.html" class="grid-burger__item">' +
         '<img src="./img/photo-burger2.jpg" class="img-map" alt="...">' +
         '<span class="resto-name">Restaurant Name</span>' +
         '<span class="burger-name">Poutine Name</span>' +
@@ -146,7 +146,7 @@ function initMap() {
         '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<a href="./burger.html" class="grid-burger__item" target="_blank">' +
+        '<a href="./burger.html" class="grid-burger__item">' +
         '<img src="./img/photo-burger3.jpg" class="img-map" alt="...">' +
         '<span class="resto-name">Restaurant Name</span>' +
         '<span class="burger-name">Poutine Name</span>' +
@@ -181,7 +181,7 @@ function initMap() {
         '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<a href="./burger.html" class="grid-burger__item" target="_blank">' +
+        '<a href="./burger.html" class="grid-burger__item">' +
         '<img src="./img/photo-burger4.jpg" class="img-map" alt="...">' +
         '<span class="resto-name">Restaurant Name</span>' +
         '<span class="burger-name">Poutine Name</span>' +

@@ -7886,6 +7886,8 @@ label {
   @media (max-width: 767.98px) {
     .logo-main {
       max-width: 120px; } }
+  .logo-main.logo-sm {
+    width: 115px; }
 
 .bg-artwork {
   position: absolute; }

@@ -10341,14 +10341,16 @@ section.results {
 
 .grid-burgers {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
 }
 
 a.grid-burger__item {
   display: inline-block;
-  width: 18%;
+  width: 20%;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-bottom: 40px;
   text-decoration: none;
   position: relative;
@@ -10370,7 +10372,7 @@ a.grid-burger__item .logo-saputo-grid {
   display: inline-block;
   position: absolute;
   top: 16px;
-  left: 16px;
+  left: 24px;
   width: 50px;
   z-index: 1;
 }
@@ -10398,17 +10400,17 @@ a.grid-burger__item .distance {
 }
 @media (max-width: 1199.98px) {
   a.grid-burger__item {
-    width: 23%;
+    width: 25%;
   }
 }
 @media (max-width: 991.98px) {
   a.grid-burger__item {
-    width: 30%;
+    width: 33%;
   }
 }
 @media (max-width: 767.98px) {
   a.grid-burger__item {
-    width: 45%;
+    width: 50%;
   }
 }
 @media (max-width: 575.98px) {

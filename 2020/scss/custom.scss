@@ -477,9 +477,8 @@ section.results {
 }
 
 .grid-burgers {
-
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -487,7 +486,9 @@ section.results {
 
 a.grid-burger__item {
     display: inline-block;
-    width: 18%;
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 40px;
     text-decoration: none;
     position: relative;
@@ -503,14 +504,13 @@ a.grid-burger__item {
         @include media-breakpoint-down(xs) {
             height: 200px;
         }
-
     }
 
     .logo-saputo-grid {
         display: inline-block;
         position: absolute;
         top: 16px;
-        left: 16px;
+        left: 24px;
         width: 50px;
         z-index: 1;
     }
@@ -542,15 +542,15 @@ a.grid-burger__item {
     }
 
     @include media-breakpoint-down(lg) {
-        width: 23%;
+        width: 25%;
     }
 
     @include media-breakpoint-down(md) {
-        width: 30%;
+        width: 33%;
     }
 
     @include media-breakpoint-down(sm) {
-        width: 45%;
+        width: 50%;
     }
 
     @include media-breakpoint-down(xs) {

@@ -488,7 +488,7 @@ section.results {
 a.grid-burger__item {
     display: inline-block;
     width: 18%;
-    margin-top: 20px;
+    margin-bottom: 40px;
     text-decoration: none;
     position: relative;
 
@@ -551,7 +551,6 @@ a.grid-burger__item {
 
     @include media-breakpoint-down(sm) {
         width: 45%;
-        margin-top: 0;
     }
 
     @include media-breakpoint-down(xs) {

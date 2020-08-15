@@ -10349,7 +10349,7 @@ section.results {
 a.grid-burger__item {
   display: inline-block;
   width: 18%;
-  margin-top: 20px;
+  margin-bottom: 40px;
   text-decoration: none;
   position: relative;
 }
@@ -10409,7 +10409,6 @@ a.grid-burger__item .distance {
 @media (max-width: 767.98px) {
   a.grid-burger__item {
     width: 45%;
-    margin-top: 0;
   }
 }
 @media (max-width: 575.98px) {

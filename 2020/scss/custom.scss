@@ -558,6 +558,13 @@ a.grid-burger__item {
     @include media-breakpoint-down(xs) {
         width: 100%;
     }
+
+    &.for-map {
+        width: 100%;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 

@@ -10420,6 +10420,12 @@ a.grid-burger__item .distance {
     width: 100%;
   }
 }
+a.grid-burger__item.for-map {
+  width: 100%;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
 
 .img-map {
   height: 120px;

@@ -76,6 +76,9 @@ $modal-show-transform: none;
 $modal-transition: transform .25s ease-out;
 $modal-scale-transform:scale(1.02);
 $modal-inner-padding: 1.5rem;
+$dropdown-link-hover-color:white;
+$dropdown-link-hover-bg:$orange;
+$dropdown-link-active-bg:darken($orange, 5%);
 
 
 // Bootstrap

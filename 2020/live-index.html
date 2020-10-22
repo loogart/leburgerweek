@@ -44,6 +44,17 @@
 <body>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=1502111493180438&autoLogAppEvents=1" nonce="SaZNM0zU"></script>
+    <!-- survey -->
+    <div class="alert alert-light alert-dismissible mb-0 p-4 rounded-0 fade show" role="alert">
+        <div class="container-fluid">
+           <div class="d-flex align-items-center">
+                <i class="fas fa-comment-alt-smile fa-2x text-primary mr-4 d-none d-sm-block"></i>
+                <p class="mb-0 text-dark"> Please take two minutes to answer the <a href="https://us14.list-manage.com/survey?u=f3039c91361c2e63415b5502b&id=18f24056b5" target="_blank">following five questions</a> for a chance to win an iPad and to get $50 off La Poutine Week 2021 or le Burger Week 2021.</p>
+           </div>            
+        </div>  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-md navbar-light" style="background-color:white">
         <a class="navbar-brand" href="./index-live.html">Le Burger Week <span class="sr-only">(current)</span></a>
@@ -52,10 +63,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-                <!--                <a class="nav-item nav-link" href="./faq.html">FAQ</a>-->
-                <a class="nav-item nav-link" href="./results.html"><i class="fas fa-hamburger text-primary"></i>&nbsp;Find a Burger</a>
-                <a class="nav-item nav-link" href="./winners.html">2019 Winners</a>
-                <!--                <a class="nav-item nav-link" href="./register.html">Register</a>-->
+                               <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-trophy text-primary"></i>&nbsp; Winners
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">2020</a>
+                      <a class="dropdown-item" href="./winners.html">2019</a>
+                    </div>
+              </li>
+                <a class="nav-item nav-link" href="./faq.html">FAQ</a>
+                <a class="nav-item nav-link" href="./results.html"><!--<i class="fas fa-hamburger text-primary"></i>&nbsp;-->Find a Burger</a>
+                <a class="nav-item nav-link" href="./register.html">Register</a>
                 <a class="nav-item nav-link" href="./login.html">Login</a>
                 <a class="nav-item nav-link" href="#!">Français</a>
             </div>

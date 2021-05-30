@@ -1,0 +1,656 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+// Required
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+
+// Re-define BS colors
+$orange: #ED5D28;
+$yellow: #FAA21E;
+$green:#A9AE38;
+$blue: #2F4ADE;
+$red:#B32029;
+
+// Define new colors
+$brown:#411F1F;
+$gold:#AB7029;
+$beige:#FFE8C9;
+$saputo:#CF3339;
+
+// Map colors
+$colors: ("orange":#ED5D28, "yellow":#F78C26, "green":#468B40, "beige":$beige, "brown":$brown, "blue": #2F4ADE, "gold":$gold, "saputo":$saputo);
+
+//Map theme-colors
+$theme-colors: ("primary": $orange, "success":$green, "warning":$yellow, "dark":$brown, "light":$beige, "info":$blue);
+
+// customize theme
+$body-bg: white;
+$body-color: $brown;
+$font-family-sans-serif: 'IBM Plex Sans',
+sans-serif;
+$headings-font-family:'IBM Plex Mono',
+monospace;
+$input-font-family: 'IBM Plex Sans',
+sans-serif;
+$font-family-base: $input-font-family;
+
+$body-color: $brown;
+$navbar-brand-font-size: $font-size-base;
+$navbar-light-color:$brown;
+$navbar-light-hover-color:$orange;
+$navbar-light-active-color:$orange;
+$navbar-light-brand-color:$brown;
+$navbar-light-brand-hover-color:$orange;
+$navbar-light-toggler-border-color: transparent;
+$btn-padding-x-lg: $spacer*2;
+$btn-font-weight:bold;
+$navbar-toggler-padding-x:0;
+$link-color:$orange;
+$link-hover-color: darken($link-color, 15%);
+$input-border-color: $brown;
+$input-border-width:2px;
+$input-padding-y: 20px;
+$input-border-radius: 4px;
+$input-color: $brown;
+$input-focus-border-color:$yellow;
+$input-focus-color: $brown;
+$input-placeholder-color:#a89a89;
+$component-active-bg: $orange;
+$input-focus-box-shadow:0 0 0 0.2rem rgba(247, 190, 85, 0.47);
+$custom-control-indicator-checked-bg: $orange;
+$custom-control-indicator-active-bg:$orange;
+$custom-control-indicator-checked-border-color:$orange;
+$label-margin-bottom: 5px;
+$btn-shadow: 0 0.9px 2.2px rgba(0, 0, 0, 0.02),
+0 2.2px 5.3px rgba(0, 0, 0, 0.028),
+0 4.1px 10px rgba(0, 0, 0, 0.035),
+0 7.4px 17.9px rgba(0, 0, 0, 0.042),
+0 13.8px 33.4px rgba(0, 0, 0, 0.05),
+0 33px 80px rgba(0, 0, 0, 0.07);
+
+$modal-fade-transform: translate(0, 50%);
+$modal-show-transform: none;
+$modal-transition: transform .25s ease-out;
+$modal-scale-transform:scale(1.02);
+$modal-inner-padding: 1.5rem;
+$dropdown-link-hover-color:white;
+$dropdown-link-hover-bg:$orange;
+$dropdown-link-active-bg:darken($orange, 5%);
+
+
+// Bootstrap
+@import "../bootstrap/scss/bootstrap.scss";
+
+// Typography
+
+h1 {
+    font-size: 36px;
+    color: $brown;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    color: $brown;
+    font-weight: bold;
+    margin-bottom: $spacer*1.25;
+}
+
+h3 {
+    font-size: 20px;
+    color: $brown;
+}
+
+.navbar-brand,
+.nav-link {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.navbar-logo{
+    width:44px;
+    height:auto;
+    margin-right:$spacer*.5;
+    @include media-breakpoint-down(sm) {
+        width:60px;        
+    }
+}
+
+span.supertitle {
+    display: block;
+    color: $orange;
+    font-size: 24px;
+    margin-bottom: 12px;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+}
+
+.pb-jumbo {
+    padding-bottom: 69px;
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 30px;
+    }
+}
+
+
+select.form-control {
+    padding: 20px 0;
+    height: 44px;
+}
+
+p.price small {
+    display: block;
+    font-size: 14px;
+    color: lighten($brown, 30%);
+    margin-top: 5px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn {
+    box-shadow: $btn-shadow;
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+// Artwork
+.logo-main {
+    width: 150px;
+    height: 100%;
+    margin-bottom: 10px;
+    transition: .25s all ease-in;
+
+    &:hover,
+    &:active {
+        transform: scale(.98);
+    }
+
+    @include media-breakpoint-down(sm) {
+        max-width: 150px;
+    }
+
+    &.logo-sm {
+        width: 115px;
+    }
+}
+
+
+
+.icon-award {
+    height: 54px;
+    margin-bottom: 20px;
+}
+
+.icon-marketing {
+    height: 69px;
+    margin-bottom: 10px;
+}
+
+.img-featurette {
+    @include media-breakpoint-down(md) {
+    max-width: 220px;
+    margin-top:$spacer*2;
+    }
+}
+
+.logo-partner {
+    width:auto;
+    max-height: 50px;
+    @include media-breakpoint-down(md) {
+        margin-bottom:$spacer;
+        max-height: 40px;
+    }
+}
+
+.logo-footer {
+    width: 99px;
+}
+
+.winners-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.winner-item {
+    display: flex;
+    margin-bottom: 20px;
+    width: 45%;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+}
+
+.img-winner {
+    object-fit: cover;
+    width: 120px;
+    height: 80px;
+    border-radius: 12px;
+}
+
+// Sections
+
+section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;;
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    h1.jumbo {
+        font-size: 60px;
+        line-height: 1;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 32px;
+            line-height: 1.1;
+        }
+    }
+
+    h2.jumbo {
+        font-size: 44px;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 24px;
+        }
+    }
+}
+
+section.hero {
+    padding-top: 34px;
+    padding-bottom:0;
+    background-color: white;
+    text-align: center;
+
+    .hero-illustration {
+        width: 100%;
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+            margin-top: $spacer;
+        }
+    }
+}
+
+section.generic {
+    padding-top: 34px;
+    background-color: white;
+}
+
+section.dark {
+    background-color: $brown;
+
+    h2 {
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+section.white {
+    a {
+        text-decoration: none;
+    }
+
+    @mixin tile-award {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        height: 240px;
+        padding: 20px;
+        background-color: $green;
+        margin-bottom: 20px;
+
+        h3 {
+            color: white;
+            font-weight: bold;
+            font-size: 2em;
+        }
+    }
+
+    .tile-green {
+        @include tile-award;
+        background-color: $green;
+    }
+
+    .tile-orange {
+        @include tile-award;
+        background-color: $orange;
+    }
+
+    .tile-yellow {
+        @include tile-award;
+        background-color: $yellow;
+    }
+
+    .tile-saputo {
+        @include tile-award;
+        background-color: $saputo;
+    }
+}
+
+footer {
+    h6 {
+        color: $yellow;
+        margin-bottom: 25px;
+    }
+
+    ul li {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: $orange;
+            text-decoration: none;
+        }
+    }
+
+    color:$beige;
+    font-size: 11px;
+
+    li.list-inline-item {
+        font-size: 11px;
+        margin-bottom: 0;
+    }
+}
+
+// live festival css
+
+.custom-select {
+    &.search-bar {
+        padding-left: 3rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $brown;
+        vertical-align: middle;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        appearance: none;
+        background: #eee url(../img/location-pin.svg) no-repeat left .75rem center/16px 16px;
+    }
+
+    &.filter-btn {
+        padding-left: 3rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $brown;
+        vertical-align: middle;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        appearance: none;
+        background: #eee url(../img/icon-filter.svg) no-repeat left .75rem center/16px 16px;
+    }
+}
+
+section.results {
+    background-color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.the-filter {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    border-bottom: 1px solid #f5f5f5;
+
+    @include media-breakpoint-down(sm) {
+        position: static;
+    }
+}
+
+.logo-results {
+    width: 69px;
+    height: 100%;
+    padding: 5px 5px 5px 0;
+}
+
+.results-grid {
+    padding: 30px 0 0;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+}
+
+.grid-burgers {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+a.grid-burger__item {
+    display: inline-block;
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    position: relative;
+
+    .img-burger {
+        border-radius: 12px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        transition: .25s all ease-out;
+
+        @include media-breakpoint-down(xs) {
+            height: 200px;
+        }
+    }
+
+    .logo-saputo-grid {
+        display: inline-block;
+        position: absolute;
+        top: 16px;
+        left: 24px;
+        width: 50px;
+        z-index: 1;
+    }
+
+    &:hover .img-burger {
+        opacity: .8;
+        transform: translateY(-5px);
+    }
+
+    .resto-name {
+        display: block;
+        color: $orange;
+        font-weight: 700;
+    }
+
+    .burger-name {
+        display: block;
+        color: $brown;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.25;
+    }
+
+    .price,
+    .distance {
+        color: lighten($brown, 30%);
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        width: 25%;
+    }
+
+    @include media-breakpoint-down(md) {
+        width: 33%;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 50%;
+    }
+
+    @include media-breakpoint-down(xs) {
+        width: 100%;
+    }
+
+    &.for-map {
+        width: 100%;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+.img-map {
+    height: 120px;
+    width: 200px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+}
+
+.preview-modal,
+.burger {
+    .modal-content {
+        border-radius: 24px;
+    }
+
+    .modal-photo {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+
+    }
+
+    h2.modal-resto {
+        font-size: 20px;
+        color: $orange;
+        margin-bottom: 7px;
+    }
+
+    h3.modal-burger,
+    h3.modal-price {
+        font-size: 28px;
+        color: $brown;
+        font-weight: bold;
+    }
+
+    .logo-p {
+        height: 32px;
+        margin: auto 3px;
+    }
+
+    .btn {
+        box-shadow: none;
+        border-radius: 12px;
+    }
+
+    .close {
+        width: 32px;
+        height: 32px;
+        top: 12px;
+        right: 12px;
+        z-index: 2000;
+        position: absolute;
+        background-color: white;
+        border-radius: 32px;
+    }
+
+    .logo-charity {
+        width: 140px;
+    }
+}
+
+.footer-graphic {
+    position: relative;
+    display: block;
+    height: 200px;
+    width: 100%;
+    background-image: url(../img/footer-graphic.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 95% 100%;
+    background-color: transparent;
+
+    @include media-breakpoint-down(md) {
+        background-size: contain;
+    }
+
+    @include media-breakpoint-down(sm) {
+        background-size: cover;
+        background-position: 20px bottom;
+    }
+}
+
+
+section.burger {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 100px;
+    }
+}
+
+.img-burger-page {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: $box-shadow;
+}
+
+.donate-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-breakpoint-down(sm) {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 2000;
+        padding: 10px 15px;
+        background-color: white;
+        border-top: solid 2px #f5f5f5;
+    }
+}
+
+.logo-charity-sm {
+    height: 69px;
+
+    @include media-breakpoint-down(sm) {
+        height: 50px;
+
+    }
+}

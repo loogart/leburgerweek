@@ -2992,7 +2992,7 @@ input[type=button].btn-block {
   display: none;
   float: left;
   min-width: 10rem;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
   color: #212529;
@@ -3001,7 +3001,7 @@ input[type=button].btn-block {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
+  border-radius: 1rem;
 }
 
 .dropdown-menu-left {
@@ -10027,11 +10027,31 @@ label {
 }
 @media (max-width: 767.98px) {
   .logo-main {
-    max-width: 150px;
+    max-width: 120px;
   }
 }
 .logo-main.logo-sm {
   width: 115px;
+}
+
+.artwork-bottom-page {
+  position: absolute;
+  bottom: -2px;
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  object-position: center bottom;
+}
+.artwork-bottom-page.left {
+  left: 20px;
+}
+.artwork-bottom-page.right {
+  right: 20px;
+}
+@media (max-width: 991.98px) {
+  .artwork-bottom-page {
+    display: none;
+  }
 }
 
 .icon-award {
@@ -10142,6 +10162,11 @@ section.hero .hero-illustration {
 section.generic {
   padding-top: 34px;
   background-color: white;
+}
+
+section.dashboard {
+  padding-top: 34px;
+  background-color: #F6F6F7;
 }
 
 section.dark {

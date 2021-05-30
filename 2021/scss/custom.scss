@@ -79,6 +79,9 @@ $modal-inner-padding: 1.5rem;
 $dropdown-link-hover-color:white;
 $dropdown-link-hover-bg:$orange;
 $dropdown-link-active-bg:darken($orange, 5%);
+$dropdown-padding-y: $spacer;
+$dropdown-border-radius:$spacer;
+$dropdown-box-shadow:0 1rem 1rem rgba(65,31,31, .16);
 
 
 // Bootstrap
@@ -178,11 +181,29 @@ label {
     }
 
     @include media-breakpoint-down(sm) {
-        max-width: 150px;
+        max-width: 120px;
     }
 
     &.logo-sm {
         width: 115px;
+    }
+}
+
+.artwork-bottom-page{
+    position: absolute;
+    bottom:-2px;
+    width:240px;
+    height:240px;
+    object-fit: contain;
+    object-position: center bottom;
+    &.left{
+        left:20px;
+    }
+    &.right{
+        right:20px;
+    }
+    @include media-breakpoint-down(md) {
+        display: none;
     }
 }
 
@@ -249,7 +270,7 @@ section {
     padding-bottom: 90px;
     position: relative;
     overflow: hidden;
-    background-color: white;;
+    background-color: white;
 
     @include media-breakpoint-down(sm) {
         padding-top: 50px;
@@ -294,6 +315,13 @@ section.generic {
     padding-top: 34px;
     background-color: white;
 }
+
+section.dashboard {
+    padding-top: 34px;
+    background-color: #F6F6F7;
+}
+
+
 
 section.dark {
     background-color: $brown;

@@ -22,7 +22,7 @@
     <script src="https://kit.fontawesome.com/2d83ef6eb3.js" crossorigin="anonymous"></script>
 
     <!-- Primary Meta Tags -->
-    <title>Thank you | Le Burger Week 2021</title>
+    <title>Your restaurant account | Le Burger Week 2021</title>
     <meta name="title" content="Le Burger Week 2021">
     <meta name="description"
         content="Le Burger Week 2021 allows participants to discover new venues, while providing the opportunity to taste burger creations they never would have originally.">
@@ -67,8 +67,18 @@
                             <a class="dropdown-item" href="./winners.html">2019</a>
                         </div>
                     </li>
-                    <a class="nav-item nav-link" href="./register.html">Sign up</a>
-                    <a class="nav-item nav-link" href="./login.html">Login</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user-circle mr-2"></i>Your account
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./dashboard-admin.html"><i class="fad fa-th mr-2"></i>Admin dashboard</a>
+                            <a class="dropdown-item" href="./dashboard-resto.html"><i class="fad fa-store mr-2"></i>Your restaurant</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./login.html"><i class="far fa-sign-out mr-2"></i>Log out</a>
+                        </div>
+                    </li>
                     <a class="nav-item nav-link" href="#!">Français</a>
                 </div>
             </div>
@@ -77,28 +87,17 @@
 
     <main>
         <!-- hero section -->
-        <section class="generic">
+        <section class="dashboard">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7 col-lg-5 mx-auto">
-                        <div class="text-center">
-                            </nav><a href="./"><img src="./img/logos/logo-light-full-en.svg" alt="homepage of Le Burger Week"
-                                    class="logo-main mb-4"></a></nav>
 
-                            <h1><span class="supertitle">Oh yeaaah!</span>Thank you for signing up.</h1>
-                            <p class="mt-4">We promise you lots of tasty and fun days ahead. A confirmation with your order was emailed to you.</p>
-                            <p>You can start updating your information and add your special Burger recipe for the festival.</p>
-                            <!-- <p><a href="mailto:team@peoplemovertech.com">Questions? Contact us.</a></p> -->
-                            <div class="my-4">
-                                <a href="./dashboard-resto.html" class="btn btn-primary"><i class="fas fa-long-arrow-right mr-2"></i>Continue to your account</a>
-                            </div>
-                        </div>
-
-                    </div>
+                
+                <h1>Your restaurant information</h1>
+                <p>You can skip this step for now and come back later to add in your information and burger recipe. 
+                    Please note that your information is updated automatically (without needing to save).</p>
                 </div>
             </div>
-            <!-- background-artwork -->
-            <img src="./img/artwork/artwork-thank-you.svg" alt="" class="artwork-bottom-page right">
+            <img src="./img/artwork/artwork-dashboard.svg" alt="">
         </section>
 
     </main>

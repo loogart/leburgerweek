@@ -252,13 +252,18 @@ label {
     width: 100%;
 }
 
-.winner-item {
+a.winner-item {
     display: flex;
     margin-bottom: 20px;
     width: 45%;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
 
     @include media-breakpoint-down(sm) {
         width: 100%;
+    }
+    &:hover, &:focus{
+        opacity: .8;
     }
 }
 

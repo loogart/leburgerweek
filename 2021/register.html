@@ -76,9 +76,7 @@
     </nav>
 
     <main>
-        <!-- hero section -->
         <section class="generic">
-
             <div class="container">
                 <div class="row">
                     <div class="col-md-7 col-lg-5 mx-auto">
@@ -87,10 +85,8 @@
                                     alt="homepage of Le Burger Week" class="logo-main mb-4"></a></nav>
 
                             <h1><span class="supertitle">September 1-7</span>Sign up</h1>
-                            <p class="mt-4">Ready to register today? Fill out the rest of your information and payment
-                                method. We guarantee an amazing experience!</p>
-                            <p class="small"><a href="mailto:team@peoplemovertech.com">Email us directly</a> for
-                                questions.</p>
+                            <p class="mt-4">Ready to register today? Fill out the required information and set up your payment. We guarantee an amazing experience!</p>
+                            <p class="small"><strong>Franchises: </strong>If you are a restaurant chain with 5 of more franchises, please email <a href="mailto:Stephanie@peoplemovertech.com">stephanie@peoplemovertech.com</a> for a simplified registration.</p>
                         </div>
                         <form class="needs-validation mt-4" novalidate>
                             <div class="form-group">
@@ -151,6 +147,14 @@
                                 </div>
                             </div>
 
+                            <div class="box-outline text-center">
+                                <span class="d-block">Registration fee</span>
+                                <span class="h1 d-block font-weight-bold">$200</span>
+                                <p class="disclaimer">Taxes not included.
+                                    Deadline to sign up if you're participating in partnership with one of our partners
+                                    : July 1<sup>st</sup> 2021</p>
+                            </div>
+
                             <!-- <div class="form-row d-flex justify-content-between">
                                 <div class="form-group col-md-7">
                                     <label for="selectRegion">Your region</label>
@@ -192,7 +196,9 @@
                             </div>
                             <div class="my-4">
                                 <!-- <button type="submit" class="btn btn-warning btn-lg btn-block"><i                          class="fas fa-lock mr-2"></i> Pay and register</button> -->
-                                <a href="./thankyou.html" class="btn btn-warning btn-lg btn-block"><i class="fas fa-lock mr-2"></i> Pay and register</a>
+                                <a href="#!" class="btn btn-primary btn-lg btn-block" data-toggle="modal"
+                                    data-target="#modalStripe"><i class="fas fa-arrow-right mr-2"></i> Continue to
+                                    payment</a>
                             </div>
                         </form>
                     </div>
@@ -203,6 +209,93 @@
             <img src="./img/artwork/artwork-signup-1.svg" alt="" class="artwork-bottom-page left">
             <img src="./img/artwork/artwork-signup-2.svg" alt="" class="artwork-bottom-page right">
         </section>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalStripe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title font-weight-bold" id="exampleModalLabel">💰&nbsp;Payment information</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="username">Full name (on the card)</label>
+                                    <input type="text" name="username" placeholder="Sir Burgerlot" required
+                                        class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cardNumber">Card number</label>
+                                    <div class="input-group">
+                                        <input type="text" name="cardNumber" placeholder="Your card number"
+                                            class="form-control" required>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label><span class="hidden-xs">Expiration</span></label>
+                                            <div class="input-group">
+                                                <input type="number" placeholder="MM" name="" class="form-control"
+                                                    required>
+                                                <input type="number" placeholder="YY" name="" class="form-control"
+                                                    required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label>CVV</label>
+                                            <input type="text" required class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="border-dark">
+                                <div class="py-3">
+                                    <!-- <label for="discountCode">Discount code</label> -->
+                                    <div class="d-flex">
+                                        <input type="text" class="form-control" placeholder="Discount code"
+                                            name="discountCode">
+                                        <button type="button" class="btn btn-success ml-3">Apply</button>
+                                    </div>
+                                </div>
+                                <hr class="border-dark">
+                                <div class="subtotal">
+                                    <div class="row">
+                                        <div class="col-6 text-left">Subtotal</div>
+                                        <div class="col-6 text-right">$200.00</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 text-left">Taxes</div>
+                                        <div class="col-6 text-right">$29.95</div>
+                                    </div>
+                                </div>
+                                <hr class="border-dark">
+                                <div class="row">
+                                    <div class="col-6 text-left">Total</div>
+                                    <div class="col-6 text-right"><span class="h4">$229.95</span></div>
+                                </div>
+                                <div class="mt-4">
+                                <a href="./thankyou.html" class="btn btn-warning btn-lg btn-block"><i
+                                        class="fas fa-lock mr-2"></i> Pay and register</a>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+                </div>
+            </div>
+        </div>
+
 
     </main>
 

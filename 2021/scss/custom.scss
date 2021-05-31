@@ -81,7 +81,8 @@ $dropdown-link-hover-bg:$orange;
 $dropdown-link-active-bg:darken($orange, 5%);
 $dropdown-padding-y: $spacer;
 $dropdown-border-radius:$spacer;
-$dropdown-box-shadow:0 1rem 1rem rgba(65,31,31, .16);
+$dropdown-box-shadow:0 1rem 1rem rgba(65, 31, 31, .16);
+$modal-content-border-radius:$spacer*1.5;
 
 
 // Bootstrap
@@ -113,12 +114,13 @@ h3 {
     font-size: 14px;
 }
 
-.navbar-logo{
-    width:44px;
-    height:auto;
-    margin-right:$spacer*.5;
+.navbar-logo {
+    width: 44px;
+    height: auto;
+    margin-right: $spacer*.5;
+
     @include media-breakpoint-down(sm) {
-        width:60px;        
+        width: 60px;
     }
 }
 
@@ -189,19 +191,22 @@ label {
     }
 }
 
-.artwork-bottom-page{
+.artwork-bottom-page {
     position: absolute;
-    bottom:-2px;
-    width:240px;
-    height:240px;
+    bottom: -2px;
+    width: 240px;
+    height: 240px;
     object-fit: contain;
     object-position: center bottom;
-    &.left{
-        left:20px;
+
+    &.left {
+        left: 20px;
     }
-    &.right{
-        right:20px;
+
+    &.right {
+        right: 20px;
     }
+
     @include media-breakpoint-down(md) {
         display: none;
     }
@@ -221,16 +226,17 @@ label {
 
 .img-featurette {
     @include media-breakpoint-down(md) {
-    max-width: 220px;
-    margin-top:$spacer*2;
+        max-width: 220px;
+        margin-top: $spacer*2;
     }
 }
 
 .logo-partner {
-    width:auto;
+    width: auto;
     max-height: 50px;
+
     @include media-breakpoint-down(md) {
-        margin-bottom:$spacer;
+        margin-bottom: $spacer;
         max-height: 40px;
     }
 }
@@ -298,12 +304,13 @@ section {
 
 section.hero {
     padding-top: 34px;
-    padding-bottom:0;
+    padding-bottom: 0;
     background-color: white;
     text-align: center;
 
     .hero-illustration {
         width: 100%;
+
         @include media-breakpoint-down(sm) {
             width: 100%;
             margin-top: $spacer;
@@ -433,6 +440,21 @@ footer {
         appearance: none;
         background: #eee url(../img/icon-filter.svg) no-repeat left .75rem center/16px 16px;
     }
+}
+
+.box-outline {
+    padding: $spacer;
+    border: 2px solid $brown;
+    color: $brown;
+    border-radius: $spacer*.5;
+    padding: $spacer*2;
+    margin: $spacer auto;
+}
+
+.disclaimer {
+    font-size: $font-size-base*.8;
+    margin-bottom: 0;
+    ;
 }
 
 section.results {
@@ -681,4 +703,83 @@ section.burger {
         height: 50px;
 
     }
+}
+
+.dashboard {
+    color: black !important;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .card {
+        border-color: black;
+        ;
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: $font-size-base*1.5;
+        color: black;
+    }
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: $font-size-base*1.25;
+        ;
+        color: black;
+    }
+
+    .form-control {
+        border: 1px solid black;
+        padding: 10px;
+
+        &::placeholder {
+            color: rgba(1, 1, 1, 0.32);
+        }
+    }
+
+    .infoblock {
+        border-top: 1px solid black;
+        padding-top: $spacer;
+        padding-bottom: $spacer;
+    }
+
+    .custom-file-label {
+        border: 1px solid black;
+        color: black;
+
+        &::after {
+            background-color: white;
+        }
+    }
+
+    .custom-file-input:lang(en)~.custom-file-label::after {
+        content: "Browse";
+    }
+
+    .blue-bubble {
+        display: inline-block;
+        position: relative;
+        ;
+        max-width: 300px;
+        height: auto;
+        padding: $spacer;
+        background-color: #11A2F3;
+        color: white;
+        line-height: 1.2;
+        border-radius: $spacer;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 20px;
+            width: 0;
+            border-top: 10px solid #11A2F3;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+        }
+        a{
+            color:white;
+        }
+    }
+
 }

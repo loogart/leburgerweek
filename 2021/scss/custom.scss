@@ -172,7 +172,7 @@ label {
 
 // Artwork
 .logo-main {
-    width: 150px;
+    width: 200px;
     height: 100%;
     margin-bottom: 10px;
     transition: .25s all ease-in;
@@ -183,7 +183,7 @@ label {
     }
 
     @include media-breakpoint-down(sm) {
-        max-width: 120px;
+        max-width: 150px;
     }
 
     &.logo-sm {

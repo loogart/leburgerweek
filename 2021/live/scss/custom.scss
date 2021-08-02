@@ -1,0 +1,529 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+// Required
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+
+// Re-define BS colors
+$orange: #ED5D28;
+$yellow: #FAA21E;
+$green:#A9AE38;
+$blue: #2F4ADE;
+$red:#B32029;
+
+// Define new colors
+$brown:#411F1F;
+$brown2:#592B2B;
+$gold:#AB7029;
+$beige:#FFE8C9;
+$saputo:#CF3339;
+
+// Map colors
+$colors: ("orange":#ED5D28, "yellow":#F78C26, "green":#468B40, "beige":$beige, "brown":$brown, "blue": #2F4ADE, "gold":$gold, "saputo":$saputo);
+
+//Map theme-colors
+$theme-colors: ("primary": $orange, "success":$green, "warning":$yellow, "dark":$brown, "light":$beige, "info":$blue);
+
+// customize theme
+$body-bg: white;
+$body-color: $brown;
+$font-family-sans-serif: 'IBM Plex Sans',
+sans-serif;
+$headings-font-family:'IBM Plex Mono',
+monospace;
+$input-font-family: 'IBM Plex Sans',
+sans-serif;
+$font-family-base: $input-font-family;
+
+$body-color: $brown;
+$navbar-brand-font-size: $font-size-base;
+$navbar-light-color:$brown;
+$navbar-light-hover-color:$orange;
+$navbar-light-active-color:$orange;
+$navbar-light-brand-color:$brown;
+$navbar-light-brand-hover-color:$orange;
+$navbar-light-toggler-border-color: transparent;
+$navbar-nav-link-padding-x: $spacer;
+$btn-padding-x-lg: $spacer*4;
+$btn-border-radius-lg:  12px;
+$btn-font-weight:bold;
+$navbar-toggler-padding-x:0;
+$link-color:$orange;
+$link-hover-color: darken($link-color, 15%);
+$input-border-color: $brown;
+$input-border-width:2px;
+$input-padding-y: 20px;
+$input-border-radius: 4px;
+$input-color: $brown;
+$input-focus-border-color:$yellow;
+$input-focus-color: $brown;
+$input-placeholder-color:#a89a89;
+$component-active-bg: $orange;
+$input-focus-box-shadow:0 0 0 0.2rem rgba(247, 190, 85, 0.47);
+$custom-control-indicator-checked-bg: $orange;
+$custom-control-indicator-active-bg:$orange;
+$custom-control-indicator-checked-border-color:$orange;
+$label-margin-bottom: 5px;
+$btn-shadow: 0 0.9px 2.2px rgba(0, 0, 0, 0.02),
+0 2.2px 5.3px rgba(0, 0, 0, 0.028),
+0 4.1px 10px rgba(0, 0, 0, 0.035),
+0 7.4px 17.9px rgba(0, 0, 0, 0.042),
+0 13.8px 33.4px rgba(0, 0, 0, 0.05),
+0 33px 80px rgba(0, 0, 0, 0.07);
+
+$modal-fade-transform: translate(0, 50%);
+$modal-show-transform: none;
+$modal-transition: transform .25s ease-out;
+$modal-scale-transform:scale(1.02);
+$modal-inner-padding: 1.5rem;
+$dropdown-link-hover-color:white;
+$dropdown-link-hover-bg:$orange;
+$dropdown-link-active-bg:darken($orange, 5%);
+$dropdown-padding-y: $spacer;
+$dropdown-border-radius:$spacer;
+$dropdown-box-shadow:0 1rem 1rem rgba(65, 31, 31, .16);
+$modal-content-border-radius:$spacer*1.5;
+
+
+// Bootstrap
+@import "../bootstrap/scss/bootstrap.scss";
+
+// Typography
+
+h1 {
+    font-size: 36px;
+    color: $brown;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    color: $brown;
+    font-weight: bold;
+    margin-bottom: $spacer*1.25;
+}
+
+h3 {
+    font-size: 20px;
+    color: $brown;
+}
+span.supertitle {
+    display: block;
+    color: #ED5D28;
+    font-size: 24px;
+    margin-bottom: 12px;
+    }
+.navbar-brand,
+.nav-link {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.navbar-logo {
+    width: 44px;
+    height: auto;
+    margin-right: $spacer*.5;
+
+    @include media-breakpoint-down(sm) {
+        width: 60px;
+    }
+}
+
+
+.btn{
+    box-shadow: 4px 4px 0 $brown;
+    transform-origin: center;
+    &:active{
+        box-shadow:none;
+    }
+}
+
+// Artwork
+.logo-main {
+    width: 160px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: .25s all ease-in;
+
+    &:hover,
+    &:active {
+        transform: scale(.98);
+    }
+
+    @include media-breakpoint-down(sm) {
+        max-width: 120px;
+    }
+
+    &.logo-sm {
+        width: 115px;
+    }
+}
+
+// Sections
+section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    h1.jumbo {
+        font-size: 60px;
+        line-height: 1;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 32px;
+            line-height: 1.1;
+        }
+    }
+
+    h2.jumbo {
+        font-size: 44px;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 24px;
+        }
+    }
+}
+
+
+// Footer
+footer {
+    background-color: $beige;
+    color:$brown;
+    border-top:3px dotted $brown;
+    h6 {
+        color: $orange;
+        margin-bottom: 25px;
+        font-family: "IBM Plex Sans";
+        font-weight: bold;
+    }
+
+    ul li {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    a {
+        color: $brown;
+        text-decoration: none;
+
+        &:hover {
+            color: $orange;
+            text-decoration: none;
+        }
+    }
+
+    color:$beige;
+    font-size: 11px;
+
+    li.list-inline-item {
+        font-size: 11px;
+        margin-bottom: 0;
+    }
+}
+.footer-artwork{
+    display: block;
+    width:100%;
+    height:420px;
+    background-image: url('../img/artwork/footer-artwork.png');
+    background-size: contain;
+    background-position: 100%;;
+    @include media-breakpoint-down(sm) {
+       background-repeat: no-repeat;
+       background-size: cover;
+       height:300px;
+       background-position: 50%;;
+    }
+}
+
+.logo-footer{
+    width:120px;
+    @include media-breakpoint-down(sm) {
+        width:80px;
+    }
+}
+
+// live festival css
+
+// results grid
+.grid-burgers {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+a.grid-burger__item {
+    display: inline-block;
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    position: relative;
+
+    .img-burger {
+        border-radius: 12px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        transition: .25s all ease-out;
+
+        @include media-breakpoint-down(xs) {
+            height: 200px;
+        }
+    }
+
+    .logo-saputo-grid {
+        display: inline-block;
+        position: absolute;
+        top: 16px;
+        left: 24px;
+        width: 50px;
+        z-index: 1;
+    }
+
+    &:hover .img-burger {
+        opacity: .8;
+        transform: translateY(-5px);
+    }
+
+    .resto-name {
+        display: block;
+        color: $orange;
+        font-weight: 700;
+    }
+
+    .burger-name {
+        display: block;
+        color: $brown;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.25;
+    }
+
+    .price,
+    .distance {
+        color: lighten($brown, 30%);
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        width: 25%;
+    }
+
+    @include media-breakpoint-down(md) {
+        width: 33%;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 50%;
+    }
+
+    @include media-breakpoint-down(xs) {
+        width: 100%;
+    }
+
+    &.for-map {
+        width: 100%;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+// map
+#map {
+    width: 100%;
+    height: 100vh;
+}
+
+.img-map {
+    height: 120px;
+    width: 200px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+}
+
+// modal
+.preview-modal,
+.burger {
+    .modal-content {
+        border-radius: 24px;
+    }
+
+    .modal-photo {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+
+    }
+
+    h2.modal-resto {
+        font-size: 20px;
+        color: $orange;
+        margin-bottom: 7px;
+    }
+
+    h3.modal-burger,
+    h3.modal-price {
+        font-size: 28px;
+        color: $brown;
+        font-weight: bold;
+    }
+
+    .logo-p {
+        height: 32px;
+        margin: auto 3px;
+    }
+
+    .btn {
+        box-shadow: none;
+        border-radius: 12px;
+    }
+
+    .close {
+        width: 32px;
+        height: 32px;
+        top: 12px;
+        right: 12px;
+        z-index: 2000;
+        position: absolute;
+        background-color: white;
+        border-radius: 32px;
+    }
+
+    .logo-charity {
+        width: 140px;
+    }
+}
+
+// Winners
+.winners-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+a.winner-item {
+    display: flex;
+    margin-bottom: 20px;
+    width: 45%;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+
+    &:hover,
+    &:focus {
+        opacity: .8;
+    }
+}
+
+.img-winner {
+    object-fit: cover;
+    width: 120px;
+    height: 80px;
+    border-radius: 12px;
+}
+
+// dashboard
+section.dashboard {
+    padding-top: 34px;
+    background-color: #F6F6F7;
+}
+
+.dashboard {
+    color: black !important;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .card {
+        border-color: black;
+        ;
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: $font-size-base*1.5;
+        color: black;
+    }
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: $font-size-base*1.25;
+        ;
+        color: black;
+    }
+
+    .form-control {
+        border: 1px solid black;
+        padding: 10px;
+
+        &::placeholder {
+            color: rgba(1, 1, 1, 0.32);
+        }
+    }
+
+    .infoblock {
+        border-top: 1px solid black;
+        padding-top: $spacer;
+        padding-bottom: $spacer;
+    }
+
+    .custom-file-label {
+        border: 1px solid black;
+        color: black;
+
+        &::after {
+            background-color: white;
+        }
+    }
+
+    .custom-file-input:lang(en)~.custom-file-label::after {
+        content: "Browse";
+    }
+
+    .blue-bubble {
+        display: inline-block;
+        position: relative;
+        ;
+        max-width: 300px;
+        height: auto;
+        padding: $spacer;
+        background-color: #11A2F3;
+        color: white;
+        line-height: 1.2;
+        border-radius: $spacer;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 20px;
+            width: 0;
+            border-top: 10px solid #11A2F3;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+        }
+
+        a {
+            color: white;
+        }
+    }
+
+}

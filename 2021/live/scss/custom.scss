@@ -20,12 +20,13 @@ $brown2:#592B2B;
 $gold:#AB7029;
 $beige:#FFE8C9;
 $saputo:#CF3339;
+$light:#FFF6EA;
 
 // Map colors
 $colors: ("orange":#ED5D28, "yellow":#F78C26, "green":#468B40, "beige":$beige, "brown":$brown, "blue": #2F4ADE, "gold":$gold, "saputo":$saputo);
 
 //Map theme-colors
-$theme-colors: ("primary": $orange, "success":$green, "warning":$yellow, "dark":$brown, "light":$beige, "info":$blue);
+$theme-colors: ("primary": $orange, "success":$green, "warning":$yellow, "dark":$brown, "light":$light, "info":$blue);
 
 // customize theme
 $body-bg: white;
@@ -67,13 +68,6 @@ $custom-control-indicator-checked-bg: $orange;
 $custom-control-indicator-active-bg:$orange;
 $custom-control-indicator-checked-border-color:$orange;
 $label-margin-bottom: 5px;
-$btn-shadow: 0 0.9px 2.2px rgba(0, 0, 0, 0.02),
-0 2.2px 5.3px rgba(0, 0, 0, 0.028),
-0 4.1px 10px rgba(0, 0, 0, 0.035),
-0 7.4px 17.9px rgba(0, 0, 0, 0.042),
-0 13.8px 33.4px rgba(0, 0, 0, 0.05),
-0 33px 80px rgba(0, 0, 0, 0.07);
-
 $modal-fade-transform: translate(0, 50%);
 $modal-show-transform: none;
 $modal-transition: transform .25s ease-out;
@@ -91,31 +85,51 @@ $modal-content-border-radius:$spacer*1.5;
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
 
+$smooth-shadow: 0 0.8px 3.6px rgba(0, 0, 0, 0.035),
+0 2.1px 10px rgba(0, 0, 0, 0.05),
+0 5.1px 24.1px rgba(0, 0, 0, 0.065),
+0 17px 80px rgba(0, 0, 0, 0.1);
+
+
 // Typography
 
 h1 {
-    font-size: 36px;
+    font-size: 55px;
     color: $brown;
     font-weight: bold;
+    line-height: 1;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 32px;
+        line-height: 1.1;
+    }
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 36px;
     color: $brown;
     font-weight: bold;
     margin-bottom: $spacer*1.25;
+    @include media-breakpoint-down(sm) {
+        font-size: 24px;
+    }
 }
 
 h3 {
     font-size: 20px;
     color: $brown;
 }
+
 span.supertitle {
     display: block;
     color: #ED5D28;
     font-size: 24px;
     margin-bottom: 12px;
+    @include media-breakpoint-down(sm) {
+        font-size: 16px;
     }
+}
+
 .navbar-brand,
 .nav-link {
     font-weight: bold;
@@ -146,11 +160,11 @@ span.supertitle {
     width: 160px;
     height: auto;
     margin-bottom: 10px;
-    transition: .25s all ease-in;
+    transition: .15s all ease-in;
 
     &:hover,
     &:active {
-        transform: scale(.98);
+        transform: scale(.96) rotate(1deg);
     }
 
     @include media-breakpoint-down(sm) {
@@ -164,8 +178,8 @@ span.supertitle {
 
 // Sections
 section {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     position: relative;
     overflow: hidden;
     background-color: white;
@@ -174,30 +188,83 @@ section {
         padding-top: 30px;
         padding-bottom: 30px;
     }
+}
 
-    h1.jumbo {
-        font-size: 60px;
-        line-height: 1;
+.dotted-box{
+    display: block;
+    position: relative;
+    width:100%;
+    padding:$spacer*2;
+    border-radius: 24px;
+    border:3px dotted $brown;
+    box-shadow:$smooth-shadow;
+  
 
+
+}
+
+a.burger-leader{
+    display: inline-block;
+    width:15%;
+    color:$brown;
+    text-decoration: none;
+    margin-bottom: $spacer*2;    
+    img{
+        border-radius: 16px;
+        margin-bottom: $spacer/2;
+        transition: all .15s ease-in-out;
+        object-fit: cover;
+        height:140px;
+        width:100%;
+        &:hover{
+            transform:rotate(2deg);
+            opacity: .9;
+        }
         @include media-breakpoint-down(sm) {
-            font-size: 32px;
-            line-height: 1.1;
+            width:69%;
         }
     }
-
-    h2.jumbo {
-        font-size: 44px;
-
-        @include media-breakpoint-down(sm) {
-            font-size: 24px;
-        }
+    @include media-breakpoint-down(lg) {
+        width:30%;
+    }
+    @include media-breakpoint-down(md) {
+        width:40%;
+    }
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+        width:100%;
     }
 }
 
+.feature-video{
+    border-radius: $spacer;
+    box-shadow: $smooth-shadow;
+    position: relative;
+    z-index:1;
+    outline-offset: $spacer*2;
+    outline:3px dotted $orange;
+    margin-top: $spacer*3;
+    margin-bottom: $spacer*3;
+}
+
+a.logo-partner{
+    width:25%;
+    img{
+    object-fit: contain;
+    width:100%;
+    height:40px;
+    
+}
+@include media-breakpoint-down(sm) {
+    width:60%;
+    margin-bottom: $spacer;
+}
+   
+}
 
 // Footer
 footer {
-    background-color: $beige;
+    background-color: $light;
     color:$brown;
     border-top:3px dotted $brown;
     h6 {
@@ -230,18 +297,44 @@ footer {
         margin-bottom: 0;
     }
 }
+
+.subfooter{
+    display: block;
+    position: relative;
+    width:100%;
+    padding-bottom: 20px;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width:100%;
+        height:3px;
+        background-color: $yellow;
+        bottom:96px;
+        transform:rotate(-1deg);
+    }
+    .floor{
+        display: block;
+        position: absolute;
+        bottom:0;
+        height:150px;
+        width:100%;
+        background-color: $brown2;
+    }
+}
+
 .footer-artwork{
     display: block;
+    position: relative;
     width:100%;
-    height:420px;
-    background-image: url('../img/artwork/footer-artwork.png');
-    background-size: contain;
-    background-position: 100%;;
+    max-width:1200px;
+    margin: auto;
+    z-index:1;
+    margin-bottom: 20px;
     @include media-breakpoint-down(sm) {
-       background-repeat: no-repeat;
-       background-size: cover;
-       height:300px;
-       background-position: 50%;;
+        object-fit: cover;
+        object-position: 69%;
+        height:220px;
     }
 }
 

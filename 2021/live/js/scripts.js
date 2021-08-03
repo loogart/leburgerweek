@@ -1,8 +1,13 @@
+// Animate onto screen
 AOS.init();
 
-//Select price
-$('select.region').on('change', function () {
-    $(".price").html(this.value);
+// scroll to add navbar bottom border
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 69) {
+       $('.navbar-light').addClass('navbar-border-bottom');
+    } else {
+       $('.navbar-light').removeClass('navbar-border-bottom');
+    }
 });
 
 // validation
@@ -25,27 +30,216 @@ $('select.region').on('change', function () {
     }, false);
 })();
 
+// flex select
+$("select.flexselect").flexselect();
+
 //google maps
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 17,
         center: new google.maps.LatLng(45.5035, -73.5685),
         //map customization styles
-        styles: [{
-            "featureType": "administrative.country",
-            "elementType": "geometry",
-            "stylers": [{
-                "visibility": "simplified"
-                    }, {
-                "hue": "#ff0000"
-                    }]
-                }]
+        styles: [
+    {
+        "featureType": "all",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "saturation": 36
+            },
+            {
+                "color": "#333333"
+            },
+            {
+                "lightness": 40
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 17
+            },
+            {
+                "weight": 1.2
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5eedd"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5eedd"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#D3C8B8"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 29
+            },
+            {
+                "weight": 0.2
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 18
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            },
+            {
+                "lightness": 19
+            }
+        ]
+    },
+    {
+        "featureType": "transit.station.rail",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.station.rail",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "hue": "#ff7800"
+            },
+            {
+                "saturation": "-10"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#e2d2b9"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    }
+]
     });
-    // custom Le Burger Week icon for Maps
-    //    var image = './img/poutine-marker.svg';
 
     var image = {
-        url: "./img/burger-marker.svg", // url
+        url: "../img/logo/map-marker.svg", // url
         scaledSize: new google.maps.Size(69, 69), // scaled size
         origin: new google.maps.Point(0, 0), // origin
         anchor: new google.maps.Point(0, 0) // anchor
@@ -76,12 +270,12 @@ function initMap() {
         '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<a href="./burger.html" class="grid-burger__item for-map">' +
-        '<img src="./img/photo-burger1.jpg" class="img-map" alt="...">' +
+        '<a href="./restaurant.html" target="_blank" class="grid-item for-map">' +
+        '<img src="https://instagram.fymq2-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.169.1349.1349a/s640x640/169088158_473348593863884_7004601539434682593_n.jpg?tp=1&_nc_ht=instagram.fymq2-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=HWMcoXHZQggAX9IZg_G&edm=ABfd0MgAAAAA&ccb=7-4&oh=b4890ce53c72d596c1f0a6ac3aa9b41c&oe=60970274&_nc_sid=7bff83" class="img-map" alt="...">' +
         '<span class="resto-name">Restaurant Name</span>' +
-        '<span class="burger-name">Poutine Name</span>' +
+        '<span class="item-name">Item Name</span>' +
         '<div class="d-flex justify-content-between">' +
-        '<span class="price">$18</span>' +
+        '<span class="price">$14</span>' +
         '<span class="distance">1.2km</span>' +
         '</div>' +
         '</a>' +
@@ -111,12 +305,12 @@ function initMap() {
         '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<a href="./burger.html" class="grid-burger__item for-map">' +
-        '<img src="./img/photo-burger2.jpg" class="img-map" alt="...">' +
+        '<a href="./restaurant.html" target="_blank" class="grid-item for-map">' +
+        '<img src="https://instagram.fymq2-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.169.1349.1349a/s640x640/169088158_473348593863884_7004601539434682593_n.jpg?tp=1&_nc_ht=instagram.fymq2-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=HWMcoXHZQggAX9IZg_G&edm=ABfd0MgAAAAA&ccb=7-4&oh=b4890ce53c72d596c1f0a6ac3aa9b41c&oe=60970274&_nc_sid=7bff83" class="img-map" alt="...">' +
         '<span class="resto-name">Restaurant Name</span>' +
-        '<span class="burger-name">Poutine Name</span>' +
+        '<span class="item-name">Item Name</span>' +
         '<div class="d-flex justify-content-between">' +
-        '<span class="price">$18</span>' +
+        '<span class="price">$15</span>' +
         '<span class="distance">1.2km</span>' +
         '</div>' +
         '</a>' +
@@ -146,10 +340,10 @@ function initMap() {
         '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<a href="./burger.html" class="grid-burger__item for-map">' +
-        '<img src="./img/photo-burger3.jpg" class="img-map" alt="...">' +
+        '<a href="./restaurant.html" target="_blank" class="grid-item for-map">' +
+        '<img src="https://instagram.fymq2-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.169.1349.1349a/s640x640/169088158_473348593863884_7004601539434682593_n.jpg?tp=1&_nc_ht=instagram.fymq2-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=HWMcoXHZQggAX9IZg_G&edm=ABfd0MgAAAAA&ccb=7-4&oh=b4890ce53c72d596c1f0a6ac3aa9b41c&oe=60970274&_nc_sid=7bff83" class="img-map" alt="...">' +
         '<span class="resto-name">Restaurant Name</span>' +
-        '<span class="burger-name">Poutine Name</span>' +
+        '<span class="item-name">Item Name</span>' +
         '<div class="d-flex justify-content-between">' +
         '<span class="price">$18</span>' +
         '<span class="distance">1.2km</span>' +
@@ -181,10 +375,10 @@ function initMap() {
         '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<a href="./burger.html" class="grid-burger__item for-map">' +
-        '<img src="./img/photo-burger4.jpg" class="img-map" alt="...">' +
+        '<a href="./restaurant.html" target="_blank" class="grid-item for-map">' +
+        '<img src="https://instagram.fymq2-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.169.1349.1349a/s640x640/169088158_473348593863884_7004601539434682593_n.jpg?tp=1&_nc_ht=instagram.fymq2-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=HWMcoXHZQggAX9IZg_G&edm=ABfd0MgAAAAA&ccb=7-4&oh=b4890ce53c72d596c1f0a6ac3aa9b41c&oe=60970274&_nc_sid=7bff83" class="img-map" alt="...">' +
         '<span class="resto-name">Restaurant Name</span>' +
-        '<span class="burger-name">Poutine Name</span>' +
+        '<span class="item-name">Item Name</span>' +
         '<div class="d-flex justify-content-between">' +
         '<span class="price">$18</span>' +
         '<span class="distance">1.2km</span>' +
@@ -213,13 +407,74 @@ $(function () {
 });
 
 // modal data mirror for prottotype
-$(".grid-burger__item").click(function () {
+$(".grid-item").click(function () {
     var restoName = $(this).find(".resto-name").html();
-    var burgerName = $(this).find(".burger-name").html();
-    var burgerPrice = $(this).find(".price").html();
-    var burgerImage = $(this).find("img.img-burger").attr("src");
+    var itemName = $(this).find(".item-name").html();
+    var itemPrice = $(this).find(".price").html();
+    var itemImage = $(this).find("img.img-item").attr("src");
     $(".modal-resto").html(restoName);
-    $(".modal-burger").html(burgerName);
-    $(".modal-price").html(burgerPrice);
-    $('.modal-photo').attr('src', burgerImage);
+    $(".modal-burger").html(itemName);
+    $(".modal-price").html(itemPrice);
+    $('.modal-photo').attr('src', itemImage);
 });
+
+// lightbox plugin
+lightGallery(document.getElementById('lightgallery'));
+
+// Vote 2 step
+$(function () {
+    $(".btn-rate").click(function () {
+        $('#modalVote1').modal('hide');
+    });
+});
+
+// toggle vote button look
+$('#voteNow').click(function () {
+    if ($(this).hasClass("btn-outline-danger")) {
+        $('#modalUnvoted').modal('show');
+        $(this).removeClass('btn-outline-danger').addClass('btn-danger').text("Rate  this poutine");
+    } else {
+        $('#modalVote1').modal('show');
+        $(this).removeClass('btn-danger').addClass('btn-outline-danger').text("Remove rating");
+    }
+});
+
+// toggle fave button
+$('.btn-fave').click(function () {
+    if ($(this).hasClass("text-danger")) {
+        $(this).removeClass('text-danger').addClass('text-light');
+        ($(this).children()).removeClass('fas').addClass('fal');
+        $('#elementRemoved').toast('show');
+        
+    } else {
+        $(this).removeClass('text-light').addClass('text-danger');
+        ($(this).children()).removeClass('fal').addClass('fas');
+        $('#elementSaved').toast('show');
+    }
+});
+
+// toggle fave button on account page
+$('.btn-fave-account').click(function () {
+        $(this).removeClass('text-danger').addClass('text-light');
+        ($(this).children()).removeClass('fas').addClass('fal');
+        $('#elementRemoved').toast('show');
+        $(this).parent().hide();
+        $(this).hide();
+});
+
+// toggle fave button on resto page
+$('.btn-fave-page').click(function () {
+    if ($(this).hasClass("btn-outline-danger")) {
+        $(this).removeClass('btn-outline-danger').addClass('btn-outline-dark').text("❤️ Save for later");
+        $('#elementRemoved').toast('show');
+        
+    } else {
+        $(this).removeClass('btn-outline-dark').addClass('btn-outline-danger').text("❌  Remove from Saved");
+        $('#elementSaved').toast('show');
+    }
+});
+
+// tooltip above save button on grid
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

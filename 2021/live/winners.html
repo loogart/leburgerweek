@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="./img/favicon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Le Burger Week">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/custom.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d83ef6eb3.js" crossorigin="anonymous"></script>
+
+    <!-- Primary Meta Tags -->
+    <title>Winners | Le Burger Week 2021</title>
+    <meta name="title" content="Le Burger Week 2021">
+    <meta name="description"
+        content="Le Burger Week 2021 allows participants to discover new venues, while providing the opportunity to taste burger creations they never would have originally.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loogart.github.io/leburgerweek/2021">
+    <meta property="og:title" content="Le Burger Week 2021">
+    <meta property="og:description"
+        content="Le Burger Week 2021 allows participants to discover new venues, while providing the opportunity to taste burger creations they never would have originally.">
+    <meta property="og:image" content="https://loogart.github.io/leburgerweek/2021/img/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://loogart.github.io/leburgerweek/2021">
+    <meta property="twitter:title" content="Le Burger Week 2021">
+    <meta property="twitter:description"
+        content="Le Burger Week 2021 allows participants to discover new venues, while providing the opportunity to taste burger creations they never would have originally.">
+    <meta property="twitter:image" content="https://loogart.github.io/leburgerweek/2021/img/og-image.jpg">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color:white">
+        <div class="container">
+            <a class="navbar-brand" href="./"><img src="./img/logos/logo-lbw-en.svg" class="navbar-logo" alt=""
+                    class="mr-2">Le Burger Week <span class="sr-only">(current)</span></a>
+            <button class="navbar-toggler p-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="far fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="./results.html">🍔 Find a
+                        burger<span class="sr-only">(current)</span></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            🏆 Winners
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./winners.html">2020</a>
+                            <a class="dropdown-item" href="./winners.html">2019</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            😊 Account
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./account.html">❤️ Saved</a>
+                            <a class="dropdown-item" href="./dashboard-resto.html">🧑‍🍳 Resto dashboard</a>
+                            <a class="dropdown-item" href="./dashboard-admin.html">⚙️ Admin dashboard</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./login.html">Logout</a>
+                        </div>
+                    </li>
+                    <a class="nav-item nav-link" href="#!">Français</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="bg-brown py-5">
+            <div class="container-fluid text-center text-light">
+                <div class="row justify-content-center align-items-end">
+                    <div class="col-md-2 col-lg-2">
+                        <img src="./img/artwork/chef.png" class="img-fluid d-none d-md-block" alt="">
+                    </div>
+                    <div class="col-md-7 col-lg-6">
+                        <a href="./"><img src="./img/logos/logo-dark-full-en.svg" class="logo-main" alt=""></a>
+                        <h1 class="jumbo text-light">🏆&nbsp;2020 Winners<span
+                                class="mt-3 lead d-block text-warning">Official
+                                Le Burger Week Winners</span></h1>
+                        <img src="./img/artwork/popup-filters.png" class="img-fluid" alt="">
+                    </div> 
+                    <div class="col-md-2 col-lg-2">
+                        <img src="./img/artwork/bakun-cta.png" class="img-fluid d-none d-md-block" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <!-- navigation -->
+                    <div class="col-md-3 d-none d-md-block">
+                        <nav class="">
+                            <h4 class="font-weight-bold text-dark mb-3">Awards</h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#category1" class="text-dark">
+                                                <p class="font-weight-bold my-2">🇨🇦 Top 5 in Canada</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#category2" class="text-dark">
+                                                <p class="font-weight-bold my-2">🌆 City faves</p>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2 pl-3"><a href="#city1" class="text-dark">Montreal</a></li>
+                                        <li class="mb-2 pl-3"><a href="#city2" class="text-dark">Winnipeg</a></li>
+                                        <li class="mb-2 pl-3"><a href="#city3" class="text-dark">Quebec</a></li>
+                                        <li class="mb-2 pl-3"><a href="#city4" class="text-dark">Edmonton</a>
+                                        </li>
+                                        <li class="mb-2 pl-3"><a href="#city5" class="text-dark">Calgary</a>
+                                        </li>
+                                        <li class="mb-2 pl-3"><a href="#city6" class="text-dark">Vancouver</a>
+                                        </li>
+                                        <li class="mb-2 pl-3"><a href="#city7" class="text-dark">Toronto</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#category3" class="text-dark">
+                                                <p class="font-weight-bold my-2"><img
+                                                        src="./img/logos/logo-partner-saputo.svg" alt=""
+                                                        style="width:32px;margin-right:4px">Saputo's Choice</p>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2 pl-3"><a href="#saputo1" class="text-dark">Per city</a></li>
+                                        <li class="mb-2 pl-3"><a href="#saputo2" class="text-dark">Cheesiest</a></li>
+                                        <li class="mb-2 pl-3"><a href="#saputo3" class="text-dark">Most unique</a></li>
+                                        <li class="mb-2 pl-3"><a href="#saputo4" class="text-dark">Best in Canada</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#category4" class="text-dark">
+                                                <p class="font-weight-bold my-2"><img
+                                                        src="./img/logos/logo-partner-doordash-logomark.svg" alt=""
+                                                        style="width:32px;margin-right:4px">Doordash's Choice</p>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2 pl-3"><a href="#doordash1" class="text-dark">Per city</a></li>
+                                        <li class="mb-2 pl-3"><a href="#doordash2" class="text-dark">Most unique</a>
+                                        </li>
+                                        <li class="mb-2 pl-3"><a href="#doordash3" class="text-dark">Best in Canada</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- winners grid -->
+                    <div class="col-md-9">
+
+                        <!-- Top 5 in Canada -->
+                        <div class="my-2">
+                            <!-- Top 5 per city -->
+                            <h2 class="h1 font-weight-bold text-dark border-bottom pb-3 border-dark" id="category1">🇨🇦
+                                Top 5 in Canada</h2>
+                            <div class="winners-grid my-4">
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Top 5 per city -->
+                        <div class="my-2">
+                            <h2 class="h1 font-weight-bold text-dark border-bottom pb-3 border-dark" id="category2">🌆
+                                Top 5 per city</h2>
+                            <h3 class="h4 mt-4 text-dark" id="city1">Montreal</h3>
+                            <div class="winners-grid my-4">
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <h3 class="h4 mt-4 text-dark" id="city1">Winnipeg</h3>
+                            <div class="winners-grid my-4">
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Saputo -->
+                        <div class="my-2">
+                            <h2 class="h1 font-weight-bold text-dark border-bottom pb-3 border-dark" id="category3"><img
+                                    src="./img/logos/logo-partner-saputo.svg" alt=""
+                                    style="width:96px;margin-right:4px">Saputo's Choice</h2>
+                            <div class="winners-grid my-4">
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">Montreal</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">Winnipeg</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Doordash -->
+                        <div class="my-2">
+                            <!-- Sponsor -->
+                            <h2 class="h1 font-weight-bold text-dark border-bottom pb-3 border-dark" id="category4"><img
+                                    src="./img/logos/logo-partner-doordash-logomark.svg" alt=""
+                                    style="width:96px;margin-right:4px">
+                                Doordash's Choice</h2>
+                            <div class="winners-grid my-4">
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">Montreal</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">Winnipeg</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                                <a href="./restaurant.html" class="winner-item" target="_blank">
+                                    <img src="./img/artwork/placeholder.jpg" class="img-winner" alt="">
+                                    <div class="pl-4">
+                                        <p class="small text-dark mb-2">City name</p>
+                                        <p class="h6 text-primary font-weight-bold mt-0">Restaurant Name</p>
+                                        <p class="font-weight-bold text-dark">Burger Name</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5 text-center text-md-left">
+                    <img src="./img/logos/logo-light-full-en.svg" alt="" class="logo-footer">
+                    <ul class="list-inline mt-4">
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Montreal</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Winnipeg</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Vancouver</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Edmonton</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Calgary</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Regina</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Saskatoon</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Toronto</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Outaouais</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Laval</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Quebec</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">International</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md mb-4">
+                    <h6>Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:team@peoplemovertech.com">Sponsorship</a></li>
+                        <li><a href="https://lapoutineweek.com">La Poutine Week</a></li>
+                        <li><a href="https://lapizzaweek.com">La Pizza Week</a></li>
+                        <li><a href="./legal.html">Terms &amp; Privacy</a></li>
+                        <li><a href="#!">Français</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md mb-4">
+                    <h6>Restaurants</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="./login.html">Login</a></li>
+                        <li><a href="./register.html">Sign up</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md mb-4">
+                    <h6>Stay connected</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.facebook.com/LeBurgerWeek/" target="_blank"><i
+                                    class="fab fa-facebook mr-2"></i>Facebook</a></li>
+                        <li><a href="https://www.instagram.com/leburgerweek/" target="_blank"><i
+                                    class="fab fa-instagram mr-2"></i>Instagram</a></li>
+                        <li><a href="mailto:team@peoplemovertech.com" target="_blank"><i
+                                    class="fal fa-envelope mr-2"></i>Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="subfooter">
+            <img src="./img/artwork/footer-artwork-nostreet.png" class="footer-artwork" alt="">
+            <div class="floor"></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between flex-wrap">
+                        <p class="text-light">© 2019&nbsp;Le Burger Week&nbsp;|&nbsp;<a href="https://peoplemover.tech"
+                                target="_blank" class="text-light">People Mover
+                                Technologies Inc.</a></p>
+                        <p class="text-light">Made with&nbsp;<i class="fal fa-heart"></i>&nbsp;and&nbsp;<i
+                                class="fal fa-coffee"></i>&nbsp;by <a href="https://loogart.com" target="_blank"
+                                class="text-light">Loogart</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/scripts.js"></script>
+
+</body>
+
+</html>

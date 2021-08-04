@@ -48,7 +48,7 @@ $navbar-light-brand-color:$brown;
 $navbar-light-brand-hover-color:$orange;
 $navbar-light-toggler-border-color: transparent;
 $navbar-nav-link-padding-x: $spacer;
-$btn-padding-x-lg: $spacer*4;
+$btn-padding-x-lg: $spacer*2;
 $btn-border-radius-lg: 12px;
 $btn-font-weight:bold;
 $navbar-toggler-padding-x:0;
@@ -152,7 +152,6 @@ span.supertitle {
 
 .btn {
     box-shadow: 4px 4px 0 $brown;
-    transform-origin: center;
 
     &:active {
         box-shadow: none;
@@ -202,10 +201,9 @@ section {
     border-radius: 24px;
     border: 3px dotted $brown;
     box-shadow: $smooth-shadow;
-
-
-
 }
+
+
 
 a.burger-leader {
     display: inline-block;
@@ -263,7 +261,7 @@ a.logo-partner {
     img {
         object-fit: contain;
         width: 100%;
-        height: 40px;
+        height: 50px;
 
     }
 
@@ -288,7 +286,8 @@ a.logo-partner {
         text-align: center;
         cursor: pointer;
         transition: all .15s ease-in-out;
-        &:hover{
+
+        &:hover {
             background-color: $light;
         }
     }
@@ -308,8 +307,8 @@ a.logo-partner {
     margin-bottom: 40px;
     text-decoration: none;
     position: relative;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     a.grid-item-link {
         position: relative;
@@ -363,12 +362,13 @@ a.logo-partner {
         ;
         margin-top: 10px;
     }
-    .grid-item__footer{
+
+    .grid-item__footer {
         display: flex;
         justify-content: space-between;
-        border-top:1px dashed $brown; 
-        margin-top:$spacer;
-        margin-bottom:$spacer;       
+        border-top: 1px dashed $brown;
+        margin-top: $spacer;
+        margin-bottom: $spacer;
     }
 
     @include media-breakpoint-down(lg) {
@@ -392,7 +392,8 @@ a.logo-partner {
         margin-bottom: 0;
         padding-left: 0;
         padding-right: 0;
-        text-decoration: none;;
+        text-decoration: none;
+        ;
     }
 }
 
@@ -403,19 +404,21 @@ a.logo-partner {
     border-radius: 12px;
 }
 
-.resto-name{
+.resto-name {
     display: block;
-    color:$orange;
+    color: $orange;
     font-weight: bold;
 }
-.item-name{
+
+.item-name {
     display: block;
-    color:$brown;
+    color: $brown;
     font-weight: bold;
     font-size: $font-size-base*1.5;
 }
 
-.btn-fave, .btn-fave-account {
+.btn-fave,
+.btn-fave-account {
     z-index: 1;
     position: absolute;
     width: 24px;
@@ -477,6 +480,88 @@ a.logo-partner {
 .flexselect_selected {
     background-color: #EB422E;
     color: white;
+}
+
+// Resto page
+.saputo-badge {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.logo-saputo {
+    height: 40px;
+    margin: auto 3px;
+}
+
+.img-resto {
+    border-radius: $spacer*1.5;
+    transition: all .15s ease-in-out;
+
+    &:hover {
+        opacity: .9;
+    }
+}
+
+.vote-box {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: $spacer*2;
+    border-radius: 24px;
+    border: 3px dotted $brown;
+
+    @include media-breakpoint-down(sm) {
+        position: fixed;
+        background-color: $white;
+        border-radius: 0;
+        border: none;
+        border-top: 3px dotted $brown;
+        padding: 12px $spacer;
+        width: 100%;
+        min-height: 20px;
+        z-index: 1000;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.btn-rate {
+    transition: all .15s ease-out;
+    width: 33%;
+    text-align: center;
+    color: $brown;
+
+    &:hover,
+    &:focus,
+    &:active,
+    .active {
+        color: $orange;
+        transform: scale(1.1);
+        text-decoration: none;
+    }
+}
+
+details.multiple-locations {
+    font-size: $font-size-base;
+    font-weight: bold;
+    border: 2px solid $brown;
+    box-shadow: 4px 4px 0 $brown;
+    padding: $spacer;
+    border-radius: 8px;
+    margin-bottom: $spacer;
+
+    &>summary {
+        font-size: $font-size-base*1.25;
+        color: $brown;
+
+    }
+
+    a:not(.btn) {
+        color: $brown;
+        text-decoration: underline;
+    }
 }
 
 // Footer
@@ -679,6 +764,7 @@ a.grid-burger__item {
     border-radius: 24px;
     overflow: hidden;
 }
+
 .close {
     display: inline-block;
     position: absolute;
@@ -723,6 +809,10 @@ a.grid-burger__item {
     background-color: $beige;
 }
 
+.bg-brown {
+    background-color: $brown2;
+}
+
 // Winners
 .winners-grid {
     display: flex;
@@ -754,6 +844,8 @@ a.winner-item {
     height: 80px;
     border-radius: 12px;
 }
+
+.border-dark {}
 
 // dashboard
 section.dashboard {

@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="./img/favicon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Le Burger Week">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/lightgallery.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d83ef6eb3.js" crossorigin="anonymous"></script>
+
+    <!-- Primary Meta Tags -->
+    <title>Restaurant</title>
+    <meta name="title" content="Le Burger Week 2021">
+    <meta name="description"
+        content="Le Burger Week 2021 allows participants to discover new venues, while providing the opportunity to taste burger creations they never would have originally.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loogart.github.io/leburgerweek/2021/live/">
+    <meta property="og:title" content="Le Burger Week 2021">
+    <meta property="og:description"
+        content="Le Burger Week 2021 allows participants to discover new venues, while providing the opportunity to taste burger creations they never would have originally.">
+    <meta property="og:image" content="https://loogart.github.io/leburgerweek/2021/live/img/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://loogart.github.io/leburgerweek/2021/live/">
+    <meta property="twitter:title" content="Le Burger Week 2021">
+    <meta property="twitter:description"
+        content="Le Burger Week 2021 allows participants to discover new venues, while providing the opportunity to taste burger creations they never would have originally.">
+    <meta property="twitter:image" content="https://loogart.github.io/leburgerweek/2021/live/img/og-image.jpg">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color:white">
+        <div class="container">
+            <a class="navbar-brand" href="./"><img src="./img/logos/logo-lbw-en.svg" class="navbar-logo" alt=""
+                    class="mr-2">Le Burger Week <span class="sr-only">(current)</span></a>
+            <button class="navbar-toggler p-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="far fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="./results.html">🍔 Find a
+                        burger<span class="sr-only">(current)</span></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            🏆 Winners
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./winners.html">2020</a>
+                            <a class="dropdown-item" href="./winners.html">2019</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            😊 Account
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./account.html">❤️ Saved</a>
+                            <a class="dropdown-item" href="./dashboard-resto.html">🧑‍🍳 Resto dashboard</a>
+                            <a class="dropdown-item" href="./dashboard-admin.html">⚙️ Admin dashboard</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./login.html">Logout</a>
+                        </div>
+                    </li>
+                    <a class="nav-item nav-link" href="#!">Français</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- Restaurant-->
+        <section class="item-page bg-white text-dark">
+            <div class="container">
+                <div class="row justify-content-between">
+
+                    <!-- Burger PHOTO AND VOTE -->
+                    <div class="col-md-5">
+                        <div id="lightgallery" class="mb-4" data-aos="fade-left">
+                            <a href="./img/photos/photo-burger1.jpg">
+                                <img src="./img/photos/photo-burger1.jpg" class="img-fluid img-resto">
+                            </a>
+                        </div>
+                        <div class="vote-box shadow text-center">
+                            <span class="h5 font-weight-bold mb-3 d-none d-md-block">Tell us what you think</span>
+                            <div class="btn btn-warning btn-lg" id="voteNow">⭐️ Rate burger</div>
+                        </div>
+                    </div>
+
+                    <!-- Burger INFO -->
+                    <div class="col-md-6">
+                        <h1 class="resto-name h4 mb-2">Burger Cantley</h1>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                            <h3 class="h2 font-weight-bold">Burger Name goes right here</h3>
+                            <h3 class="h2 font-weight-bold ml-md-4">$16.95</h3>
+                        </div>
+                        <!-- Saputo badge -->
+                        <div class="saputo-badge">
+                            <small>
+                                <a href="https://www.saputofoodservice.ca/" target="_blank">
+                                    <img src="./img/logos/logo-partner-saputo.svg" alt="" class="logo-saputo mr-2">
+                                </a>
+                                <i>Made with Saputo Cheese</i></small>
+                        </div>
+                        <div class="mb-4">
+                            <!-- Save for later -->
+                            <a href="#" class="btn btn-outline-dark btn-fave-page">❤️ Save for later</a>
+                        </div>
+
+                        <!-- description -->
+                        <p class="lead mb-4">It was all a dream, I used to read Word Up! magazine. Salt-n-Pepa and Heavy
+                            D up
+                            in the limousine. Hangin' pictures on my wall. Every Saturday Rap Attack, Mr. Magic, Marley
+                            Marl. I let my tape rock 'til my tape popped. Smokin' weed in Bambu, sippin' on Private
+                            Stock.</p>
+
+                        <!-- address -->
+                        <a href="https://g.page/SOSTicket-Avocats?share" target="_blank" class="text-dark"><u>1124 Sainte-Catherine Ouest, Montreal QC H4N
+                                7A1</u></a>
+                        <div class="d-flex justify-content-start my-4">
+                            <a href="https://facebook.com/loogart" class="mr-4 text-dark" target="_blank"><i
+                                    aria-hidden="true" class="fab fa-facebook fa-2x" title="Facebook Page"></i></a>
+                            <a href="https://instagram.com/loogart" class="mr-4 text-dark" target="_blank"><i
+                                    aria-hidden="true" class="fab fa-instagram fa-2x" title="Instagram Page"></i></a>
+                            <a href="https://twitter.com/iamloogart" class="mr-4 text-dark" target="_blank"><i
+                                    aria-hidden="true" class="fab fa-twitter fa-2x" title="Twitter Page"></i></a>
+                            <a href="https://loogart.com" class="mr-4 text-dark" target="_blank"><i aria-hidden="true"
+                                    class="far fa-link fa-2x" title="Website"></i></a>
+
+                        </div>
+
+
+                        <hr class="my-lg-4" style="border:1px dashed #411F1F">
+
+                        <!-- SINGLE LOCATION: Show for single locations-->
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-3 text-center">
+                                <a href="https://www.doordash.com" target="_blank"
+                                    class="btn btn-lg btn-block btn-outline-dark">🚗 Get it delivered</a>
+                                <span class="d-block mt-2 small">Delivered with <img
+                                        src="./img/logos/logo-partner-doordash.svg" alt="" class="d-sm-inline-block"
+                                        style="width:100px"></span>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <a href="tel:15144484911" target="_blank"
+                                    class="btn btn-lg btn-block btn-outline-dark">📞 Call restaurant</a>
+                            </div>
+                        </div>
+
+                        <!-- MULTIPLE LOCATIONS: Show for Franchises -->
+                        <div class="d-none">
+                            <details class="multiple-locations">
+                                <summary>📍 St-Eustache, QC</summary>
+                                <div class="mt-3">
+                                    <a href="#!" target="_blank">1234 rue Burgerland, Montreal QC</a>
+                                </div>
+                                <div class="d-flex justify-content-start my-2">
+                                    <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true"
+                                            class="fab fa-facebook" title="Facebook Page"></i></a>
+                                    <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true"
+                                            class="fab fa-instagram" title="Instagram Page"></i></a>
+                                    <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true"
+                                            class="fab fa-twitter" title="Twitter Page"></i></a>
+                                    <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true"
+                                            class="far fa-link" title="Website"></i></a>
+                                </div>
+                                <hr class="my-4" style="border:1px dashed #411F1F">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3 text-center">
+                                        <a href="https://www.doordash.com" target="_blank"
+                                            class="btn btn-block btn-outline-dark">🚗 Get it delivered</a>
+                                        <span class="d-block mt-2 small">Delivered with <img
+                                                src="./img/logos/logo-partner-doordash.svg" alt=""
+                                                class="d-sm-inline-block" style="width:100px"></span>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <a href="tel:15144484911" target="_blank"
+                                            class="btn btn-block btn-outline-dark">📞 Call restaurant</a>
+                                    </div>
+                                </div>
+                            </details>
+
+                            <details class="multiple-locations">
+                                <summary>📍 Centre-Ville Montréal, QC</summary>
+                                <div class="mt-3">
+                                    <a href="#!" target="_blank">669 ave. Bourgurr, Montreal QC</a>
+                                </div>
+                                <div class="d-flex justify-content-start my-2">
+                                    <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true"
+                                            class="fab fa-facebook" title="Facebook Page"></i></a>
+                                    <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true"
+                                            class="fab fa-instagram" title="Instagram Page"></i></a>
+                                    <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true"
+                                            class="fab fa-twitter" title="Twitter Page"></i></a>
+                                    <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true"
+                                            class="far fa-link" title="Website"></i></a>
+                                </div>
+                                <hr class="my-4" style="border:1px dashed #411F1F">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3 text-center">
+                                        <a href="https://www.doordash.com" target="_blank"
+                                            class="btn btn-block btn-outline-dark">🚗 Get it delivered</a>
+                                        <span class="d-block mt-2 small">Delivered with <img
+                                                src="./img/logos/logo-partner-doordash.svg" alt=""
+                                                class="d-sm-inline-block" style="width:100px"></span>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <a href="tel:15144484911" target="_blank"
+                                            class="btn btn-block btn-outline-dark">📞 Call restaurant</a>
+                                    </div>
+                                </div>
+                            </details>
+
+                            <details class="multiple-locations">
+                                <summary>📍 Cantley, QC</summary>
+                                <div class="mt-3">
+                                    <a href="#!" target="_blank">669 ave. Bourgurr, Montreal QC</a>
+                                </div>
+                                <div class="d-flex justify-content-start my-2">
+                                    <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true"
+                                            class="fab fa-facebook" title="Facebook Page"></i></a>
+                                    <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true"
+                                            class="fab fa-instagram" title="Instagram Page"></i></a>
+                                    <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true"
+                                            class="fab fa-twitter" title="Twitter Page"></i></a>
+                                    <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true"
+                                            class="far fa-link" title="Website"></i></a>
+                                </div>
+                                <hr class="my-4" style="border:1px dashed #411F1F">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3 text-center">
+                                        <a href="https://www.doordash.com" target="_blank"
+                                            class="btn btn-block btn-outline-dark">🚗 Get it delivered</a>
+                                        <span class="d-block mt-2 small">Delivered with <img
+                                                src="./img/logos/logo-partner-doordash.svg" alt=""
+                                                class="d-sm-inline-block" style="width:100px"></span>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <a href="tel:15144484911" target="_blank"
+                                            class="btn btn-block btn-outline-dark">📞 Call restaurant</a>
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Modal Vote Step 1 -->
+        <div class="preview-modal modal fade" id="modalVote1" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="modal-header modal-resto sr-only">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    </div>
+                    <div class="modal-photo-holder bg-beige text-center pt-4">
+                        <img src="./img/artwork/lady-orange.png" alt="" style="max-width:200px;" class="mx-auto">
+                    </div>
+                    <div class="modal-body text-center">
+                        <h3 class="font-weight-bold">What did you think?</h3>
+                        <div class="d-flex justify-content-around align-items-center my-4 mx-auto"
+                            style="max-width:300px">
+                            <a href="" class="btn-rate" data-toggle="modal" data-target="#modalVote2"><i
+                                    class="far fa-frown-open fa-3x" Title=""></i><span class="d-block">Bad</span></a>
+                            <a href="" class="btn-rate" data-toggle="modal" data-target="#modalVote2"><i
+                                    class="far fa-smile fa-3x" Title=""></i><span class="d-block" data-toggle="modal"
+                                    data-target="#modalVote2">Good</span></a>
+                            <a href="" class="btn-rate" data-toggle="modal" data-target="#modalVote2"><i
+                                    class="far fa-grin-stars fa-3x" Title=""></i><span
+                                    class="d-block">Amazing</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Vote Step 2 -->
+        <div class="preview-modal modal fade" id="modalVote2" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="modal-header modal-resto sr-only">
+                        <h4 class="modal-title" id="exampleModalLabel">Thank you for voting!</h4>
+                    </div>
+                    <div class="modal-photo-holder pt-4 bg-brown text-center">
+                        <img src="./img/artwork/popup-vote-thanks.png" alt="" style="max-width:200px;" class="mx-auto">
+                    </div>
+                    <div class="modal-body text-center">
+                        <h3 class="my-3 h2 font-weight-bold">Thanks for voting!</h3>
+                        <p>We appreciate your support!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Vote Removed-->
+        <div class="preview-modal modal fade" id="modalUnvoted" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="modal-header modal-resto sr-only">
+                        <h5 class="modal-title" id="exampleModalLabel">You have removed your rating.</h5>
+                    </div>
+                    <div class="modal-photo-holder text-center bg-danger p-3">
+                        <img src="./img/artwork/popup-vote-removed.png" alt="" style="max-width:200px;" class="mx-auto">
+                    </div>
+                    <div class="modal-body text-center">
+                        <h3 class="my-3 font-weight-bold">Rating removed.</h3>
+                        <p>Your rating for this pizza has been removed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toast Saved and removed-->
+        <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
+            <div id="elementSaved" class="toast hide text-dark" role="alert" aria-live="assertive" aria-atomic="true"
+                data-delay="2000">
+                <div class="toast-header text-dark">
+                    <strong class="mr-auto">✅ Saved</strong>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    View <a href="account.html"><u>saved pizzas</u></a>.
+                </div>
+            </div>
+        </div>
+        <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
+            <div id="elementRemoved" class="toast hide text-dark" role="alert" aria-live="assertive" aria-atomic="true"
+                data-delay="2000">
+                <div class="toast-header text-dark">
+                    <strong class="mr-auto">❌ Removed</strong>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    You removed this saved item.
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    
+    <!-- footer -->
+    <footer class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5 text-center text-md-left">
+                    <img src="./img/logos/logo-light-full-en.svg" alt="" class="logo-footer">
+                    <ul class="list-inline mt-4">
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Montreal</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Winnipeg</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Vancouver</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Edmonton</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Calgary</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Regina</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Saskatoon</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Toronto</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Outaouais</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Laval</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">Quebec</a></li>
+                        <li class="list-inline-item"><a href="#!" class="text-dark">International</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md mb-4">
+                    <h6>Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:team@peoplemovertech.com">Sponsorship</a></li>
+                        <li><a href="https://lapoutineweek.com">La Poutine Week</a></li>
+                        <li><a href="https://lapizzaweek.com">La Pizza Week</a></li>
+                        <li><a href="./legal.html">Terms &amp; Privacy</a></li>
+                        <li><a href="#!">Français</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md mb-4">
+                    <h6>Restaurants</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="./login.html">Login</a></li>
+                        <li><a href="./register.html">Sign up</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md mb-4">
+                    <h6>Stay connected</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.facebook.com/LeBurgerWeek/" target="_blank"><i
+                                    class="fab fa-facebook mr-2"></i>Facebook</a></li>
+                        <li><a href="https://www.instagram.com/leburgerweek/" target="_blank"><i
+                                    class="fab fa-instagram mr-2"></i>Instagram</a></li>
+                        <li><a href="mailto:team@peoplemovertech.com" target="_blank"><i
+                                    class="fal fa-envelope mr-2"></i>Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="subfooter">
+            <img src="./img/artwork/footer-artwork-nostreet.png" class="footer-artwork" alt="">
+            <div class="floor"></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between flex-wrap">
+                        <p class="text-light">© 2019&nbsp;Le Burger Week&nbsp;|&nbsp;<a href="https://peoplemover.tech"
+                                target="_blank" class="text-light">People Mover
+                                Technologies Inc.</a></p>
+                        <p class="text-light">Made with&nbsp;<i class="fal fa-heart"></i>&nbsp;and&nbsp;<i
+                                class="fal fa-coffee"></i>&nbsp;by <a href="https://loogart.com" target="_blank"
+                                class="text-light">Loogart</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/liquidmetal.js"></script>
+    <script src="./js/jquery.flexselect.js"></script>
+    <script src="./js/lightgallery.js"></script>
+    <script src="./js/lg-zoom.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap"
+        async defer></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>

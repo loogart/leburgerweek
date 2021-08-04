@@ -406,6 +406,13 @@ $(function () {
     }).change();
 });
 
+//results none
+$('#customCheck9').change(function() {
+        $("#resultsNone").toggleClass("d-block");
+        $("#resultsGrid").toggleClass("d-none");
+});
+
+
 // modal data mirror for prottotype
 $(".grid-item").click(function () {
     var restoName = $(this).find(".resto-name").html();
@@ -432,10 +439,10 @@ $(function () {
 $('#voteNow').click(function () {
     if ($(this).hasClass("btn-outline-danger")) {
         $('#modalUnvoted').modal('show');
-        $(this).removeClass('btn-outline-danger').addClass('btn-danger').text("Rate  this poutine");
+        $(this).removeClass('btn-outline-danger').addClass('btn-warning').text("⭐️ Rate burger");
     } else {
         $('#modalVote1').modal('show');
-        $(this).removeClass('btn-danger').addClass('btn-outline-danger').text("Remove rating");
+        $(this).removeClass('btn-warning').addClass('btn-outline-danger').text("❌ Remove rating");
     }
 });
 
@@ -455,11 +462,11 @@ $('.btn-fave').click(function () {
 
 // toggle fave button on account page
 $('.btn-fave-account').click(function () {
-        $(this).removeClass('text-danger').addClass('text-light');
-        ($(this).children()).removeClass('fas').addClass('fal');
-        $('#elementRemoved').toast('show');
-        $(this).parent().hide();
-        $(this).hide();
+    $(this).removeClass('text-danger').addClass('text-light');
+    ($(this).children()).removeClass('fas').addClass('fal');
+    $('#elementRemoved').toast('show');
+    $(this).parent().hide();
+    $(this).hide();
 });
 
 // toggle fave button on resto page

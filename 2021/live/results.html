@@ -17,12 +17,13 @@
     <link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/flexselect.css">
     <link rel="stylesheet" href="./css/custom.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2d83ef6eb3.js" crossorigin="anonymous"></script>
 
     <!-- Primary Meta Tags -->
-    <title>Le Burger Week 2021</title>
+    <title>Results | Le Burger Week 2021</title>
     <meta name="title" content="Le Burger Week 2021">
     <meta name="description"
         content="Le Burger Week 2021 allows participants to discover new venues, while providing the opportunity to taste burger creations they never would have originally.">
@@ -50,7 +51,7 @@
         <div class="container">
             <a class="navbar-brand" href="./"><img src="./img/logos/logo-lbw-en.svg" class="navbar-logo" alt=""
                     class="mr-2">Le Burger Week <span class="sr-only">(current)</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            <button class="navbar-toggler p-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="far fa-bars"></i>
             </button>
@@ -75,249 +76,520 @@
     </nav>
 
     <main>
+        <!-- Results filters -->
+        <nav class="filter-bar">
+            <div class="container">
+                <div class="row no-gutters justify-content-between align-items-center">
+                    <div class="col-8 col-lg-4 mb-2 mb-lg-0 pr-3">
+                        <div class="nav-filter-search">
+                            <select class="flexselect">
+                                <option value="" disabled selected>🔍 Search</option>
+                                <option value="1">Amazing Burgers Place</option>
+                                <option value="2">Arabian Nights</option>
+                                <option value="3">Blazing Balaszi</option>
+                                <option value="4">La Banquise</option>
+                                <option value="5">Benedict Berg</option>
+                                <option value="6">Behaved Buns</option>
+                                <option value="7">Cantley Fried Chicken</option>
+                                <option value="8">Harveys</option>
+                                <option value="9">JeePoutine Doan-Moi</option>
+                                <option value="10">Kentucky Fried Chicken</option>
+                                <option value="11">Loogart Burgers</option>
+                                <option value="12">Na'eem The Dream</option>
+                                <option value="13">Omnivore</option>
+                                <option value="14">Paulo et Suzanne</option>
+                                <option value="15">Stéphoutine Grondin</option>
+                                <option value="16">Thierry Mange Icitte</option>
+                                <option value="17">Why so serious?</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-2 mb-2 mb-lg-0 pr-lg-3">
+                        <a class="btn-filter" data-toggle="modal" data-target="#modalFilter">
+                            <i class="fad fa-sliders-v mr-2"></i>Filter
+                        </a>
+                    </div>
+                    <div class="col-8 col-lg-4">
+                        <i class="fad fa-map-marker-alt mr-2"></i><span>169 burgers in</span> <strong><a href="" class="text-dark"
+                                data-toggle="modal" data-target="#modalLocation"> Montreal</a></strong>
+                    </div>
+                    <div class="col-4 col-lg-2 text-right">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label text-dark" for="customSwitch1">Map <span class="d-none d-sm-inline-block">view</span></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
+        <!-- results -->
+        <section class="pt-0">
+            <!-- results grid -->
+            <div class="results-grid" id="resultsGrid">
+                <div class="container">
+                    <div class="grid-items mt-4">
+                        <div class="grid-item">
+                            <a href="./restaurant.html" target="_blank" class="grid-item-link">
+                                <img class="img-item" src="./img/photos/photo-burger1.jpg" alt="">
+                                <span class="resto-name">Restaurant name A</span>
+                                <span class="item-name">Pizza Name A</span>
+                                <div class="grid-item__footer">
+                                    <span class="price">$15.00</span>
+                                    <span class="distance">6.0 km</span>
+                                </div>
+                            </a>
+                            <!-- <img src="./img/logos/logo-partner-saputo.svg" alt="" class="logo-saputo-grid"> -->
+                            <a href="#!" class="btn-fave text-light" data-toggle="tooltip" data-placement="top"
+                                title="Save pizza"><i class="fal fa-heart fa-2x"></i></a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="./restaurant.html" target="_blank" class="grid-item-link">
+                                <img class="img-item" src="./img/photos/photo-burger2.jpg" alt="">
+                                <span class="resto-name">Restaurant name B</span>
+                                <span class="item-name">Pizza Name B</span>
+                                <div class="grid-item__footer">
+                                    <span class="price">$15.00</span>
+                                    <span class="distance">6.0 km</span>
+                                </div>
+                            </a>
+                            <img src="./img/logos/logo-partner-saputo.svg" alt="" class="logo-saputo-grid">
 
+                            <a href="#!" class="btn-fave text-light" data-toggle="tooltip" data-placement="top"
+                                title="Save pizza"><i class="fal fa-heart fa-2x"></i></a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="./restaurant.html" target="_blank" class="grid-item-link">
+                                <img class="img-item" src="./img/photos/photo-burger3.jpg" alt="">
+                                <span class="resto-name">Restaurant name B</span>
+                                <span class="item-name">Pizza Name B</span>
+                                <div class="grid-item__footer">
+                                    <span class="price">$15.00</span>
+                                    <span class="distance">6.0 km</span>
+                                </div>
+                            </a>
+                            <!-- <img src="./img/logos/logo-partner-saputo.svg" alt="" class="logo-saputo-grid"> -->
+                            <a href="#!" class="btn-fave text-light" data-toggle="tooltip" data-placement="top"
+                                title="Save pizza"><i class="fal fa-heart fa-2x"></i></a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="./restaurant.html" target="_blank" class="grid-item-link">
+                                <img class="img-item" src="./img/photos/photo-burger4.jpg" alt="">
+                                <span class="resto-name">Restaurant name B</span>
+                                <span class="item-name">Pizza Name B</span>
+                                <div class="grid-item__footer">
+                                    <span class="price">$15.00</span>
+                                    <span class="distance">6.0 km</span>
+                                </div>
+                            </a>
+                            <!-- <img src="./img/logos/logo-partner-saputo.svg" alt="" class="logo-saputo-grid"> -->
 
+                            <a href="#!" class="btn-fave text-light" data-toggle="tooltip" data-placement="top"
+                                title="Save pizza"><i class="fal fa-heart fa-2x"></i></a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="./restaurant.html" target="_blank" class="grid-item-link">
+                                <img class="img-item" src="./img/photos/photo-burger5.jpg" alt="">
+                                <span class="resto-name">Restaurant name B</span>
+                                <span class="item-name">Pizza Name B</span>
+                                <div class="grid-item__footer">
+                                    <span class="price">$15.00</span>
+                                    <span class="distance">6.0 km</span>
+                                </div>
+                            </a>
+                            <img src="./img/logos/logo-partner-saputo.svg" alt="" class="logo-saputo-grid">
+
+                            <a href="#!" class="btn-fave text-light" data-toggle="tooltip" data-placement="top"
+                                title="Save pizza"><i class="fal fa-heart fa-2x"></i></a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="./restaurant.html" target="_blank" class="grid-item-link">
+                                <img class="img-item" src="./img/photos/photo-burger6.jpg" alt="">
+                                <span class="resto-name">Restaurant name B</span>
+                                <span class="item-name">Pizza Name B</span>
+                                <div class="grid-item__footer">
+                                    <span class="price">$15.00</span>
+                                    <span class="distance">6.0 km</span>
+                                </div>
+                            </a>
+                            <img src="./img/logos/logo-partner-saputo.svg" alt="" class="logo-saputo-grid">
+
+                            <a href="#!" class="btn-fave text-light" data-toggle="tooltip" data-placement="top"
+                                title="Save pizza"><i class="fal fa-heart fa-2x"></i></a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="./restaurant.html" target="_blank" class="grid-item-link">
+                                <img class="img-item" src="./img/photos/photo-burger7.jpg" alt="">
+                                <span class="resto-name">Restaurant name B</span>
+                                <span class="item-name">Pizza Name B</span>
+                                <div class="grid-item__footer">
+                                    <span class="price">$15.00</span>
+                                    <span class="distance">6.0 km</span>
+                                </div>
+                            </a>
+                            <!-- <img src="./img/logos/logo-partner-saputo.svg" alt="" class="logo-saputo-grid"> -->
+
+                            <a href="#!" class="btn-fave text-light" data-toggle="tooltip" data-placement="top"
+                                title="Save pizza"><i class="fal fa-heart fa-2x"></i></a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="./restaurant.html" target="_blank" class="grid-item-link">
+                                <img class="img-item" src="./img/photos/photo-burger1.jpg" alt="">
+                                <span class="resto-name">Restaurant name B</span>
+                                <span class="item-name">Pizza Name B</span>
+                                <div class="grid-item__footer">
+                                    <span class="price">$15.00</span>
+                                    <span class="distance">6.0 km</span>
+                                </div>
+                            </a>
+                            <img src="./img/logos/logo-partner-saputo.svg" alt="" class="logo-saputo-grid">
+
+                            <a href="#!" class="btn-fave text-light" data-toggle="tooltip" data-placement="top"
+                                title="Save pizza"><i class="fal fa-heart fa-2x"></i></a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="./restaurant.html" target="_blank" class="grid-item-link">
+                                <img class="img-item" src="./img/photos/winner1.jpg" alt="">
+                                <span class="resto-name">Restaurant name B</span>
+                                <span class="item-name">Pizza Name B</span>
+                                <div class="grid-item__footer">
+                                    <span class="price">$15.00</span>
+                                    <span class="distance">6.0 km</span>
+                                </div>
+                            </a>
+                            <!-- <img src="./img/logos/logo-partner-saputo.svg" alt="" class="logo-saputo-grid"> -->
+
+                            <a href="#!" class="btn-fave text-light" data-toggle="tooltip" data-placement="top"
+                                title="Save pizza"><i class="fal fa-heart fa-2x"></i></a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="./restaurant.html" target="_blank" class="grid-item-link">
+                                <img class="img-item" src="./img/photos/winner2.jpg" alt="">
+                                <span class="resto-name">Restaurant name B</span>
+                                <span class="item-name">Pizza Name B</span>
+                                <div class="grid-item__footer">
+                                    <span class="price">$15.00</span>
+                                    <span class="distance">6.0 km</span>
+                                </div>
+                            </a>
+                            <img src="./img/logos/logo-partner-saputo.svg" alt="" class="logo-saputo-grid">
+
+                            <a href="#!" class="btn-fave text-light" data-toggle="tooltip" data-placement="top"
+                                title="Save pizza"><i class="fal fa-heart fa-2x"></i></a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="./restaurant.html" target="_blank" class="grid-item-link">
+                                <img class="img-item" src="./img/photos/winner3.jpg" alt="">
+                                <span class="resto-name">Restaurant name B</span>
+                                <span class="item-name">Pizza Name B</span>
+                                <div class="grid-item__footer">
+                                    <span class="price">$15.00</span>
+                                    <span class="distance">6.0 km</span>
+                                </div>
+                            </a>
+                            <img src="./img/logos/logo-partner-saputo.svg" alt="" class="logo-saputo-grid">
+
+                            <a href="#!" class="btn-fave text-light" data-toggle="tooltip" data-placement="top"
+                                title="Save pizza"><i class="fal fa-heart fa-2x"></i></a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="./restaurant.html" target="_blank" class="grid-item-link">
+                                <img class="img-item" src="./img/artwork/placeholder.jpg" alt="">
+                                <span class="resto-name">Restaurant name B</span>
+                                <span class="item-name">Pizza Name B</span>
+                                <div class="grid-item__footer">
+                                    <span class="price">$15.00</span>
+                                    <span class="distance">6.0 km</span>
+                                </div>
+                            </a>
+                            <img src="./img/logos/logo-partner-saputo.svg" alt="" class="logo-saputo-grid">
+
+                            <a href="#!" class="btn-fave text-light" data-toggle="tooltip" data-placement="top"
+                                title="Save pizza"><i class="fal fa-heart fa-2x"></i></a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="./restaurant.html" target="_blank" class="grid-item-link">
+                                <img class="img-item" src="./img/artwork/placeholder2.jpg" alt="">
+                                <span class="resto-name">Restaurant name B</span>
+                                <span class="item-name">Pizza Name B</span>
+                                <div class="grid-item__footer">
+                                    <span class="price">$15.00</span>
+                                    <span class="distance">6.0 km</span>
+                                </div>
+                            </a>
+                            <img src="./img/logos/logo-partner-saputo.svg" alt="" class="logo-saputo-grid">
+
+                            <a href="#!" class="btn-fave text-light" data-toggle="tooltip" data-placement="top"
+                                title="Save pizza"><i class="fal fa-heart fa-2x"></i></a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="./restaurant.html" target="_blank" class="grid-item-link">
+                                <img class="img-item" src="./img/artwork/placeholder3.jpg" alt="">
+                                <span class="resto-name">Restaurant name B</span>
+                                <span class="item-name">Pizza Name B</span>
+                                <div class="grid-item__footer">
+                                    <span class="price">$15.00</span>
+                                    <span class="distance">6.0 km</span>
+                                </div>
+                            </a>
+                            <img src="./img/logos/logo-partner-saputo.svg" alt="" class="logo-saputo-grid">
+
+                            <a href="#!" class="btn-fave text-light" data-toggle="tooltip" data-placement="top"
+                                title="Save pizza"><i class="fal fa-heart fa-2x"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="text-center my-3">
+                        <a href="#!" class="btn btn-lg btn-warning"><i class="fal fa-plus"></i>&nbsp;Load more burgers
+                            🍔 🍔 🍔</a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- map view -->
+            <div class="results-map d-none" id="resultsMap">
+                <div id="map"></div>
+            </div>
+        </section>
     </main>
 
-        <!-- Modal Location -->
-        <div class="modal fade" id="modalLocation" tabindex="-1" aria-labelledby="modalLocation" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-lg">
-                <div class="modal-content bg-light text-dark">
-                    <div class="bg-dark p-4 d-none d-md-block">
-                        <img src="../img/artwork/hero-artwork.png" class="img-fluid" alt="">
-                    </div>
-                    <div class="modal-header">
-                        <div class="container">
-                            <h5 class="modal-title" id="exampleModalLabel">Select your location</h5>
-                        </div>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
-                    <div class="modal-body pt-0">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-12 mb-2">
-                                    <a class="btn btn-danger" href="./results.html"><i
-                                            class="fas fa-location-arrow mr-2"></i>Around me</a>
-                                    <hr>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <details>
-                                        <summary><span class="font-weight-bold">British Columbia</span></summary>
-                                        <ul class="list-unstyled">
-                                            <li><a href="./results.html">Kelowna</a></li>
-                                            <li><a href="./results.html">Surrey</a></li>
-                                            <li><a href="./results.html">Vancouver</a></li>
-                                            <li><a href="./results.html">Victoria</a></li>
-                                        </ul>
-                                    </details>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <details>
-                                        <summary><span class="font-weight-bold">Alberta</span></summary>
-                                        <ul class="list-unstyled">
-                                            <li><a href="./results.html">Edmonton</a></li>
-                                            <li><a href="./results.html">Calgary</a></li>
-                                            <li><a href="./results.html">Banff</a></li>
-                                        </ul>
-                                    </details>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <details>
-                                        <summary><span class="font-weight-bold">Saskatchewan</span></summary>
-                                        <ul class="list-unstyled">
-                                            <li><a href="./results.html">Regina</a></li>
-                                            <li><a href="./results.html">Saskatoon</a></li>
-                                            <li><a href="./results.html">Prince Albert</a></li>
-                                        </ul>
-                                    </details>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <details>
-                                        <summary><span class="font-weight-bold">Manitoba</span></summary>
-                                        <ul class="list-unstyled">
-                                            <li><a href="./results.html">Winnipeg</a></li>
-                                            <li><a href="./results.html">Churchill</a></li>
-                                        </ul>
-                                    </details>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <details>
-                                        <summary><span class="font-weight-bold">Ontario</span></summary>
-                                        <ul class="list-unstyled">
-                                            <li><a href="./results.html">Toronto</a></li>
-                                            <li><a href="./results.html">Ottawa</a></li>
-                                        </ul>
-                                    </details>
-                                </div>
-
-
-                                <div class="col-md-6 col-lg-4">
-                                    <details>
-                                        <summary><span class="font-weight-bold">Quebec</span></summary>
-                                        <ul class="list-unstyled">
-                                            <li><a href="./results.html">Montreal</a></li>
-                                            <li><a href="./results.html">Quebec</a></li>
-                                            <li><a href="./results.html">Gatineau</a></li>
-                                        </ul>
-                                    </details>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <details>
-                                        <summary><span class="font-weight-bold">New Brunswick</span></summary>
-                                        <ul class="list-unstyled">
-                                            <li><a href="./results.html">Fredericton</a></li>
-                                            <li><a href="./results.html">Moncton</a></li>
-                                            <li><a href="./results.html">St-John</a></li>
-                                        </ul>
-                                    </details>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <details>
-                                        <summary><span class="font-weight-bold">Nova Scotia</span></summary>
-                                        <ul class="list-unstyled">
-                                            <li><a href="./results.html">Halifax</a></li>
-                                            <li><a href="./results.html">Sydney</a></li>
-                                        </ul>
-                                    </details>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <details>
-                                        <summary><span class="font-weight-bold">Prince Edward Island</span></summary>
-                                        <ul class="list-unstyled">
-                                            <li><a href="./results.html">Charlottetown</a></li>
-                                        </ul>
-                                    </details>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <details>
-                                        <summary><span class="font-weight-bold">Newfoundland</span></summary>
-                                        <ul class="list-unstyled">
-                                            <li><a href="./results.html">St. John's</a></li>
-                                        </ul>
-                                    </details>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <details>
-                                        <summary><span class="font-weight-bold">International</span></summary>
-                                        <ul class="list-unstyled">
-                                            <li><a href="./results-none.html">No results</a></li>
-                                        </ul>
-                                    </details>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Filter -->
-        <div class="modal" id="modalFilter" tabindex="-1" aria-labelledby="modalLocation" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content bg-light text-dark">
-                    <div class="modal-header">
-                        <div class="container">
-                            <h5 class="modal-title" id="exampleModalLabel">Sort and filter</h5>
-                        </div>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container">
-                            <h6>Filters</h6>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="custom-control custom-checkbox mb-2">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                        <label class="custom-control-label" for="customCheck1">Sea Food</label>
+    <!-- Modal Location -->
+    <div class="modal fade" id="modalLocation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-location">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fad fa-times-circle fa-2x"></i>
+                </button>
+                <div class="modal-body">
+                    
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-7 p-3 p-md-5 order-1 order-lg-0">
+                                <h4 class="font-weight-bold mb-3">Select your location</h4>
+                                <div class="row">
+                                    <div class="col-12 mb-2">
+                                        <a class="btn btn-primary btn-lg" href="./results.html"><i
+                                                class="fas fa-location-arrow mr-2"></i>Around me</a>
+                                        <hr style="border:3px dotted #411F1F" class="my-4">
                                     </div>
-                                    <div class="custom-control custom-checkbox mb-2">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                        <label class="custom-control-label" for="customCheck2">Vegetarian</label>
+                                    <div class="col-lg-6">
+                                        <details>
+                                            <summary><span class="font-weight-bold">British Columbia</span></summary>
+                                            <ul class="list-unstyled">
+                                                <li><a href="./results.html">Kelowna</a></li>
+                                                <li><a href="./results.html">Surrey</a></li>
+                                                <li><a href="./results.html">Vancouver</a></li>
+                                                <li><a href="./results.html">Victoria</a></li>
+                                            </ul>
+                                        </details>
                                     </div>
-                                    <div class="custom-control custom-checkbox mb-2">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                        <label class="custom-control-label" for="customCheck3">Vegan</label>
+                                    <div class="col-lg-6">
+                                        <details>
+                                            <summary><span class="font-weight-bold">Alberta</span></summary>
+                                            <ul class="list-unstyled">
+                                                <li><a href="./results.html">Edmonton</a></li>
+                                                <li><a href="./results.html">Calgary</a></li>
+                                                <li><a href="./results.html">Banff</a></li>
+                                            </ul>
+                                        </details>
                                     </div>
-                                    <div class="custom-control custom-checkbox mb-2">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                        <label class="custom-control-label" for="customCheck4">Glutten-free</label>
+                                    <div class="col-lg-6">
+                                        <details>
+                                            <summary><span class="font-weight-bold">Saskatchewan</span></summary>
+                                            <ul class="list-unstyled">
+                                                <li><a href="./results.html">Regina</a></li>
+                                                <li><a href="./results.html">Saskatoon</a></li>
+                                                <li><a href="./results.html">Prince Albert</a></li>
+                                            </ul>
+                                        </details>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="custom-control custom-checkbox mb-2">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                        <label class="custom-control-label" for="customCheck5"><img
-                                                src="../img/logo/logo-saputo.svg" alt="Saputo"
-                                                style="width:50px">&nbsp;Cheese</label>
+                                    <div class="col-lg-6">
+                                        <details>
+                                            <summary><span class="font-weight-bold">Manitoba</span></summary>
+                                            <ul class="list-unstyled">
+                                                <li><a href="./results.html">Winnipeg</a></li>
+                                                <li><a href="./results.html">Churchill</a></li>
+                                            </ul>
+                                        </details>
                                     </div>
-                                    <div class="custom-control custom-checkbox mb-2">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck6">
-                                        <label class="custom-control-label" for="customCheck6">Delivered by&nbsp;<img
-                                                src="../img/logo/logo-skip-bi.svg" alt="SKIP The Dishes"
-                                                style="width:60px"></label>
+                                    <div class="col-lg-6">
+                                        <details>
+                                            <summary><span class="font-weight-bold">Ontario</span></summary>
+                                            <ul class="list-unstyled">
+                                                <li><a href="./results.html">Toronto</a></li>
+                                                <li><a href="./results.html">Ottawa</a></li>
+                                            </ul>
+                                        </details>
                                     </div>
-                                    <div class="custom-control custom-checkbox mb-2">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck6">
-                                        <label class="custom-control-label" for="customCheck6">Beef</label>
+                                    <div class="col-lg-6">
+                                        <details>
+                                            <summary><span class="font-weight-bold">Quebec</span></summary>
+                                            <ul class="list-unstyled">
+                                                <li><a href="./results.html">Montreal</a></li>
+                                                <li><a href="./results.html">Quebec</a></li>
+                                                <li><a href="./results.html">Gatineau</a></li>
+                                            </ul>
+                                        </details>
                                     </div>
-                                    <div class="custom-control custom-checkbox mb-2">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck7">
-                                        <label class="custom-control-label" for="customCheck7">Chicken</label>
+                                    <div class="col-lg-6">
+                                        <details>
+                                            <summary><span class="font-weight-bold">New Brunswick</span></summary>
+                                            <ul class="list-unstyled">
+                                                <li><a href="./results.html">Fredericton</a></li>
+                                                <li><a href="./results.html">Moncton</a></li>
+                                                <li><a href="./results.html">St-John</a></li>
+                                            </ul>
+                                        </details>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <details>
+                                            <summary><span class="font-weight-bold">Nova Scotia</span></summary>
+                                            <ul class="list-unstyled">
+                                                <li><a href="./results.html">Halifax</a></li>
+                                                <li><a href="./results.html">Sydney</a></li>
+                                            </ul>
+                                        </details>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <details>
+                                            <summary><span class="font-weight-bold">Prince Edward Island</span>
+                                            </summary>
+                                            <ul class="list-unstyled">
+                                                <li><a href="./results.html">Charlottetown</a></li>
+                                            </ul>
+                                        </details>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <details>
+                                            <summary><span class="font-weight-bold">Newfoundland</span></summary>
+                                            <ul class="list-unstyled">
+                                                <li><a href="./results.html">St. John's</a></li>
+                                            </ul>
+                                        </details>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <details>
+                                            <summary><span class="font-weight-bold">International</span></summary>
+                                            <ul class="list-unstyled">
+                                                <li><a href="./results-none.html">No results</a></li>
+                                            </ul>
+                                        </details>
                                     </div>
                                 </div>
                             </div>
-                            <hr>
-                            <h6>Sorting</h6>
-                            <select class="custom-select custom-select-lg">
-                                <option selected>Random</option>
-                                <option value="1">$&nbsp;Ascending</option>
-                                <option value="2">$&nbsp;Descending</option>
-                                <option value="3">A-Z</option>
-                                <option value="4">Z-A</option>
-                            </select>
-                            <hr>
-                            <a href="./results.html"><i class="far fa-trash-alt mr-2"></i>Reset filters</a>
+                            <div class="col-lg-5 bg-beige d-flex align-items-center order-0 order-lg-1">
+                                <img src="./img/artwork/popup-location.png" class="img-fluid" alt="" style=>
+                            </div>
                         </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Filter -->
+    <div class="modal" id="modalFilter" tabindex="-1" aria-labelledby="modalLocation" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fad fa-times-circle fa-2x"></i>
+                </button>
+                <div class="bg-beige p-4">
+                    <img src="./img/artwork/popup-filters.png" class="img-fluid" alt="">
+                </div>
+                <div class="modal-body">
+                   
+                    <div class="container">
+                        <h4 class="font-weight-bold mb-3">Filters</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Sea Food</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    <label class="custom-control-label" for="customCheck2">Vegetarian</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                    <label class="custom-control-label" for="customCheck3">Vegan</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                    <label class="custom-control-label" for="customCheck4">Glutten-free</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                    <label class="custom-control-label" for="customCheck5"><img
+                                            src="./img/logos/logo-partner-saputo.svg" alt="Saputo"
+                                            style="width:50px">&nbsp;Cheese</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                    <label class="custom-control-label" for="customCheck6"><img
+                                            src="./img/logos/logo-partner-doordash.svg" alt="Doordash"
+                                            style="width:120px"></label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                    <label class="custom-control-label" for="customCheck6">Beef</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                    <label class="custom-control-label" for="customCheck7">Chicken</label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="border:3px dotted #411F1F">
+                        <!-- <h6>Sorting</h6>
+                        <select class="custom-select custom-select-lg">
+                            <option selected>Random</option>
+                            <option value="1">$&nbsp;Ascending</option>
+                            <option value="2">$&nbsp;Descending</option>
+                            <option value="3">A-Z</option>
+                            <option value="4">Z-A</option>
+                        </select>
+                        <hr> -->
+                        <a href="./results.html" class="text-dark"><i class="far fa-trash-alt mr-2"></i>Reset filters</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Toast Saved and removed-->
-        <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
-            <div id="elementSaved" class="toast hide text-dark" role="alert" aria-live="assertive" aria-atomic="true"
-                data-delay="2000">
-                <div class="toast-header text-dark">
-                    <strong class="mr-auto">✅  Saved</strong>
-                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="toast-body">
-                    View <a href="account.html"><u>saved pizzas</u></a>.
-                </div>
+    <!-- Toast Saved and removed-->
+    <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
+        <div id="elementSaved" class="toast hide text-dark" role="alert" aria-live="assertive" aria-atomic="true"
+            data-delay="2000">
+            <div class="toast-header text-dark">
+                <strong class="mr-auto">✅ Saved</strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                View <a href="account.html"><u>saved pizzas</u></a>.
             </div>
         </div>
-        <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
-            <div id="elementRemoved" class="toast hide text-dark" role="alert" aria-live="assertive" aria-atomic="true"
-                data-delay="2000">
-                <div class="toast-header text-dark">
-                    <strong class="mr-auto">❌  Removed</strong>
-                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="toast-body">
-                    You removed this saved item.
-                </div>
+    </div>
+    <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
+        <div id="elementRemoved" class="toast hide text-dark" role="alert" aria-live="assertive" aria-atomic="true"
+            data-delay="2000">
+            <div class="toast-header text-dark">
+                <strong class="mr-auto">❌ Removed</strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                You removed this saved item.
             </div>
         </div>
+    </div>
 
     <!-- footer -->
     <footer class="pt-5">
@@ -344,7 +616,7 @@
                     <h6>Links</h6>
                     <ul class="list-unstyled">
                         <li><a href="mailto:team@peoplemovertech.com">Sponsorship</a></li>
-                        <li><a href="https://lapoutineweek.com">La Poutine Week</a></li>
+                        <li><a href="https://lapoutineweek.com">La BurgersWeek</a></li>
                         <li><a href="https://lapizzaweek.com">La Pizza Week</a></li>
                         <li><a href="./legal.htm">Terms &amp; Privacy</a></li>
                         <li><a href="#!">Français</a></li>

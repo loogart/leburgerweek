@@ -239,7 +239,7 @@ function initMap() {
     });
 
     var image = {
-        url: "../img/logo/map-marker.svg", // url
+        url: "./img/logos/map-marker.svg", // url
         scaledSize: new google.maps.Size(69, 69), // scaled size
         origin: new google.maps.Point(0, 0), // origin
         anchor: new google.maps.Point(0, 0) // anchor
@@ -271,10 +271,10 @@ function initMap() {
         '<div id="siteNotice">' +
         '</div>' +
         '<a href="./restaurant.html" target="_blank" class="grid-item for-map">' +
-        '<img src="https://instagram.fymq2-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.169.1349.1349a/s640x640/169088158_473348593863884_7004601539434682593_n.jpg?tp=1&_nc_ht=instagram.fymq2-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=HWMcoXHZQggAX9IZg_G&edm=ABfd0MgAAAAA&ccb=7-4&oh=b4890ce53c72d596c1f0a6ac3aa9b41c&oe=60970274&_nc_sid=7bff83" class="img-map" alt="...">' +
+        '<img src="./img/photos/photo-burger1.jpg" class="img-map" alt="...">' +
         '<span class="resto-name">Restaurant Name</span>' +
         '<span class="item-name">Item Name</span>' +
-        '<div class="d-flex justify-content-between">' +
+        '<div class="grid-item__footer">' +
         '<span class="price">$14</span>' +
         '<span class="distance">1.2km</span>' +
         '</div>' +
@@ -306,10 +306,10 @@ function initMap() {
         '<div id="siteNotice">' +
         '</div>' +
         '<a href="./restaurant.html" target="_blank" class="grid-item for-map">' +
-        '<img src="https://instagram.fymq2-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.169.1349.1349a/s640x640/169088158_473348593863884_7004601539434682593_n.jpg?tp=1&_nc_ht=instagram.fymq2-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=HWMcoXHZQggAX9IZg_G&edm=ABfd0MgAAAAA&ccb=7-4&oh=b4890ce53c72d596c1f0a6ac3aa9b41c&oe=60970274&_nc_sid=7bff83" class="img-map" alt="...">' +
+        '<img src="./img/photos/photo-burger1.jpg" class="img-map" alt="...">' +
         '<span class="resto-name">Restaurant Name</span>' +
         '<span class="item-name">Item Name</span>' +
-        '<div class="d-flex justify-content-between">' +
+        '<div class="grid-item__footer">' +
         '<span class="price">$15</span>' +
         '<span class="distance">1.2km</span>' +
         '</div>' +
@@ -341,10 +341,10 @@ function initMap() {
         '<div id="siteNotice">' +
         '</div>' +
         '<a href="./restaurant.html" target="_blank" class="grid-item for-map">' +
-        '<img src="https://instagram.fymq2-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.169.1349.1349a/s640x640/169088158_473348593863884_7004601539434682593_n.jpg?tp=1&_nc_ht=instagram.fymq2-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=HWMcoXHZQggAX9IZg_G&edm=ABfd0MgAAAAA&ccb=7-4&oh=b4890ce53c72d596c1f0a6ac3aa9b41c&oe=60970274&_nc_sid=7bff83" class="img-map" alt="...">' +
+        '<img src="./img/photos/photo-burger1.jpg" class="img-map" alt="...">' +
         '<span class="resto-name">Restaurant Name</span>' +
         '<span class="item-name">Item Name</span>' +
-        '<div class="d-flex justify-content-between">' +
+        '<div class="grid-item__footer">' +
         '<span class="price">$18</span>' +
         '<span class="distance">1.2km</span>' +
         '</div>' +
@@ -376,10 +376,10 @@ function initMap() {
         '<div id="siteNotice">' +
         '</div>' +
         '<a href="./restaurant.html" target="_blank" class="grid-item for-map">' +
-        '<img src="https://instagram.fymq2-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.169.1349.1349a/s640x640/169088158_473348593863884_7004601539434682593_n.jpg?tp=1&_nc_ht=instagram.fymq2-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=HWMcoXHZQggAX9IZg_G&edm=ABfd0MgAAAAA&ccb=7-4&oh=b4890ce53c72d596c1f0a6ac3aa9b41c&oe=60970274&_nc_sid=7bff83" class="img-map" alt="...">' +
+        '<img src="./img/photos/photo-burger1.jpg" class="img-map" alt="...">' +
         '<span class="resto-name">Restaurant Name</span>' +
         '<span class="item-name">Item Name</span>' +
-        '<div class="d-flex justify-content-between">' +
+        '<div class="grid-item__footer">' +
         '<span class="price">$18</span>' +
         '<span class="distance">1.2km</span>' +
         '</div>' +

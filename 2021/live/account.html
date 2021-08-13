@@ -47,46 +47,7 @@
 
 <body>
     <!-- navigation bar -->
-    <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color:white">
-        <div class="container">
-            <a class="navbar-brand" href="./"><img src="./img/logos/logo-lbw-en.svg" class="navbar-logo" alt=""
-                    class="mr-2">Le Burger Week <span class="sr-only">(current)</span></a>
-            <button class="navbar-toggler p-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="far fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="./results.html">🍔 Find a
-                        burger<span class="sr-only">(current)</span></a>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            🏆 Winners
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="./winners.html">2020</a>
-                            <a class="dropdown-item" href="./winners.html">2019</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            😊 Account
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item active" href="./account.html">❤️ Saved</a>
-                            <a class="dropdown-item" href="./dashboard-resto.html">🧑‍🍳 Resto dashboard</a>
-                            <a class="dropdown-item" href="./dashboard-admin.html">⚙️ Admin dashboard</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./login.html">Logout</a>
-                        </div>
-                    </li>
-                    <a class="nav-item nav-link" href="#!">Français</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div id="navburger"></div>
 
     <main>
         <section class="py-4">
@@ -156,98 +117,10 @@
                 </section>                
             </div>
         </section>
-
-        <!-- Toast Removed-->
-        <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
-            <div id="elementRemoved" class="toast hide text-dark" role="alert" aria-live="assertive" aria-atomic="true"
-                data-delay="2000">
-                <div class="toast-header text-dark">
-                    <strong class="mr-auto">❌ Removed</strong>
-                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="toast-body">
-                    You removed this saved item. <a href="account.html">Undo</a>
-                </div>
-            </div>
-        </div>
-
-
     </main>
 
     <!-- footer -->
-    <footer class="pt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-5 text-center text-md-left">
-                    <img src="./img/logos/logo-light-full-en.svg" alt="" class="logo-footer">
-                    <ul class="list-inline mt-4">
-                        <li class="list-inline-item"><a href="#!" class="text-dark">Montreal</a></li>
-                        <li class="list-inline-item"><a href="#!" class="text-dark">Winnipeg</a></li>
-                        <li class="list-inline-item"><a href="#!" class="text-dark">Vancouver</a></li>
-                        <li class="list-inline-item"><a href="#!" class="text-dark">Edmonton</a></li>
-                        <li class="list-inline-item"><a href="#!" class="text-dark">Calgary</a></li>
-                        <li class="list-inline-item"><a href="#!" class="text-dark">Regina</a></li>
-                        <li class="list-inline-item"><a href="#!" class="text-dark">Saskatoon</a></li>
-                        <li class="list-inline-item"><a href="#!" class="text-dark">Toronto</a></li>
-                        <li class="list-inline-item"><a href="#!" class="text-dark">Outaouais</a></li>
-                        <li class="list-inline-item"><a href="#!" class="text-dark">Laval</a></li>
-                        <li class="list-inline-item"><a href="#!" class="text-dark">Quebec</a></li>
-                        <li class="list-inline-item"><a href="#!" class="text-dark">International</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md mb-4">
-                    <h6>Links</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="mailto:team@peoplemovertech.com">Sponsorship</a></li>
-                        <li><a href="https://lapoutineweek.com">La Poutine Week</a></li>
-                        <li><a href="https://lapizzaweek.com">La Pizza Week</a></li>
-                        <li><a href="./legal.html">Terms &amp; Privacy</a></li>
-                        <li><a href="#!">Français</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md mb-4">
-                    <h6>Restaurants</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="./login.html">Login</a></li>
-                        <li><a href="./register.html">Sign up</a></li>
-                        <li><a href="./faq.html">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md mb-4">
-                    <h6>Stay connected</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="https://www.facebook.com/LeBurgerWeek/" target="_blank"><i
-                                    class="fab fa-facebook mr-2"></i>Facebook</a></li>
-                        <li><a href="https://www.instagram.com/leburgerweek/" target="_blank"><i
-                                    class="fab fa-instagram mr-2"></i>Instagram</a></li>
-                        <li><a href="mailto:team@peoplemovertech.com" target="_blank"><i
-                                    class="fal fa-envelope mr-2"></i>Email</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="subfooter">
-            <img src="./img/artwork/footer-artwork-nostreet.png" class="footer-artwork" alt="">
-            <div class="floor"></div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-between flex-wrap">
-                        <p class="text-light">© 2019&nbsp;Le Burger Week&nbsp;|&nbsp;<a href="https://peoplemover.tech"
-                                target="_blank" class="text-light">People Mover
-                                Technologies Inc.</a></p>
-                        <p class="text-light">Made with&nbsp;<i class="fal fa-heart"></i>&nbsp;and&nbsp;<i
-                                class="fal fa-coffee"></i>&nbsp;by <a href="https://loogart.com" target="_blank"
-                                class="text-light">Loogart</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+    <div id="footburger"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -259,6 +132,12 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap"
         async defer></script>
     <script src="./js/scripts.js"></script>
+    <script>
+        window.onload = function() {
+        document.getElementById('myAccount').className = 'nav-item dropdown active';
+        };
+    </script>
+    <div id="allModals"></div>
 </body>
 
 </html>

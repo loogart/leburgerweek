@@ -1,3 +1,10 @@
+//Load navbar and footer
+$(function(){
+  $("#navburger").load("./html/navbar.html");
+  $("#footburger").load("./html/footer.html");
+  $("#allModals").load("./html/modals.html");
+});
+
 // Animate onto screen
 AOS.init();
 

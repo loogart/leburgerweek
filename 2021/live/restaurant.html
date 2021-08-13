@@ -231,9 +231,43 @@
 
     </main>
 
+    <!-- Modal Vote Step 1 -->
+    <div class="preview-modal modal fade" id="modalVote1" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header modal-resto sr-only">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            </div>
+            <div class="modal-photo-holder bg-beige text-center pt-4">
+                <img src="./img/artwork/lady-orange.png" alt="" style="max-width:200px;" class="mx-auto">
+            </div>
+            <div class="modal-body text-center">
+                <h3 class="font-weight-bold">What did you think?</h3>
+                <div class="d-flex justify-content-around align-items-center my-4 mx-auto"
+                    style="max-width:300px">
+                    <a href="" class="btn-rate" data-toggle="modal" data-target="#modalVote2"><i
+                            class="far fa-frown-open fa-3x" Title=""></i><span class="d-block">Bad</span></a>
+                    <a href="" class="btn-rate" data-toggle="modal" data-target="#modalVote2"><i
+                            class="far fa-smile fa-3x" Title=""></i><span class="d-block" data-toggle="modal"
+                            data-target="#modalVote2">Good</span></a>
+                    <a href="" class="btn-rate" data-toggle="modal" data-target="#modalVote2"><i
+                            class="far fa-grin-stars fa-3x" Title=""></i><span
+                            class="d-block">Amazing</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
     <!-- footer -->
     <div id="footburger"></div>
-    
+    <div id="allModals"></div>
+        
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -244,7 +278,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap"
         async defer></script>
     <script src="./js/scripts.js"></script>
-    <div id="allModals"></div>
+
 </body>
 
 </html>

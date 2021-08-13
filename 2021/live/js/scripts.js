@@ -5,6 +5,10 @@ $(function(){
   $("#allModals").load("./html/modals.html");
 });
 
+window.onload = function() {
+    document.getElementById('navburger').className = 'sticky-top';
+};
+
 // Animate onto screen
 AOS.init();
 
